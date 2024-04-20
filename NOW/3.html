@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>조원 소개</title>
+  <style>
+    /* 스토브 홈페이지의 전반적인 스타일을 따라서 작성 */
+
+    .nav_wrap{
+    display: flex;
+    align-items: center;
+    border-bottom: 0;
+    height: 68px;
+    padding: 0 48px;
+}
+
+.stove_title img {
+    width: 88px;
+    height: 20px;
+}
+
+.list a {
+    font-size: 20px;
+    color: white;
+    margin-left: 30px;
+}
+
+.navtop{
+    position: fixed;
+    bottom: 64px;
+    background-color: #fff;
+    box-shadow: 0 0.4rem 1rem 0 rgba(0,0,0,.1);
+    color: #3a3a3a;
+    right: 41px;
+    min-width: 48px;
+    border: 0;
+    border-radius: 24px;
+    padding: 0!important;
+    height: 48px;
+}
+
+.stove_nav{
+    position: fixed;
+    border-bottom: 1px solid;
+    letter-spacing: 0;
+    width: 100%;
+    height: 66px;
+    z-index: 100;
+    background-color: #1a1a1a;
+}
+
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .member {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .member-image {
+      flex: 0 0 120px;
+      margin-right: 20px;
+    }
+
+    .member-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .member-info {
+      flex: 1;
+    }
+
+    .member-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .member-introduction {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .member-recommendation {
+      display: flex;
+      align-items: center;
+    }
+
+    .member-recommendation img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .member-recommendation-name {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="stove_nav">
+      <div class="nav_wrap">
+          <div class="stove_title">
+              <a href="https://www.onstove.com/" style="margin-right: 10px;">
+                  <img src="./EVENTIMG/stovetitle.png">
+              </a>
+              <a href="https://indie.onstove.com/ko/store/recommend">
+                  <img src="./EVENTIMG/indietitle.png">
+              </a>
+          </div>
+          <div class="menu_wrap">
+              <div class="list">
+                  <a style="color: #fc6020;;" href="https://indie.onstove.com/ko/store/recommend">게임</a>
+                  <a href="https://indie.onstove.com/ko/event">이벤트</a>
+                  <a href="https://page.onstove.com/indie/global">커뮤니티</a>
+                  <a href="https://accounts.onstove.com/auth/login?redirect_url=https%3A%2F%2Fmyindie.onstove.com">마이인디</a>
+                  <a href="https://page.onstove.com/indieboostlab/global">
+                      <img style="width: 138px; height: 24px; margin-top: 8px;" src="./INDIEIMG/슬기로운데모생활.png">
+                  </a>
+                  <a href="https://page.onstove.com/seavtuber/global">
+                      <img style="width: 108px; height: 20px; margin-top: 6px;" src="./INDIEIMG/seastory.png">
+                      <ion-icon name="open-outline"></ion-icon>
+                  </a>
+              </div>
+              <div class="menu_input">
+                  <div class="search_area">
+                      <div class="inputbox_wrap">
+                          <div class="inputbox">
+                              <div class="input_wrap">
+                                  <input class="inputsp" maxlength="20" type="text"
+                                  class="element-input" placeholder="게임 검색하기">
+                                  <button class="input_btn"><ion-icon name="search-outline"></ion-icon></button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="studio">
+                          <a href="https://studio.onstove.com/ko">스튜디오</a>
+                      </div>
+                  </div>  
+              </div>
+              <div class="button_list">
+                  <button class="btn-1"><img src="./INDIEIMG/글로벌.png"></button>
+                  <button class="btn-2"><img src="./INDIEIMG/메뉴.png"></button>
+                  <a href="https://accounts.onstove.com/login?redirect_
+                  url=https%3A%2F%2Findie.onstove.com%2Fko%2Fgames%2F1689%2Fcommunit
+                  y%2F122752%2Flist%3Fpage%3D1%26direction%3DLATEST" style="margin-left: 9px;">로그인</a>
+              </div>
+          </div>
+      </div>
+  </div>
+    <div class="member">
+      <div class="member-image">
+        <img src="member1.jpg" alt="Member 1">
+      </div>
+      <div class="member-info">
+        <h2 class="member-name">조원 1</h2>
+        <p class="member-introduction">안녕하세요! 저는 조원 1입니다. 저의 추천 게임은 '게임 이름'입니다. 아래 이미지를 확인해주세요.</p>
+        <div class="member-recommendation">
+          <img src="game1.jpg" alt="Game 1">
+          <span class="member-recommendation-name">게임 이름</span>
+        </div>
+      </div>
+    </div>
+    <div class="member">
+      <div class="member-image">
+        <img src="member2.jpg" alt="Member 2">
+      </div>
+      <div class="member-info">
+        <h2 class="member-name">조원 2</h2>
+        <p class="member-introduction">안녕하세요! 저는 조원 2입니다. 저의 추천 게임은 '게임 이름'입니다. 아래 이미지를 확인해주세요.</p>
+        <div class="member-recommendation">
+          <img src="game2.jpg" alt="Game 2">
+          <span class="member-recommendation-name">게임 이름</span>
+        </div>
+      </div>
+    </div>
+    <div class="member">
+      <div class="member-image">
+        <img src="member3.jpg" alt="Member 3">
+      </div>
+      <div class="member-info">
+        <h2 class="member-name">조원 3</h2>
+        <p class="member-introduction">안녕하세요! 저는 조원 3입니다. 저의 추천 게임은 '게임 이름'입니다. 아래 이미지를 확인해주세요.</p>
+        <div class="member-recommendation">
+          <img src="game3.jpg" alt="Game 3">
+          <span class="member-recommendation-name">게임 이름</span>
+        </div>
+      </div>
+    </div>
+    <div class="member">
+      <div class="member-image">
+        <img src="member4.jpg" alt="Member 4">
+      </div>
+      <div class="member-info">
+        <h2 class="member-name">조원 4</h2>
+        <p class="member-introduction">안녕하세요! 저는 조원 4입니다. 저의 추천 게임은 '게임 이름'입니다. 아래 이미지를 확인해주세요.</p>
+        <div class="member-recommendation">
+          <img src="game4.jpg" alt="Game 4">
+          <span class="member-recommendation-name">게임 이름</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

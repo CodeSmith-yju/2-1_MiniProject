@@ -1,0 +1,1908 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>STOVE - 스토브, 식지 않는 재미</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/16x16.ico">
+        <link rel="stylesheet" type="text/css" href="./css/main.css" />
+        <link rel="stylesheet" type="text/css" href="./css/header_login.css" />
+        <link rel="stylesheet" type="text/css" href="./css/mainbody.css" />
+        <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <style type="text/css">@import url(./css/StoveFont-KR.css);</style>
+        <style>
+            body {
+                font-family: Spoqa Han Sans Neo KR, -apple-system, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            }
+
+            .swiper {
+                width: 860px;
+                height: 360px;
+                position: relative;
+                border-radius: 4px;
+            }
+
+            .swiper-button-next:after {
+                opacity: 0;
+            }
+
+            .swiper-button-prev:after {
+                opacity: 0;
+            }
+
+            .swiper:hover .swiper-button-next:after {
+                opacity: 1;
+                transition: all 0.2s ease-in-out;
+            }
+
+            .swiper:hover .swiper-button-prev:after {
+                opacity: 1;
+                transition: all 0.2s ease-in-out;
+            }
+
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .swiper-button-next:after {
+                content: "";
+                background: url(./img/control-arrow-line.svg) 0 0 no-repeat !important;
+                width: 32px;
+                height: 32px;
+                transform: rotate(180deg) !important;
+            }
+
+            .swiper-button-prev:after {
+                content: "";
+                background: url(./img/control-arrow-line.svg) 0 0 no-repeat !important;
+                width: 32px;
+                height: 32px;
+            }
+
+            .swiper-pagination {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 20px !important;
+                text-align: center;
+                display: inline-block !important;
+                box-sizing: border-box !important;
+                width: 100% !important;
+                pointer-events: none;
+            }
+
+            .swiper-pagination > .swiper-pagination-bullet {
+                width: 6px; height: 6px;
+                border-radius: 10pc; display: inline-block !important;
+                text-indent: -99999em;
+                margin: 0 4px;
+                background-color: #fff;
+                opacity: .3;
+                cursor: pointer;
+                pointer-events: all;
+            }
+
+            .swiper-pagination > .swiper-pagination-bullet:hover {
+                background-color: #fff;
+                opacity: 1;
+            }
+
+            .swiper-pagination > .swiper-pagination-bullet-active {
+                width: 16px;
+                background-color: #fff !important;
+                opacity: 1 !important;
+                transition: width .15s ease-in-out, opacity .15s ease-in-out;
+            }
+            
+        </style>
+        <script src = "./js/main_login.js"></script>
+        <script src = "./js/slide.js"></script>
+    </head>
+
+    <body>
+
+        <!-- 네비게이션 바 -->
+        <header class='header'>
+        <section id = "mainhead">
+            <section id="inner">
+                <figure id ="mainlogo">
+                    <a id = "logo" href="main.html" target="_self"></a>
+                </figure>
+                <nav id = "list">
+                    <ul id = "toggle">
+                        <li class = 'nav'>
+                            <a href = "#menu1" class = 'menu' id = "pcmenu" role = "button">PC게임</a>
+                            <section id = "menu1">
+                                <section id = "pcgame-content">
+                                    <section class = 'pcgame-container'>
+                                        <article class = 'pcgame-list'>
+                                            <figure class = 'pcgame-img'>
+                                                <a href= "https://blueprotocol.game.onstove.com/" target="_self">
+                                                    <img src="./img/게임대표이미지_블루프로토콜.jpg" alt="블루프로토콜" />
+                                                </a>
+                                            </figure>
+                                            <article class = 'pcgame-desc'>
+                                                <article class = 'pcgame-name'>
+                                                    <a href= "https://blueprotocol.game.onstove.com/" target="_self">블루프로토콜</a>
+                                                    <span class = "badge new">NEW</span>
+                                                </article>
+                                                <article class = 'pcgame-wrap'>
+                                                    <a href= "https://blueprotocol.game.onstove.com/" target="_self" class="gamelist-button">
+                                                        <span class = "gamelist-button-text">공식 홈페이지</span>
+                                                    </a>
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <article class = 'pcgame-list'>
+                                            <figure class = 'pcgame-img'>
+                                                <a href= "https://getamped.game.onstove.com/" target="_self">
+                                                    <img src="./img/겟앰프드_스토브_아이콘(500x500).png" alt="겟앰프드" />
+                                                </a>
+                                            </figure>
+                                            <article class = 'pcgame-desc'>
+                                                <article class = 'pcgame-name'>
+                                                    <a href= "https://getamped.game.onstove.com/" target="_self">겟앰프드</a>
+                                                    <span class = "badge new">NEW</span>
+                                                </article>
+                                                <article class = 'pcgame-wrap'>
+                                                    <a href= "https://getamped.game.onstove.com/" target="_self" class="gamelist-button">
+                                                        <span class = "gamelist-button-text">공식 홈페이지</span>
+                                                    </a>
+                                                    <a href= "https://page.onstove.com/getamped/kr" target="_self" class="gamelist-button">
+                                                        <span class = "gamelist-button-text">커뮤니티</span>
+                                                    </a>
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <article class = 'pcgame-list'>
+                                            <figure class = 'pcgame-img'>
+                                                <a href= "https://lostark.game.onstove.com/" target="_self">
+                                                    <img src="./img/500_500_1597184530.png" alt="LOST ARK" />
+                                                </a>
+                                            </figure>
+                                            <article class = 'pcgame-desc'>
+                                                <article class = 'pcgame-name'>
+                                                    <a href= "https://lostark.game.onstove.com/" target="_self">LOST ARK</a>
+                                                    <span class = "badge update">UPDATE</span>
+                                                </article>
+                                                <article class = 'pcgame-wrap'>
+                                                    <a href= "ttps://lostark.game.onstove.com/" target="_self" class="gamelist-button">
+                                                        <span class = "gamelist-button-text">공식 홈페이지</span>
+                                                    </a>
+                                                    <a href= "https://page.onstove.com/lostark/kr" target="_self" class="gamelist-button">
+                                                        <span class = "gamelist-button-text">커뮤니티</span>
+                                                    </a>
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <article class = 'pcgame-list'>
+                                            <figure class = 'pcgame-img'>
+                                                <a href= "https://tr.game.onstove.com/" target="_self">
+                                                    <img src="./img/img_thumb_tr_1588025867.jpeg" alt="테일즈런너" />
+                                                </a>
+                                            </figure>
+                                            <article class = 'pcgame-desc'>
+                                                <article class = 'pcgame-name'>
+                                                    <a href= "https://tr.game.onstove.com/" target="_self">테일즈런너</a>
+                                                    <span class = "badge update">UPDATE</span>
+                                                </article>
+                                                <article class = 'pcgame-wrap'>
+                                                    <a href= "https://tr.game.onstove.com/" target="_self" class="gamelist-button">
+                                                        <span class = "gamelist-button-text">공식 홈페이지</span>
+                                                    </a>
+                                                    <a href= "https://page.onstove.com/talesrunner/kr" target="_self" class="gamelist-button">
+                                                        <span class = "gamelist-button-text">커뮤니티</span>
+                                                    </a>
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <article class = 'pcgame-list'>
+                                            <figure class = 'pcgame-img'>
+                                                <a href= "https://c-aoa.game.onstove.com/" target="_self">
+                                                    <img src="./img/caoa_500_500.jpg" alt="센추리: 에이지 오브 애쉬즈" />
+                                                </a>
+                                            </figure>
+                                            <article class = 'pcgame-desc'>
+                                                <article class = 'pcgame-name'>
+                                                    <a href= "https://c-aoa.game.onstove.com/" target="_self">센추리: 에이지 오브 애쉬즈</a>
+                                                </article>
+                                                <article class = 'pcgame-wrap'>
+                                                    <a href= "https://c-aoa.game.onstove.com/" target="_self" class="gamelist-button">
+                                                        <span class = "gamelist-button-text">공식 홈페이지</span>
+                                                    </a>
+                                                    <a href= "https://page.onstove.com/c-aoa/kr" target="_self" class="gamelist-button">
+                                                        <span class = "gamelist-button-text">커뮤니티</span>
+                                                    </a>
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <article class = 'pcgame-list'>
+                                            <figure class = 'pcgame-img'>
+                                                <a href= "https://page.onstove.com/kards/kr" target="_self">
+                                                    <img src="./img/GNB_대표이미지_500_500.jpg" alt="KARDS" />
+                                                </a>
+                                            </figure>
+                                            <article class = 'pcgame-desc'>
+                                                <article class = 'pcgame-name'>
+                                                    <a href= "https://page.onstove.com/kards/kr" target="_self">KARDS</a>
+                                                </article>
+                                                <article class = 'pcgame-wrap'>
+                                                    <a href= "https://page.onstove.com/kards/kr" target="_self" class="gamelist-button">
+                                                        <span class = "gamelist-button-text">공식 홈페이지</span>
+                                                    </a>
+                                                    <a href= "https://page.onstove.com/kards/kr/list/" target="_self" class="gamelist-button">
+                                                        <span class = "gamelist-button-text">커뮤니티</span>
+                                                    </a>
+                                                </article>
+                                            </article>
+                                        </article>
+                                    </section>
+                                </section>
+                            </section>
+                        </li>
+                        <li class = 'nav'>
+                            <a href = "#menu2" class = 'menu' id="mobamenu" role = "button">모바일게임</a>
+                            <section id = "menu2">
+                                <section id = "mobagame-content">
+                                    <section class = 'mobagame-container'>
+                                        <article class = 'mobagame-list'>
+                                            <figure class = 'mobagame-img'>
+                                                <a href= "https://outerplane.game.onstove.com/" target="_self">
+                                                    <img src="./img/앱아이콘_스텔라_1679988159233.png" alt="아우터플레인" />
+                                                </a>
+                                            </figure>
+                                            <article class = 'mobagame-desc'>
+                                                <article class = 'mobagame-name'>
+                                                    <a href= "https://outerplane.game.onstove.com/" target="_self">아우터플레인</a>
+                                                </article>
+                                                <article class = 'mobagame-wrap'>
+                                                    <a href= "https://outerplane.game.onstove.com/" target="_self" class="gamelist-button">
+                                                        <span class = "gamelist-button-text">공식 홈페이지</span>
+                                                    </a>
+                                                    <a href= "https://page.onstove.com/outerplane/kr" target="_self" class="gamelist-button">
+                                                        <span class = "gamelist-button-text">커뮤니티</span>
+                                                    </a>
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <article class = 'mobagame-list'>
+                                            <figure class = 'mobagame-img'>
+                                                <a href= "https://dominion.game.onstove.com/preregister" target="_self">
+                                                    <img src="./img/전국제패_GNB.png" alt="전국재패M" />
+                                                </a>
+                                            </figure>
+                                            <article class = 'mobagame-desc'>
+                                                <article class = 'mobagame-name'>
+                                                    <a href= "https://dominion.game.onstove.com/preregister" target="_self">전국재패M</a>
+                                                    <span class = "badge new">사전예약</span>
+                                                </article>
+                                                <article class = 'mobagame-wrap'>
+                                                    <a href= "https://dominion.game.onstove.com/preregister" target="_self" class="gamelist-button">
+                                                        <span class = "gamelist-button-text">공식 홈페이지</span>
+                                                    </a>
+                                                    <a href= "https://page.onstove.com/dominion/kr" target="_self" class="gamelist-button">
+                                                        <span class = "gamelist-button-text">커뮤니티</span>
+                                                    </a>
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <article class = 'mobagame-list'>
+                                            <figure class = 'mobagame-img'>
+                                                <a href= "https://page.onstove.com/epicseven/kr" target="_self">
+                                                    <img src="./img/STOVE메인GNB_500x500_1676522978426.png" alt="에픽세븐" />
+                                                </a>
+                                            </figure>
+                                            <article class = 'mobagame-desc'>
+                                                <article class = 'mobagame-name'>
+                                                    <a href= "https://page.onstove.com/epicseven/kr" target="_self">에픽세븐</a>
+                                                    <span class = "badge update">UPDATE</span>
+                                                </article>
+                                                <article class = 'mobagame-wrap'>
+                                                    <a href= "https://page.onstove.com/epicseven/kr" target="_self" class="gamelist-button">
+                                                        <span class = "gamelist-button-text">커뮤니티</span>
+                                                    </a>
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <article class = 'mobagame-list'>
+                                            <figure class = 'mobagame-img'>
+                                                <a href= "https://page.onstove.com/magicshop/kr" target="_self">
+                                                    <img src="./img/Ash_500x500_1648523464691.jpg" alt="마술양품점" />
+                                                </a>
+                                            </figure>
+                                            <article class = 'mobagame-desc'>
+                                                <article class = 'mobagame-name'>
+                                                    <a href= "https://page.onstove.com/magicshop/kr" target="_self">마술양품점</a>
+                                                    <span class = "badge update">UPDATE</span>
+                                                </article>
+                                                <article class = 'mobagame-wrap'>
+                                                    <a href= "https://page.onstove.com/magicshop/kr" target="_self" class="gamelist-button">
+                                                        <span class = "gamelist-button-text">커뮤니티</span>
+                                                    </a>
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <article class = 'mobagame-list'>
+                                            <figure class = 'mobagame-img'>
+                                                <a href= "https://page.onstove.com/supertank/global/list" target="_self">
+                                                    <img src="./img/img_thumb_supertank_1588026814.png" alt="슈퍼탱크대작전" />
+                                                </a>
+                                            </figure>
+                                            <article class = 'mobagame-desc'>
+                                                <article class = 'mobagame-name'>
+                                                    <a href= "ttps://page.onstove.com/supertank/global/list" target="_self">슈퍼탱크대작전</a>
+                                                </article>
+                                                <article class = 'mobagame-wrap'>
+                                                    <a href= "https://page.onstove.com/supertank/global/list" target="_self" class="gamelist-button">
+                                                        <span class = "gamelist-button-text">커뮤니티</span>
+                                                    </a>
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <article class = 'mobagame-list'>
+                                            <figure class = 'mobagame-img'>
+                                                <a href= "https://page.onstove.com/qurareforever/kr" target="_blank">
+                                                    <img src="./img/img_thumb_qurare_1588026930.png" alt="큐라레를 추억하는 사서들" />
+                                                </a>
+                                            </figure>
+                                            <article class = 'mobagame-desc'>
+                                                <article class = 'mobagame-name'>
+                                                    <a href= "https://page.onstove.com/qurareforever/kr" target="_self">큐라레를 추억하는 사서들</a>
+                                                </article>
+                                                <article class = 'mobagame-wrap'>
+                                                    <a href= "https://page.onstove.com/qurareforever/kr" target="_self" class="gamelist-button">
+                                                        <span class = "gamelist-button-text">커뮤니티</span>
+                                                    </a>
+                                                </article>
+                                            </article>
+                                        </article>
+                                    </section>
+                                </section>
+                            </section>
+                        </li>
+                        <li class = 'nav'><a href = "https://indie.onstove.com/ko/store/recommend" class = "menu" role = "button">인디게임</a></li>
+                    </ul>
+                </nav>
+                <nav id = "rightlist">
+                    <article id = "appeal" class ='rightmenu'>
+                        <a id = "teamappeal" href="team.html" target="_blank">조원소개</a>
+                    </article>
+                    <article id = "lang" class ='rightmenu'>
+                        <button id = "langbutton">
+                            <article id = "langtext">한국어</article>
+                        </button>
+                        <section id = "lang-content">
+                             <section id = "langmenu">
+                                <ul class = "langmenu-list">
+                                    <li class = "langmenu-item">
+                                        <a href="https://www.onstove.com/" class= "lang-select" id = "active">한국어</a>
+                                    </li>
+                                    <li class = "langmenu-item">
+                                        <a href="https://www.onstove.com/" class= "lang-select">Deutsch</a>
+                                    </li>
+                                    <li class = "langmenu-item">
+                                        <a href="https://www.onstove.com/" class= "lang-select">English (US)</a>
+                                    </li>
+                                    <li class = "langmenu-item">
+                                        <a href="https://www.onstove.com/" class= "lang-select">Español (LA)</a>
+                                    </li>
+                                    <li class = "langmenu-item">
+                                        <a href="https://www.onstove.com/" class= "lang-select">Français</a>
+                                    </li>
+                                    <li class = "langmenu-item">
+                                        <a href="https://www.onstove.com/" class= "lang-select">Português (BR)</a>
+                                    </li>
+                                    <li class = "langmenu-item">
+                                        <a href="https://www.onstove.com/" class= "lang-select">中文 (繁體)</a>
+                                    </li>
+                                    <li class = "langmenu-item">
+                                        <a href="https://www.onstove.com/" class= "lang-select">日本語</a>
+                                    </li>
+                                    <li class = "langmenu-item">
+                                        <a href="https://www.onstove.com/" class= "lang-select" >ภาษาไทย</a>
+                                    </li>
+                                    <li class = "langmenu-item">
+                                        <a href="https://www.onstove.com/" class= "lang-select">Italiano</a>
+                                    </li>
+                                </ul>
+                             </section>
+                        </section>
+                    </article>
+                    <article id = "allmenu" class ='rightmenu'>
+                        <button id = "menubutton">
+                            <article id = "menutext">전체메뉴</article>
+                        </button>
+                        <section id = "allmenu-content">
+                            <section id = "allmenu-group">
+                                <section class = "group-wrap">
+                                    <section class = "game-group">
+                                        <strong class = "group-title">PC게임</strong>
+                                        <ul class = "allgame-list">
+                                            <li class = "allgame-list-item">
+                                                <a href = "https://blueprotocol.game.onstove.com/" class = "gamelist-link" target="_blank">
+                                                    <article class = "gamelist-link-wrap">
+                                                        <strong class = "gamelist-link-text">블루프로토콜</strong>
+                                                        <article class = "sbadge">
+                                                            <span class = "badge new">NEW</span>
+                                                        </article>
+                                                    </article>
+                                                </a>
+                                            </li>
+                                            <li class = "allgame-list-item">
+                                                <a href = "https://getamped.game.onstove.com/" class = "gamelist-link" target="_blank">
+                                                    <article class = "gamelist-link-wrap">
+                                                        <strong class = "gamelist-link-text">겟앰프드</strong>
+                                                        <article class = "sbadge">
+                                                            <span class = "badge new">NEW</span>
+                                                        </article>
+                                                    </article>
+                                                </a>
+                                                <a href = "https://page.onstove.com/getamped/kr" class = "gamelist-link" target="_blank">
+                                                        <figure class = "gamelist-link-icon"></figure>
+                                                </a>
+                                            </li>
+                                            <li class = "allgame-list-item">
+                                                <a href = "https://lostark.game.onstove.com/" class = "gamelist-link" target="_blank">
+                                                    <article class = "gamelist-link-wrap">
+                                                        <strong class = "gamelist-link-text">LOST ARK</strong>
+                                                        <article class = "sbadge">
+                                                            <span class = "badge update">UPDATE</span>
+                                                        </article>
+                                                    </article>
+                                                </a>
+                                                <a href = "https://page.onstove.com/lostark/kr" class = "gamelist-link" target="_blank">
+                                                        <figure class = "gamelist-link-icon"></figure>
+                                                </a>
+                                            </li>
+                                            <li class = "allgame-list-item">
+                                                <a href = "https://tr.game.onstove.com/" class = "gamelist-link" target="_blank">
+                                                    <article class = "gamelist-link-wrap">
+                                                        <strong class = "gamelist-link-text">테일즈런너</strong>
+                                                        <article class = "sbadge">
+                                                            <span class = "badge update">UPDATE</span>
+                                                        </article>
+                                                    </article>
+                                                </a>
+                                                <a href = "https://page.onstove.com/talesrunner/kr" class = "gamelist-link" target="_blank">
+                                                        <figure class = "gamelist-link-icon"></figure>
+                                                </a>
+                                            </li>
+                                            <li class = "allgame-list-item">
+                                                <a href = "https://c-aoa.game.onstove.com/" class = "gamelist-link" target="_blank">
+                                                    <article class = "gamelist-link-wrap">
+                                                        <strong class = "gamelist-link-text">센추리: 에이지 오브 애쉬즈</strong>
+                                                    </article>
+                                                </a>
+                                                <a href = "https://page.onstove.com/c-aoa/kr" class = "gamelist-link" target="_blank">
+                                                        <figure class = "gamelist-link-icon"></figure>
+                                                </a>
+
+                                            </li>
+                                            <li class = "allgame-list-item">
+                                                <a href = "https://page.onstove.com/kards/kr" class = "gamelist-link" target="_blank">
+                                                    <article class = "gamelist-link-wrap">
+                                                        <strong class = "gamelist-link-text">KARDS</strong>
+                                                    </article>
+                                                </a>
+                                                <a href = "https://page.onstove.com/kards/kr/list/" class = "gamelist-link" target="_blank">
+                                                        <figure class = "gamelist-link-icon"></figure>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                    <section class = "game-group">
+                                        <strong class = "group-title">모바일게임</strong>
+                                        <ul class = "allgame-list">
+                                            <li class = "allgame-list-item">
+                                                <a href = "https://outerplane.game.onstove.com/" class = "gamelist-link" target="_blank">
+                                                    <article class = "gamelist-link-wrap">
+                                                        <strong class = "gamelist-link-text">아우터플레인</strong>
+                                                    </article>
+                                                </a>
+                                                <a href = "https://page.onstove.com/outerplane/kr" class = "gamelist-link" target="_blank">
+                                                        <figure class = "gamelist-link-icon"></figure>
+                                                </a>
+                                            </li>
+                                            <li class = "allgame-list-item">
+                                                <a href = "https://dominion.game.onstove.com/preregister" class = "gamelist-link" target="_blank">
+                                                    <article class = "gamelist-link-wrap">
+                                                        <strong class = "gamelist-link-text">전국제패M</strong>
+                                                        <article class = "sbadge">
+                                                            <span class = "badge new">사전예약</span>
+                                                        </article>
+                                                    </article>
+                                                </a>
+                                                <a href = "https://page.onstove.com/dominion/kr" class = "gamelist-link" target="_blank">
+                                                        <figure class = "gamelist-link-icon"></figure>
+                                                </a>
+                                            </li>
+                                            <li class = "allgame-list-item">
+                                                <a href = "https://page.onstove.com/epicseven/kr" class = "gamelist-link" target="_blank">
+                                                    <article class = "gamelist-link-wrap">
+                                                        <strong class = "gamelist-link-text">에픽세븐</strong>
+                                                        <article class = "sbadge">
+                                                            <span class = "badge update">UPDATE</span>
+                                                        </article>
+                                                    </article>
+                                                </a>
+                                            </li>
+                                            <li class = "allgame-list-item">
+                                                <a href = "https://page.onstove.com/magicshop/kr" class = "gamelist-link" target="_blank">
+                                                    <article class = "gamelist-link-wrap">
+                                                        <strong class = "gamelist-link-text">마술양품점</strong>
+                                                        <article class = "sbadge">
+                                                            <span class = "badge update">UPDATE</span>
+                                                        </article>
+                                                    </article>
+                                                </a>
+                                            </li>
+                                            <li class = "allgame-list-item">                                              
+                                                <a href = "https://page.onstove.com/supertank/global" class = "gamelist-link" target="_blank">
+                                                    <article class = "gamelist-link-wrap">
+                                                        <strong class = "gamelist-link-text">슈퍼탱크대작전</strong>
+                                                    </article>
+                                                </a>
+                                            </li>
+                                            <li class = "allgame-list-item">
+                                                <a href = "https://page.onstove.com/qurareforever/kr" class = "gamelist-link" target="_blank">
+                                                    <article class = "gamelist-link-wrap">
+                                                        <strong class = "gamelist-link-text">큐라레를 추억하는 사서들</strong>
+                                                    </article>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </section>
+                                <section class = "group-wrap">
+                                    <section class = "service-group">
+                                        <section class = "service-group-item">
+                                            <strong class = "group-title">서비스</strong>
+                                            <ul class = "service-list">
+                                                <li class = "service-list-item">
+                                                    <a href = "https://indie.onstove.com/ko" class = "servicelist-link" target="_blank">
+                                                        <article class = "servicelist-link-wrap">
+                                                            <strong class = "servicelist-link-text">인디게임</strong>
+                                                        </article>
+                                                    </a>
+                                                </li>
+                                                <li class = "service-list-item">
+                                                    <a href = "https://toonspoon.service.onstove.com/kr" class = "servicelist-link" target="_blank">
+                                                        <article class = "servicelist-link-wrap">
+                                                            <strong class = "servicelist-link-text">툰스푼</strong>
+                                                        </article>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                        <section class = "service-group-item">
+                                            <strong class = "group-title">STOVE</strong>
+                                            <ul class = "service-list">
+                                                <li class = "service-list-item">
+                                                    <a href = "https://www.onstove.com/" class = "servicelist-link" target="_blank">
+                                                        <article class = "servicelist-link-wrap">
+                                                            <strong class = "servicelist-link-text">홈</strong>
+                                                        </article>
+                                                    </a>
+                                                </li>
+                                                <li class = "service-list-item">
+                                                    <a href = "https://page.onstove.com/quarter/kr" class = "servicelist-link" target="_blank">
+                                                        <article class = "servicelist-link-wrap">
+                                                            <strong class = "servicelist-link-text">공식 커뮤니티</strong>
+                                                        </article>
+                                                    </a>
+                                                </li>
+                                                <li class = "service-list-item">
+                                                    <a href = "https://www.onstove.com/download" class = "servicelist-link" target="_blank">
+                                                        <article class = "servicelist-link-wrap">
+                                                            <strong class = "servicelist-link-text">클라이언트 설치</strong>
+                                                        </article>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                    </article>
+                    <article id = "login" class ='rightmenu'>
+                        <span class = "login-dropdown">
+                            <a href = "" class = "btn-user">
+                                <span class = "user-icon">
+                                    <img src = "img/img_default05.png"/>
+                                </span>
+                            </a>
+                        </span>
+                        <section class = "logout">
+                            <article class = "logout-menu">
+                                <ul class = "logout-area">
+                                    <li class = "logout-item">
+                                        <a target="_self" class = "logout-link" href= "main.html">
+                                            <span class = "logout-icon"></span>
+                                            <span class = "logout-text">로그아웃</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </article>
+                        </section>
+                    </article>
+                </nav>
+            </section>
+        </section>    
+        </header>
+
+        <!-- 메인 섹션 -->
+        <section id = 'mainbody'>
+            <section id = 'main-content'>
+                <!-- 슬라이드, 이벤트 배너 섹션 -->
+                <section id = 'banner-sect' class = "main-section">
+                    <!-- 라이브러리 적용 후 슬라이드 코드 -->
+                    <section class="swiper mySwipers">
+                        <section class="swiper-wrapper">
+                          <section class="swiper-slide">
+                            <a class = 'slide-link' href= "https://page.onstove.com/getamped/kr/view/9376039?boardKey=123138&utm_source=onstove_main&utm_medium=long_banner&utm_campaign=getamped_L_event&utm_content=event_open">
+                                <img class = 'event-img' src="./img/_main_long_LMS_뱃지x_01.png" />
+                            </a>
+                            </section>
+                          <section class="swiper-slide">                                    
+                            <a class = 'slide-link' href="https://page.onstove.com/c-aoa/kr/view/9370955?boardKey=11525&utm_source=gamehome_main&utm_medium=multi_banner&utm_campaign=caoa_season2_update&utm_content=update_event">
+                                <img class = 'event-img' src= "./img/센추리_스토브메인_L_1679556613621.jpg" />
+                            </a>
+                          </section>
+                          <section class="swiper-slide">
+                            <a class = 'slide-link' href="https://indie.onstove.com/ko/event/exhibit/320">
+                                <img class = 'event-img' src = "./img/메인_01_메인통합형배너_너는내꺼_main_long_LMS.jpg" />
+                            </a>
+                          </section>
+                          <section class="swiper-slide">
+                            <a class = 'slide-link' href="https://page.onstove.com/kards/kr/view/9334154?boardKey=123001&utm_source=onstove_main&utm_medium=long_banner&utm_campaign=kards_ui_change&utm_content=ui_change">
+                                <img class = 'event-img' src = "./img/스토브메인_01_메인통합형배너_main_long_LMS_카즈.jpg" />
+                            </a>
+                          </section>
+                          <section class="swiper-slide">
+                            <a class = 'slide-link' href="https://dominion.game.onstove.com/preregister">
+                                <img class = 'event-img' src = "./img/_main_long_LMS_뱃지x_02-1.jpg" />
+                            </a>
+                          </section>
+                          <section class="swiper-slide">
+                            <a class = 'slide-link' href= "https://blueprotocol.game.onstove.com/">
+                                <img class = 'event-img' src = "./img/01_통합형배너_1480x750_1679534940170.jpg" />
+                            </a>
+                          </section>
+                          <section class="swiper-slide">
+                            <a class = 'slide-link' href="https://page.onstove.com/quarter/kr/view/8604029">
+                                <img class = 'event-img' src = "./img/main_long_LMS_스토브보안-1.png" />
+                            </a>
+                          </section>
+                        </section>
+                        <section class="swiper-button-next"></section>
+                        <section class="swiper-button-prev"></section>
+                        <section class="swiper-pagination"></section>
+                      </section>
+
+                      <!-- 라이브러리 적용 전 슬라이드 코드 -->
+                    <!-- <section id = "banner-slide">
+                        <section id = "slide-wrap">
+                            <ul class = "banner-list">
+                                <li class = "banner-img">
+                                    <a class = 'slide-link' href= "https://page.onstove.com/getamped/kr/view/9376039?boardKey=123138&utm_source=onstove_main&utm_medium=long_banner&utm_campaign=getamped_L_event&utm_content=event_open">
+                                        <img class = 'event-img' src="./img/_main_long_LMS_뱃지x_01.png" />
+                                    </a>
+                                </li>
+                                <li class = "banner-img">
+                                    <a class = 'slide-link' href="https://page.onstove.com/c-aoa/kr/view/9370955?boardKey=11525&utm_source=gamehome_main&utm_medium=multi_banner&utm_campaign=caoa_season2_update&utm_content=update_event">
+                                        <img class = 'event-img' src= "./img/센추리_스토브메인_L_1679556613621.jpg" />
+                                    </a>
+                                </li>
+                                <li class = "banner-img">
+                                    <a class = 'slide-link' href="https://indie.onstove.com/ko/event/exhibit/320">
+                                        <img class = 'event-img' src = "./img/메인_01_메인통합형배너_너는내꺼_main_long_LMS.jpg" />
+                                    </a>
+                                </li>
+                                <li class = "banner-img">
+                                    <a class = 'slide-link' href="https://page.onstove.com/kards/kr/view/9334154?boardKey=123001&utm_source=onstove_main&utm_medium=long_banner&utm_campaign=kards_ui_change&utm_content=ui_change">
+                                        <img class = 'event-img' src = "./img/스토브메인_01_메인통합형배너_main_long_LMS_카즈.jpg" />
+                                    </a>
+                                </li>
+                                <li class = "banner-img">
+                                    <a class = 'slide-link' href="https://dominion.game.onstove.com/preregister">
+                                        <img class = 'event-img' src = "./img/_main_long_LMS_뱃지x_02-1.jpg" />
+                                    </a>
+                                </li>
+                                <li class = "banner-img">
+                                    <a class = 'slide-link' href= "https://blueprotocol.game.onstove.com/">
+                                        <img class = 'event-img' src = "./img/01_통합형배너_1480x750_1679534940170.jpg" />
+                                    </a>
+                                </li>
+                                <li class = "banner-img">
+                                    <a class = 'slide-link' href="https://page.onstove.com/quarter/kr/view/8604029">
+                                        <img class = 'event-img' src = "./img/main_long_LMS_스토브보안-1.png" />
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <section id = "slide-control">
+                                <a class = 'left'></a>
+                                <a class = 'right'></a>
+                            </section>
+
+                            <ul id = "slide-pagelist"></ul>
+                        </section>
+                    </section> -->
+                    <article class = "banner-appeal">
+                        <a href= "https://dominion.game.onstove.com/preregister" target="_self">
+                            <figure class = "appeal-img" id="appeal-img1"></figure>
+                        </a>
+                    </article>
+                    <article class = "banner-appeal">
+                        <a href= "https://page.onstove.com/getamped/kr/view/9376039?boardKey=123138&utm_source=onstove_main&utm_medium=short_banner&utm_campaign=getamped_L_event&utm_content=event_open" target="_self">
+                            <figure class = "appeal-img" id="appeal-img2"></figure>
+                        </a>
+                    </article>
+                </section>
+
+                <!-- 인기게임 섹션 -->
+                <section id = 'popgame' class = "main-section">
+                    <article class = "sectheader">STOVE 인기게임!</article>
+                    <section id = "popgame-sect">
+                        <ul id = "popgame-list">
+                            <li id = "pop-tap1" class = "pop-tap pop_active">
+                                <button class = 'popgame-tap'>LOST ARK</button>
+                            </li>
+                            <li id = "pop-tap2" class = "pop-tap">
+                                <button  class = 'popgame-tap'>겟앰프드</button>
+                            </li>
+                            <li id = "pop-tap3" class = "pop-tap">
+                                <button  class = 'popgame-tap'>테일즈런너</button>
+                            </li>
+                        </ul>
+                        <section class = "popgame-guide-img" id = "pop-guide1" style="display: block;">
+                            <section class = "guide-img-content">
+                                <a href= "https://lostark.game.onstove.com/" class = "popgame-link"></a>
+                                <section class = "pop-content-img" style="background-image: url(./img/_card-curation_LM_로스트아크.png);"></section>
+                                <section class = "pop-info">
+                                    <section class = 'pop-info-desc'>
+                                        <article class = 'pop-info-name'>
+                                            <article class = 'pop-tit'>LOST ARK</article>
+                                            <article class = 'pop-text'>
+                                                <article class = 'pop-inner-text'>
+                                                    해방된 분노의 단죄자, <br/> 슬레이어를 소개합니다!
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <figure class = 'pop-info-ico'>
+                                            <img src = "./img/500_500_1597184530.png" alt ="LOST ARK" />
+                                        </figure>
+                                    </section>
+                                    <section class = 'pop-info-link'>
+                                        <figure class = "pop-link-arrow"></figure>
+                                        <article class = "pop-link-text">LOST ARK 바로가기</article>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+
+                        <section class = "popgame-guide-img" id = "pop-guide2" style="display: none;">
+                            <section class = "guide-img-content">
+                                <a href= "https://getamped.game.onstove.com/" class = "popgame-link"></a>
+                                <section class = "pop-content-img" style="background-image: url(./img/겟앰프드_큐레이션_PC\(투명배경\)_000000.png);"></section>
+                                <section class = "pop-info">
+                                    <section class = 'pop-info-desc'>
+                                        <article class = 'pop-info-name'>
+                                            <article class = 'pop-tit'>겟앰프드</article>
+                                            <article class = 'pop-text'>
+                                                <article class = 'pop-inner-text'>
+                                                    다시 돌아온 레전설, <br/> 겟앰프드 채널링 오픈!
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <figure class = 'pop-info-ico'>
+                                            <img src = "./img/겟앰프드_스토브_아이콘(500x500).png" alt ="겟앰프드" />
+                                        </figure>
+                                    </section>
+                                    <section class = 'pop-info-link'>
+                                        <figure class = "pop-link-arrow"></figure>
+                                        <article class = "pop-link-text">겟앰프드 바로가기</article>
+                                    </section>
+                                </section>
+
+                            </section>
+                        </section>
+
+                        <section class = "popgame-guide-img" id = "pop-guide3" style="display: none;">
+                            <section class = "guide-img-content">
+                                <a href= "https://tr.game.onstove.com/" class = "popgame-link"></a>
+                                <section class = "pop-content-img" style="background-image: url(./img/메인_02_썸네일큐레이션배너_테일즈런너_card-curation_LM.png);"></section>
+                                <section class = "pop-info">
+                                    <section class = 'pop-info-desc'>
+                                        <article class = 'pop-info-name'>
+                                            <article class = 'pop-tit'>테일즈런너</article>
+                                            <article class = 'pop-text'>
+                                                <article class = 'pop-inner-text'>
+                                                    아름다운 동화나라 속 모험
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <figure class = 'pop-info-ico'>
+                                            <img src = "./img/img_thumb_tr_1588025867.jpeg" alt ="테일즈런너" />
+                                        </figure>
+                                    </section>
+                                    <section class = 'pop-info-link'>
+                                        <figure class = "pop-link-arrow"></figure>
+                                        <article class = "pop-link-text">테일즈런너 바로가기</article>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                        
+                    </section>
+                </section>
+
+                <!-- 풀 사이즈(바) 게임 배너 -->
+                <section class = "fullsize-banner">
+                    <section class = "full-banner-wide">
+                        <figure class = "wide-img">
+                            <a class = "fullbanner-link" href = "https://dominion.game.onstove.com/preregister?utm_source=onstove_main&utm_medium=full_banner&utm_campaign=dominion_pre&utm_content=preregister_1" target="_blank"></a>
+                            <section class = "fullbanner-text">
+                                <article class = "banner-text">원초적 본능을 깨워라! <br/> 전국제패M 사전예약</article>
+                            </section>
+                            <span class = "banner-inner">
+                                <span class = "banner-inner-img"></span>
+                            </span>
+                        </figure>
+                        <section class = 'banner-inner'>
+                            <span class = 'banner-bar-img'></span>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- 게임 리뷰 섹션 -->
+                <section id = "review-banner">
+                    <section class = "review-inner">
+                        <article class = "sectheader">INDIE GAME 리뷰</article>
+                        <section class = "review-banner-body">
+                            <section class = "review-img-sect">
+                                <figure class = "review-icon"></figure>
+                                <article class = "review-detail">
+                                    <p class = "review-detail-text">역시 스토브는 한글이지👍︎</p>
+                                </article>
+                                <section class = "review-btn-list">
+                                    <a class = "review-btn1" href = "https://indie.onstove.com/ko/games/1698" target="_blank">
+                                        <span class = "review-btn-text">자세히보기</span>
+                                    </a>
+                                    <a class = "review-btn2" href = "https://indie.onstove.com/ko/games/1698/community/12196/list?page=1&direction=LATEST" target="_blank">
+                                        <span class = "review-btn-text">커뮤니티</span>
+                                    </a>
+                                </section>
+                            </section>
+                            <section class = "review-text-sect">
+                                <section class = "review-sect-inner">
+                                    <ul class = "review-list">
+                                        <li class = "review-item">
+                                            <section class = "review-card">
+                                                <article class = "review-content">
+                                                    <article class = "review-text-area">
+                                                        <article class = "review-text">
+                                                            15시간만에 본편 액트 클리어!!!!! 기계술사-기계사제빌드로 진행했고 그야말로 핵앤슬래쉬의 정석같은 게임이 아닐까싶습니다호쾌하게 이동하면서 몹을 쓸어버리는 재미와 세분화된 아이템 등급 , 세트 셋, 다양한 종류의 아이템으로 장비파밍의 맛까지 확실하게 챙겼네요직업도 5개에 메인빌드로만 직업당 4종류씩 있어서 처음에 이것저것 많이 시도해봤네요 (초기화 시스템 무료여서 마음껏 빌드를 시도해볼수가있습니다)뭔가 디아블로2 가 생각나기도 하고 하는동안 즐겁게했습니다!!!! 가격도 비싸지않은데 할게 너무 많아서 오히려 걱정입니다본편 깼으니 또 DLC 달려봐야겠네요 여러분 꼭 한번 사서 해보십쇼!!!!!</p>
+                                                        </article>
+                                                    </article>
+                                                    <a href = "https://indie.onstove.com/ko/games/1698/review" class = "card-link" target="_blank"></a>
+                                                </article>
+                                                <article class = "review-writer">
+                                                    <a href="https://myindie.onstove.com/201772938" class = "writer">
+                                                        <span class = "writer-icon">
+                                                            <span class = "writer-icon1"></span>
+                                                        </span>
+                                                        <span class = "writer-content">
+                                                            <span class = "writer-table">
+                                                                <span class = "writer-table-cell">
+                                                                    <span class = "writer-id">STOVE201772938</span>
+                                                                </span>
+                                                            </span>
+                                                            <span class = "writer-table">
+                                                                <span class = "writer-table-cell">
+                                                                    <span class = "writer-time">12시간 15분 플레이</span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </article>
+                                            </section>
+                                        </li>
+                                        <li class = "review-item">
+                                            <section class = "review-card">
+                                                <article class = "review-content">
+                                                    <article class = "review-text-area">
+                                                        <p class = "review-text">
+                                                            스팀에서 영어로 그냥저냥 몇년 하다가 한글로 하니까 너무 편하네요 ㅎㅎㅎ근데 가끔 헷갈려서 영어로 돌려서 체크해야될 때도 있긴한데 그래도 너무 좋아요 ㅋㅋㅋ</p>
+                                                        </p>
+                                                    </article>
+                                                    <a href = "https://indie.onstove.com/ko/games/1698/review" class = "card-link" target="_blank"></a>
+                                                </article>
+                                                <article class = "review-writer">
+                                                    <a href="https://myindie.onstove.com/78349542" class = "writer">
+                                                        <span class = "writer-icon">
+                                                            <span class = "writer-icon2"></span>
+                                                        </span>
+                                                        <span class = "writer-content">
+                                                            <span class = "writer-table">
+                                                                <span class = "writer-table-cell">
+                                                                    <span class = "writer-id">STOVE78349542</span>
+                                                                </span>
+                                                            </span>
+                                                            <span class = "writer-table">
+                                                                <span class = "writer-table-cell">
+                                                                    <span class = "writer-time">1일 6시간 10분 플레이</span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </article>
+                                            </section>
+                                        </li>
+                                        <li class = "review-item">
+                                            <section class = "review-card">
+                                                <article class = "review-content">
+                                                    <article class = "review-text-area">
+                                                        <p class = "review-text">
+                                                            스팀으로 사서 하다가 한글 안해줘서 포기하고 안하고 있었는데스토브에서 한글 해주자 마자 바로 사서 하고있어요~지금 500렙도 넘기고 재미있게 즐기고 있어요.진입 장벽이 좀 있는데 시간들이면 깨지네요.  일단 할게 좀 있어요.신화템 만들기 펫키우기 디엘씨 패시브 노드 돈으로 뚫기... 어우 아직 키우려면 한참 멀은거 같아요.아 스팀이랑 연동 되더라구요. 전에 키우던거 연동되던데...새로 키우니까 엄청 빠른거 같아요.좀더 키우고 부캐 키울지 고민되네요...직업마다 세트가 8개씩은 있는거 같아서.. 키우는 맛은 확실한거 같아요.
+                                                        </p>
+                                                    </article>
+                                                    <a href = "https://indie.onstove.com/ko/games/1698/review" class = "card-link" target="_blank"></a>
+                                                </article>
+                                                <article class = "review-writer">
+                                                    <a href="https://myindie.onstove.com/83182884" class = "writer">
+                                                        <span class = "writer-icon">
+                                                            <span class = "writer-icon3"></span>
+                                                        </span>
+                                                        <span class = "writer-content">
+                                                            <span class = "writer-table">
+                                                                <span class = "writer-table-cell">
+                                                                    <span class = "writer-id">바람의배산임수</span>
+                                                                </span>
+                                                            </span>
+                                                            <span class = "writer-table">
+                                                                <span class = "writer-table-cell">
+                                                                    <span class = "writer-time">6일 7시간 9분 플레이</span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </article>
+                                            </section>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <span class = "review-background">
+                        <span class = "review-background-img"></span>
+                    </span>
+                </section>
+
+                <!-- 추천 게임 섹션 -->
+                <section id = 'game-recommend' class = "main-section">
+                    <article class = "sectheader">STOVE 추천게임</article>
+                    <section class = "recommend-tap-area">
+                        <ul class = "recommend-tap">
+                            <li class = "recommend-tap-item tap-active">
+                                <button>이달의 신작 인디게임</button>
+                            </li>
+                            <li class = "recommend-tap-item">
+                                <button>오직 스토브에서만!</button>
+                            </li>
+                            <li class = "recommend-tap-item">
+                                <button>#스토브는한글이야</button>
+                            </li>
+                            <li class = "recommend-tap-item">
+                                <button>PC 온라인 게임</button>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class = "recommend-list-area" style="display: block;">
+                        <ul class = "recommend-list">
+                            <li class = "recommend-item">
+                                <a href="https://indie.onstove.com/ko/games/1689/" class = "recommend-item-link"></a>
+                                <section class = "recommend-game-img-area">
+                                    <figure id = "recommend-game-tap1-img1" class = "recommend-game-img"></figure>
+                                </section>
+                                <article class = "recommend-game-text-area">
+                                    <span class = "recommend-game-name">랜덤채팅의 그녀</span>
+                                    <span class = "recommend-game-tag">#스토리중심 #갓게임 #멀티엔딩</span>
+                                    <span class = "recommend-game-price">￦ 40,000</span>
+                                </article>
+                            </li>
+                            <li class = "recommend-item">
+                                <a href="https://indie.onstove.com/ko/games/1359" class = "recommend-item-link"></a>
+                                <section class = "recommend-game-img-area">
+                                    <figure id = "recommend-game-tap1-img2" class = "recommend-game-img"></figure>
+                                </section>
+                                <article class = "recommend-game-text-area">
+                                    <span class = "recommend-game-name">플라워즈 -봄편-</span>
+                                    <span class = "recommend-game-tag">#스토브한글화 #2D #촉촉한감성</span>
+                                    <span class = "recommend-game-price">￦ 20,500</span>
+                                </article>
+                            </li>
+                            <li class = "recommend-item">
+                                <a href="https://indie.onstove.com/ko/games/1384" class = "recommend-item-link"></a>
+                                <section class = "recommend-game-img-area">
+                                    <figure id = "recommend-game-tap1-img3" class = "recommend-game-img"></figure>
+                                </section>
+                                <article class = "recommend-game-text-area">
+                                    <span class = "recommend-game-name">스테퍼 케이스: 초능력 추리 어드벤처</span>
+                                    <span class = "recommend-game-tag">#미스터리 #풍부한스토리 #멀티엔딩</span>
+                                    <span class = "recommend-game-price">￦ 13,500</span>
+                                </article>
+                            </li>
+                            <li class = "recommend-item">
+                                <a href="https://indie.onstove.com/ko/games/1698" class = "recommend-item-link"></a>
+                                <section class = "recommend-game-img-area">
+                                    <figure id = "recommend-game-tap1-img4" class = "recommend-game-img"></figure>
+                                </section>
+                                <article class = "recommend-game-text-area">
+                                    <span class = "recommend-game-name">크로니콘 컴플리트 에디션</span>
+                                    <span class = "recommend-game-tag">#스토브한글화 #픽셀그래픽 #갓게임</span>
+                                    <span class = "recommend-game-price">￦ 27,000</span>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class = "recommend-list-area" style="display: none;">
+                        <ul class = "recommend-list">
+                            <li class = "recommend-item">
+                                <a href="https://indie.onstove.com/ko/games/1174" class = "recommend-item-link"></a>
+                                <section class = "recommend-game-img-area">
+                                    <figure id = "recommend-game-tap2-img1" class = "recommend-game-img"></figure>
+                                </section>
+                                <article class = "recommend-game-text-area">
+                                    <span class = "recommend-game-name">러브인 로그인</span>
+                                    <span class = "recommend-game-tag">#꼭해봐야할 #귀여운 #갓게임 #스토리중심</span>
+                                    <span class = "recommend-game-price">￦ 14,500</span>
+                                </article>
+                            </li>
+                            <li class = "recommend-item">
+                                <a href="https://indie.onstove.com/ko/games/1563" class = "recommend-item-link"></a>
+                                <section class = "recommend-game-img-area">
+                                    <figure id = "recommend-game-tap2-img2" class = "recommend-game-img"></figure>
+                                </section>
+                                <article class = "recommend-game-text-area">
+                                    <span class = "recommend-game-name">러브인 로그인 (시크릿 플러스)</span>
+                                    <span class = "recommend-game-tag">#꼭해봐야할 #귀여운 #갓게임 #스토리중심</span>
+                                    <span class = "recommend-game-price">￦ 16,500</span>
+                                </article>
+                            </li>
+                            <li class = "recommend-item">
+                                <a href="https://indie.onstove.com/ko/games/1368" class = "recommend-item-link"></a>
+                                <section class = "recommend-game-img-area">
+                                    <figure id = "recommend-game-tap2-img3" class = "recommend-game-img"></figure>
+                                </section>
+                                <article class = "recommend-game-text-area">
+                                    <span class = "recommend-game-name">'하나'님의 캠퍼스 라이프! 시크릿 플러스</span>
+                                    <span class = "recommend-game-tag">#귀여운 #힐링 #스토리중심</span>
+                                    <span class = "recommend-game-price">￦ 18,000</span>
+                                </article>
+                            </li>
+                            <li class = "recommend-item">
+                                <a href="https://indie.onstove.com/ko/games/1045" class = "recommend-item-link"></a>
+                                <section class = "recommend-game-img-area">
+                                    <figure id = "recommend-game-tap2-img4" class = "recommend-game-img"></figure>
+                                </section>
+                                <article class = "recommend-game-text-area">
+                                    <span class = "recommend-game-name">블랙 아카데미 시크릿 플러스</span>
+                                    <span class = "recommend-game-tag">#2D #남성취향</span>
+                                    <span class = "recommend-game-price">￦ 18,000</span>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class = "recommend-list-area" style="display: none;">
+                        <ul class = "recommend-list">
+                            <li class = "recommend-item">
+                                <a href="https://indie.onstove.com/ko/games/1075" class = "recommend-item-link"></a>
+                                <section class = "recommend-game-img-area">
+                                    <figure id = "recommend-game-tap3-img1" class = "recommend-game-img"></figure>
+                                </section>
+                                <article class = "recommend-game-text-area">
+                                    <span class = "recommend-game-name">귀곡팔황</span>
+                                    <span class = "recommend-game-tag">#스토브한글화 #시간순삭 #소문의띵작</span>
+                                    <span class = "recommend-game-price">￦ 20,500</span>
+                                </article>
+                            </li>
+                            <li class = "recommend-item">
+                                <a href="https://indie.onstove.com/ko/games/1027" class = "recommend-item-link"></a>
+                                <section class = "recommend-game-img-area">
+                                    <figure id = "recommend-game-tap3-img2" class = "recommend-game-img"></figure>
+                                </section>
+                                <article class = "recommend-game-text-area">
+                                    <span class = "recommend-game-name">던전 오브 나흘벅: 더 아뮬렛 오브 카오스</span>
+                                    <span class = "recommend-game-tag">#턴제 #소문의띵작 #스토브한글화</span>
+                                    <span class = "recommend-game-price">￦ 36,000</span>
+                                </article>
+                            </li>
+                            <li class = "recommend-item">
+                                <a href="https://indie.onstove.com/ko/games/134" class = "recommend-item-link"></a>
+                                <section class = "recommend-game-img-area">
+                                    <figure id = "recommend-game-tap3-img3" class = "recommend-game-img"></figure>
+                                </section>
+                                <article class = "recommend-game-text-area">
+                                    <span class = "recommend-game-name">ATOM RPG</span>
+                                    <span class = "recommend-game-tag">#멀티엔딩 #풍부한스토리 #스토브한글화</span>
+                                    <span class = "recommend-game-price">￦ 15,900</span>
+                                </article>
+                            </li>
+                            <li class = "recommend-item">
+                                <a href="https://indie.onstove.com/ko/games/838" class = "recommend-item-link"></a>
+                                <section class = "recommend-game-img-area">
+                                    <figure id = "recommend-game-tap3-img4" class = "recommend-game-img"></figure>
+                                </section>
+                                <article class = "recommend-game-text-area">
+                                    <span class = "recommend-game-name">브란테 경의 삶과 고난</span>
+                                    <span class = "recommend-game-tag">#RPG #시뮬레이션 #전략</span>
+                                    <span class = "recommend-game-price">￦ 20,500</span>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class = "recommend-list-area" style="display: none;">
+                        <ul class = "recommend-list">
+                            <li class = "recommend-item">
+                                <a href="https://c-aoa.game.onstove.com/" class = "recommend-item-link"></a>
+                                <section class = "recommend-game-img-area">
+                                    <figure id = "recommend-game-tap4-img1" class = "recommend-game-img"></figure>
+                                </section>
+                                <article class = "recommend-game-text-area">
+                                    <span class = "recommend-game-name">센추리: 에이지 오브 애쉬즈</span>
+                                    <span class = "recommend-game-tag">#PC #슈팅</span>
+                                    <span class = "recommend-game-btn">
+                                        <span class = "recommend-game-btn-list">
+                                            <a href = "https://c-aoa.game.onstove.com/" class = "recommend-game-btn-item" target="_blank">
+                                                <span class = "recommend-btn-text">공식 홈페이지</span>
+                                            </a>
+                                            <a href = "https://page.onstove.com/c-aoa/kr" class = "recommend-game-btn-item" target="_blank">
+                                                <span class = "recommend-btn-text">커뮤니티</span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "recommend-item">
+                                <a href="https://lostark.game.onstove.com/" class = "recommend-item-link"></a>
+                                <section class = "recommend-game-img-area">
+                                    <figure id = "recommend-game-tap4-img2" class = "recommend-game-img"></figure>
+                                </section>
+                                <article class = "recommend-game-text-area">
+                                    <span class = "recommend-game-name">LOST ARK</span>
+                                    <span class = "recommend-game-tag">#PC #MMORPG</span>
+                                    <span class = "recommend-game-btn">
+                                        <span class = "recommend-game-btn-list">
+                                            <a href = "https://lostark.game.onstove.com/" class = "recommend-game-btn-item" target="_blank">
+                                                <span class = "recommend-btn-text">공식 홈페이지</span>
+                                            </a>
+                                            <a href = "https://page.onstove.com/lostark/kr" class = "recommend-game-btn-item" target="_blank">
+                                                <span class = "recommend-btn-text">커뮤니티</span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "recommend-item">
+                                <a href="https://getamped.game.onstove.com/" class = "recommend-item-link"></a>
+                                <section class = "recommend-game-img-area">
+                                    <figure id = "recommend-game-tap4-img3" class = "recommend-game-img"></figure>
+                                </section>
+                                <article class = "recommend-game-text-area">
+                                    <span class = "recommend-game-name">겟앰프드</span>
+                                    <span class = "recommend-game-tag">#PC #액션 #대난투</span>
+                                    <span class = "recommend-game-btn">
+                                        <span class = "recommend-game-btn-list">
+                                            <a href = "https://getamped.game.onstove.com/" class = "recommend-game-btn-item" target="_blank">
+                                                <span class = "recommend-btn-text">공식 홈페이지</span>
+                                            </a>
+                                            <a href = "https://page.onstove.com/getamped/kr" class = "recommend-game-btn-item" target="_blank">
+                                                <span class = "recommend-btn-text">커뮤니티</span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "recommend-item">
+                                <a href="https://tr.game.onstove.com/" class = "recommend-item-link"></a>
+                                <section class = "recommend-game-img-area">
+                                    <figure id = "recommend-game-tap4-img4" class = "recommend-game-img"></figure>
+                                </section>
+                                <article class = "recommend-game-text-area">
+                                    <span class = "recommend-game-name">테일즈런너</span>
+                                    <span class = "recommend-game-tag">#PC #Racing</span>
+                                    <span class = "recommend-game-btn">
+                                        <span class = "recommend-game-btn-list">
+                                            <a href = "https://tr.game.onstove.com/index.asp" class = "recommend-game-btn-item" target="_blank">
+                                                <span class = "recommend-btn-text">공식 홈페이지</span>
+                                            </a>
+                                            <a href = "https://page.onstove.com/talesrunner/kr" class = "recommend-game-btn-item" target="_blank">
+                                                <span class = "recommend-btn-text">커뮤니티</span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+
+                <!-- 모든 게임 리스트 섹션 -->
+                <section id = 'allgame-list-banner' class = "main-section">
+                    <section class = "allgame-tap-area">
+                        <ul class = "allgame-tap">
+                            <li class = "allgame-tap-item tap-active">
+                                <button type="button">인디 게임</button>
+                            </li>
+                            <li class = "allgame-tap-item">
+                                <button type="button">PC 게임</button>
+                            </li>
+                            <li class = "allgame-tap-item">
+                                <button type="button">모바일 게임</button>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class = "allgame-list-area" style="display: block;">
+                        <ul class = "allgame-wrap">
+                            <li class = "allgame-wrap-item">
+                                <a href="https://indie.onstove.com/ko/games/1372/" target="_blank" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/메인_07_게임전시_1683607328192.png);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-title">지금 우리 학교는</span>
+                                    <span class = "allgame-price-text">
+                                        <span class = "point-text">-15%</span>
+                                        <span>￦ 22,950</span>
+                                    </span>
+                                    <span class = "sale-badge-area">
+                                        <i class = "sale-badge sale">SALE</i>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://indie.onstove.com/ko/games/1372/" target="_blank">
+                                            <span class = "recommend-game-bottom-text">인디게임 자세히 보기</span>
+                                        </a>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item">
+                                <a href="https://indie.onstove.com/ko/games/1047" target="_blank" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/메인_07_게임전시_card_딜루비안윈즈.jpg);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-title">딜루비안 윈즈 (Diluvian Winds)</span>
+                                    <span class = "allgame-price-text">
+                                        <span class = "point-text">-10%</span>
+                                        <span>￦ 21,660</span>
+                                    </span>
+                                    <span class = "sale-badge-area">
+                                        <i class = "sale-badge sale">SALE</i>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://indie.onstove.com/ko/games/1047" target="_blank">
+                                            <span class = "recommend-game-bottom-text">인디게임 자세히 보기</span>
+                                        </a>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item">
+                                <a href="https://indie.onstove.com/ko/games/1866/" target="_blank" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/메인_07_게임전시_1683607151484.png);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-title">무한의 주술 (Infinite Incantation)</span>
+                                    <span class = "allgame-price-text">
+                                        <span class = "point-text">-15%</span>
+                                        <span>￦ 5,690</span>
+                                    </span>
+                                    <span class = "sale-badge-area">
+                                        <i class = "sale-badge sale">SALE</i>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://indie.onstove.com/ko/games/1866/" target="_blank">
+                                            <span class = "recommend-game-bottom-text">인디게임 자세히 보기</span>
+                                        </a>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item">
+                                <a href="https://indie.onstove.com/ko/games/1816/" target="_blank" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/메인_07_게임전시_card_yokaiart_1683606423904.jpg);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-title">요괴도: 백귀야행 컴플리트 에디션</span>
+                                    <span class = "allgame-price-text">
+                                        <span class = "point-text">-20%</span>
+                                        <span>￦ 8,000</span>
+                                    </span>
+                                    <span class = "sale-badge-area">
+                                        <i class = "sale-badge sale">SALE</i>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://indie.onstove.com/ko/games/1816/" target="_blank">
+                                            <span class = "recommend-game-bottom-text">인디게임 자세히 보기</span>
+                                        </a>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item">
+                                <a href="https://indie.onstove.com/ko/games/1841/" target="_blank" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/메인_07_게임전시_card_loven_1683606265474.jpg);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-title">러브 앤 드림</span>
+                                    <span class = "allgame-price-text">
+                                        <span class = "point-text">-30%</span>
+                                        <span>￦ 1,540</span>
+                                    </span>
+                                    <span class = "sale-badge-area">
+                                        <i class = "sale-badge sale">SALE</i>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://indie.onstove.com/ko/games/1841/" target="_blank">
+                                            <span class = "recommend-game-bottom-text">인디게임 자세히 보기</span>
+                                        </a>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item">
+                                <a href="https://indie.onstove.com/ko/games/1779/" target="_blank" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/메인_07_게임전시_card_lovenhappiness_1683606153255.jpg);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-title">러브 앤 드림: 버추얼 해피니스</span>
+                                    <span class = "allgame-price-text">
+                                        <span class = "point-text">-30%</span>
+                                        <span>￦ 1,540</span>
+                                    </span>
+                                    <span class = "sale-badge-area">
+                                        <i class = "sale-badge sale">SALE</i>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://indie.onstove.com/ko/games/1779/" target="_blank">
+                                            <span class = "recommend-game-bottom-text">인디게임 자세히 보기</span>
+                                        </a>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item">
+                                <a href="https://indie.onstove.com/ko/games/1882/" target="_blank" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/메인_07_게임전시_card_happy_quest_1683606035536.jpg);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-title">해피 퀘스트</span>
+                                    <span class = "allgame-price-text">
+                                        <span class = "point-text">-50%</span>
+                                        <span>￦ 1,100</span>
+                                    </span>
+                                    <span class = "sale-badge-area">
+                                        <i class = "sale-badge sale">SALE</i>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://indie.onstove.com/ko/games/1882/" target="_blank">
+                                            <span class = "recommend-game-bottom-text">인디게임 자세히 보기</span>
+                                        </a>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item">
+                                <a href="https://indie.onstove.com/ko/games/1862/" target="_blank" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/메인_07_게임전시_card_happyguy_1683605922752.jpg);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-title">해피 가이</span>
+                                    <span class = "allgame-price-text">
+                                        <span class = "point-text">-50%</span>
+                                        <span>￦ 1,650</span>
+                                    </span>
+                                    <span class = "sale-badge-area">
+                                        <i class = "sale-badge sale">SALE</i>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://indie.onstove.com/ko/games/1862/" target="_blank">
+                                            <span class = "recommend-game-bottom-text">인디게임 자세히 보기</span>
+                                        </a>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item">
+                                <a href="https://indie.onstove.com/ko/games/1878/" target="_blank" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/메인_07_게임전시_card_회색낙원_1683174733188.jpg);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-title">회색낙원</span>
+                                    <span class = "allgame-price-text">
+                                        <span class = "point-text">-15%</span>
+                                        <span>￦ 18,700</span>
+                                    </span>
+                                    <span class = "sale-badge-area">
+                                        <i class = "sale-badge sale">SALE</i>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://indie.onstove.com/ko/games/1878/" target="_blank">
+                                            <span class = "recommend-game-bottom-text">인디게임 자세히 보기</span>
+                                        </a>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item">
+                                <a href="https://indie.onstove.com/ko/games/1788/" target="_blank" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/메인_07_게임전시_card_madrestaurant_1683088251934.jpg);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-title">매드 레스토랑 피플</span>
+                                    <span class = "allgame-price-text">
+                                        <span class = "point-text">-30%</span>
+                                        <span>￦ 6,300</span>
+                                    </span>
+                                    <span class = "sale-badge-area">
+                                        <i class = "sale-badge sale">SALE</i>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://indie.onstove.com/ko/games/1788/" target="_blank">
+                                            <span class = "recommend-game-bottom-text">인디게임 자세히 보기</span>
+                                        </a>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item">
+                                <a href="https://indie.onstove.com/ko/games/1803/" target="_blank" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/메인_07_게임전시_1683088046834.png);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-title">미열 - 감금일지</span>
+                                    <span class = "allgame-price-text">
+                                        <span>￦ 1,000</span>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://indie.onstove.com/ko/games/1803/" target="_blank">
+                                            <span class = "recommend-game-bottom-text">인디게임 자세히 보기</span>
+                                        </a>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item more-link">
+                                <a href="https://indie.onstove.com/ko/store/search" target="_self" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/game-exhibition-img13.png);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-title">STOVE 인디게임 <br/> 더 보러가기</span>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class = "allgame-list-area" style="display: none;">
+                        <ul class = "allgame-wrap">
+                            <li class = "allgame-wrap-item">
+                                <a href="https://blueprotocol.game.onstove.com/" target="_self" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/blueprotocol_game_display.jpg);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-pcmoba-title">블루프로토콜</span>
+                                    <span class = "allgame-desc-text">
+                                        <span class = "tag-text">PC</span>
+                                        <span class = "tag-text">온라인 액션 RPG</span>
+                                    </span>
+                                    <span class = "sale-badge-area">
+                                        <i class = "sale-badge new-badge">NEW</i>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://blueprotocol.game.onstove.com/" target="_blank">
+                                            <span class = "recommend-game-bottom-text">공식 홈페이지</span>
+                                        </a>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item">
+                                <a href="https://getamped.game.onstove.com/" target="_self" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/겟앰프드_770x245.png);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-pcmoba-title">겟앰프드</span>
+                                    <span class = "allgame-desc-text">
+                                        <span class = "tag-text">PC</span>
+                                        <span class = "tag-text">액션 #대난투</span>
+                                    </span>
+                                    <span class = "sale-badge-area">
+                                        <i class = "sale-badge new-badge">NEW</i>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://getamped.game.onstove.com/" target="_blank" class = "recommend-bottom-link">
+                                            <span class = "recommend-game-bottom-text">공식 홈페이지</span>
+                                        </a>
+                                        <a href = "https://page.onstove.com/getamped/kr" target="_blank" class = "recommend-bottom-link">
+                                            <span class = "recommend-game-bottom-text">커뮤니티</span>
+                                        </a>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item">
+                                <a href="https://lostark.game.onstove.com/" target="_self" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/메인_07_게임전시_card_curation_로스크아크_card_curation_로스크아크_1674008138328.jpg);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-pcmoba-title">LOST ARK</span>
+                                    <span class = "allgame-desc-text">
+                                        <span class = "tag-text">PC</span>
+                                        <span class = "tag-text">MMORPG</span>
+                                    </span>
+                                    <span class = "sale-badge-area">
+                                        <i class = "sale-badge update-badge">UPDATE</i>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://lostark.game.onstove.com/Main" target="_blank" class = "recommend-bottom-link">
+                                            <span class = "recommend-game-bottom-text">공식 홈페이지</span>
+                                        </a>
+                                        <a href = "https://page.onstove.com/lostark/kr" target="_blank" class = "recommend-bottom-link">
+                                            <span class = "recommend-game-bottom-text">커뮤니티</span>
+                                        </a>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item">
+                                <a href="https://tr.game.onstove.com/" target="_self" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/talesrunner_game_display_1658265532311.png);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-pcmoba-title">테일즈런너</span>
+                                    <span class = "allgame-desc-text">
+                                        <span class = "tag-text">PC</span>
+                                        <span class = "tag-text">Racing</span>
+                                    </span>
+                                    <span class = "sale-badge-area">
+                                        <i class = "sale-badge update-badge">UPDATE</i>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://tr.game.onstove.com/" target="_blank" class = "recommend-bottom-link">
+                                            <span class = "recommend-game-bottom-text">공식 홈페이지</span>
+                                        </a>
+                                        <a href = "https://page.onstove.com/lostark/kr" target="_blank" class = "recommend-bottom-link">
+                                            <span class = "recommend-game-bottom-text">커뮤니티</span>
+                                        </a>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item">
+                                <a href="https://c-aoa.game.onstove.com/" target="_self" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/century_game_display.png);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-pcmoba-title">센추리: 에이지 오브 애쉬즈</span>
+                                    <span class = "allgame-desc-text">
+                                        <span class = "tag-text">PC</span>
+                                        <span class = "tag-text">슈팅</span>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://c-aoa.game.onstove.com/" target="_blank" class = "recommend-bottom-link">
+                                            <span class = "recommend-game-bottom-text">공식 홈페이지</span>
+                                        </a>
+                                        <a href = "https://page.onstove.com/c-aoa/kr" target="_blank" class = "recommend-bottom-link">
+                                            <span class = "recommend-game-bottom-text">커뮤니티</span>
+                                        </a>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item">
+                                <a href="https://page.onstove.com/kards/kr" target="_self" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/kards_game_display.png);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-pcmoba-title">KARDS</span>
+                                    <span class = "allgame-desc-text">
+                                        <span class = "tag-text">PC</span>
+                                        <span class = "tag-text">2차세계대전_카드배틀_CCG</span>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://page.onstove.com/kards/kr" target="_blank" class = "recommend-bottom-link">
+                                            <span class = "recommend-game-bottom-text">공식 홈페이지</span>
+                                        </a>
+                                        <a href = "https://page.onstove.com/kards/kr/list/11728" target="_blank" class = "recommend-bottom-link">
+                                            <span class = "recommend-game-bottom-text">커뮤니티</span>
+                                        </a>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item">
+                                <a href="https://toonspoon.service.onstove.com/kr" target="_self" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/toonspoon_game_display.png);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-pcmoba-title">툰스푼</span>
+                                    <span class = "allgame-desc-text">
+                                        <span class = "tag-text">PC</span>
+                                        <span class = "tag-text">창작 커뮤니티</span>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://toonspoon.service.onstove.com/kr" target="_blank">
+                                            <span class = "recommend-game-bottom-text">커뮤니티</span>
+                                        </a>
+                                    </span>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class = "allgame-list-area" style="display: none;">
+                        <ul class = "allgame-wrap">
+                            <li class = "allgame-wrap-item">
+                                <a href="https://outerplane.game.onstove.com/" target="_self" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/02_게임전시_스토브배너_770X245_1679988008075.jpg);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-pcmoba-title">아우터플레인</span>
+                                    <span class = "allgame-desc-text">
+                                        <span class = "tag-text">MOBILE</span>
+                                        <span class = "tag-text">3D 턴제 RPG</span>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://outerplane.game.onstove.com/" target="_blank" class = "recommend-bottom-link">
+                                            <span class = "recommend-game-bottom-text">공식 홈페이지</span>
+                                        </a>
+                                        <span class = "rec-bottom-btn-ico-area">
+                                            <a href = "https://play.google.com/store/apps/details?id=com.smilegate.outerplane.stove.google" target="_blank" class = "bot-btn-icon-link">
+                                                <span class = "bot-btn-icon" style="background-image: url(./img/google.svg);"></span>
+                                            </a>
+                                            <a href = "https://apps.apple.com/us/app/outerplane/id1630880836" target="_blank" class = "bot-btn-icon-link">
+                                                <span class = "bot-btn-icon" style="background-image: url(./img/Apple.svg);"></span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item">
+                                <a href="https://dominion.game.onstove.com/preregister" target="_self" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/전국제패_썸네일.png);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-pcmoba-title">전국제패m</span>
+                                    <span class = "allgame-desc-text">
+                                        <span class = "tag-text">MOBILE</span>
+                                        <span class = "tag-text">액션RPG</span>
+                                    </span>
+                                    <span class = "sale-badge-area">
+                                        <i class = "sale-badge new-badge">NEW</i>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://dominion.game.onstove.com/" target="_blank" class = "recommend-bottom-link">
+                                            <span class = "recommend-game-bottom-text">공식 홈페이지</span>
+                                        </a>
+                                        <span class = "rec-bottom-btn-ico-area">
+                                            <a href = "https://play.google.com/store/apps/details?id=com.peppercon.dominion.google" target="_blank" class = "bot-btn-icon-link">
+                                                <span class = "bot-btn-icon" style="background-image: url(./img/google.svg);"></span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item">
+                                <a href="https://page.onstove.com/epicseven/kr" target="_self" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/epicseven_game_display_1658265610181.png);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-pcmoba-title">에픽세븐</span>
+                                    <span class = "allgame-desc-text">
+                                        <span class = "tag-text">MOBILE</span>
+                                        <span class = "tag-text">턴제RPG</span>
+                                    </span>
+                                    <span class = "sale-badge-area">
+                                        <i class = "sale-badge update-badge">UPDATE</i>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                <span class = "recommend-game-bottom-item">
+                                    <a href = "https://page.onstove.com/epicseven/kr" target="_blank" class = "recommend-bottom-link">
+                                        <span class = "recommend-game-bottom-text">커뮤니티</span>
+                                    </a>
+                                    <span class = "rec-bottom-btn-ico-area">
+                                        <a href = "https://play.google.com/store/apps/details?id=com.stove.epic7.google" target="_blank" class = "bot-btn-icon-link">
+                                            <span class = "bot-btn-icon" style="background-image: url(./img/google.svg);"></span>
+                                        </a>
+                                        <a href = "https://apps.apple.com/kr/app/id1322399438" target="_blank" class = "bot-btn-icon-link">
+                                            <span class = "bot-btn-icon" style="background-image: url(./img/Apple.svg);"></span>
+                                        </a>
+                                    </span>
+                                </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item">
+                                <a href="https://page.onstove.com/magicshop/kr" target="_self" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/MagicalAtelier_game_display_1658265696615.png);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-pcmoba-title">마술양품점</span>
+                                    <span class = "allgame-desc-text">
+                                        <span class = "tag-text">MOBILE</span>
+                                        <span class = "tag-text">Casual</span>
+                                    </span>
+                                    <span class = "sale-badge-area">
+                                        <i class = "sale-badge update-badge">UPDATE</i>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://page.onstove.com/magicshop/kr" target="_blank" class = "recommend-bottom-link">
+                                            <span class = "recommend-game-bottom-text">커뮤니티</span>
+                                        </a>
+                                        <span class = "rec-bottom-btn-ico-area">
+                                            <a href = "https://play.google.com/store/apps/details?id=com.smilegate.magicshop.stove.google" target="_blank" class = "bot-btn-icon-link">
+                                                <span class = "bot-btn-icon" style="background-image: url(./img/google.svg);"></span>
+                                            </a>
+                                            <a href = "https://apps.apple.com/kr/app/%EB%A7%88%EC%88%A0%EC%96%91%ED%92%88%EC%A0%90/id1530127806" target="_blank" class = "bot-btn-icon-link">
+                                                <span class = "bot-btn-icon" style="background-image: url(./img/Apple.svg);"></span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item">
+                                <a href="https://page.onstove.com/supertank/global" target="_self" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/SuperTankRumble_game_display_1658265725949.png);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-pcmoba-title">슈퍼탱크대작전</span>
+                                    <span class = "allgame-desc-text">
+                                        <span class = "tag-text">MOBILE</span>
+                                        <span class = "tag-text">Casual Action</span>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://page.onstove.com/supertank/global" target="_blank" class = "recommend-bottom-link">
+                                            <span class = "recommend-game-bottom-text">커뮤니티</span>
+                                        </a>
+                                        <span class = "rec-bottom-btn-ico-area">
+                                            <a href = "https://play.google.com/store/apps/details?id=com.stove.supertank.google" target="_blank" class = "bot-btn-icon-link">
+                                                <span class = "bot-btn-icon" style="background-image: url(./img/google.svg);"></span>
+                                            </a>
+                                            <a href = "https://apps.apple.com/kr/app/super-tank-rumble/id1124294145" target="_blank" class = "bot-btn-icon-link">
+                                                <span class = "bot-btn-icon" style="background-image: url(./img/Apple.svg);"></span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </article>
+                            </li>
+                            <li class = "allgame-wrap-item">
+                                <a href="https://page.onstove.com/qurareforever/kr" target="_self" class = "allgame-link"></a>
+                                <figure class = "allgame-img" style="background-image: url(./img/qurare_game_display_1658265754639.png);"></figure>
+                                <article class = "allgame-text-area">
+                                    <span class = "allgame-pcmoba-title">큐라레를 추억하는 사람들</span>
+                                    <span class = "allgame-desc-text">
+                                        <span class = "tag-text">MOBILE</span>
+                                        <span class = "tag-text">Community</span>
+                                    </span>
+                                </article>
+                                <article class = "recommend-game-bottom">
+                                    <span class = "recommend-game-bottom-item">
+                                        <a href = "https://page.onstove.com/qurareforever/kr" target="_blank">
+                                            <span class = "recommend-game-bottom-text">커뮤니티</span>
+                                        </a>
+                                    </span>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+
+                    
+                </section>
+                <!-- 커뮤니티, PC 클라이언트 다운로드 섹션 -->
+                <section id = 'footer-banner' class = "main-section">
+                    <ul class = "footer-banner-list">
+                        <li class = "footer-banner-item">
+                            <a href = "https://page.onstove.com/quarter/kr" class = "footer-banner-link">
+                                <span class = "footer-banner-text">
+                                    STOVE 커뮤니티에서
+                                    <br/>
+                                    새로운 소식을 확인하세요.
+                                </span>
+                                <span class = "footer-banner-img" id = "ft-banner-img1"></span>
+                            </a>
+                        </li>
+                        <li class = "footer-banner-item">
+                            <a href = "https://page.onstove.com/quarter/kr/view/9151399?boardKey=612" class = "footer-banner-link">
+                                <span class = "footer-banner-text">
+                                    STOVE PC클라이언트가
+                                    <br/>
+                                    새롭게 바뀝니다.
+                                </span>
+                                <span class = "footer-banner-img" id = "ft-banner-img2"></span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </section>
+            </section>
+        </section>
+
+                <!-- 공지사항, 회사소개 등의 섹션 -->
+                <footer class = "company-footer">
+                    <section class = "footer-area">
+                       <article class = "footer-notice">
+                            <h3 class = "notice-title">공지사항</h3>
+                            <article class = "notice-data">
+                                <a href = "https://help.onstove.com/web/notice/noticeDetail/page?seq_no=798&service_no=2017080100" class = "notice-link" target="_self">
+                                    <span>4/18(화) 카카오페이 결제수단으로 캐시 충전 불가 현상 안내 (정상화)</span>
+                                </a>
+                            </article>
+                       </article>
+                       <nav class = "footer-nav">
+                            <a href="https://www.smilegate.com/ko/" class = "footer-nav-item" target="_blank">
+                                회사소개
+                            </a>
+                            <a href="https://clause.onstove.com/stove/terms?category=service" class = "footer-nav-item" target="_blank">
+                                이용약관
+                            </a>
+                            <a href="https://clause.onstove.com/stove/terms?category=privacy" class = "footer-nav-item" target="_blank">
+                                개인정보처리방침
+                            </a>
+                            <a href="https://clause.onstove.com/stove/terms?category=youth" class = "footer-nav-item" target="_blank">
+                                청소년보호정책
+                            </a>
+                            <a href="https://clause.onstove.com/stove/terms?category=oppolicy" class = "footer-nav-item" target="_blank">
+                                운영정책
+                            </a>
+                            <a href="https://member.onstove.com/game/block" class = "footer-nav-item" target="_blank">
+                                게임시간선택제
+                            </a>
+                            <a href="https://help.onstove.com/web/csMain/page?language_cd=KO" class = "footer-nav-item" target="_blank">
+                                고객센터
+                            </a>
+                       </nav>
+                       <article class = "footer-addr">
+                            <p class = "footer-addr-area">
+                                <span class = "footer-addr-item">㈜스마일게이트홀딩스 스토브지점</span>
+                                <span class = "footer-addr-item">대표이사: 성준호</span>
+                                <span class = "footer-addr-item">주소: 경기도 성남시 분당구 판교로 344, 8층,10층(삼평동)</span>
+                            </p>
+                            <p class = "footer-addr-area">
+                                <span class = "footer-addr-item">사업자 등록번호: 813-85-02492</span>
+                                <span class = "footer-addr-item">통신판매업 신고번호: 제2023-성남분당A-0145호</span>
+                                <a href= "https://www.ftc.go.kr/bizCommPop.do?wrkr_no=8138502492" class = "footer-addr-link" target="_blank" title = "사업자정보확인">사업자정보확인</a>
+                            </p>
+                            <p class = "footer-addr-area">
+                                <span class = "footer-addr-item">대표번호 : 
+                                    <a href= "tel:+8216700399" class = "footer-addr-link">1670-0399</a>
+                                </span>
+                                <span class = "footer-addr-item">팩스 : 
+                                    <a href= "tel:+820260208213" class = "footer-addr-link">02-6020-8213</a>
+                                </span>
+                                <span class = "footer-addr-item">E-mail : 
+                                    <a href= "mailto:stove@smilegate.com" class = "footer-addr-link">stove@smilegate.com</a>
+                                </span>
+                            </p>
+                       </article>
+                       <p class = "company-text">@ Smilegate. All Rights Reserved.</p>
+                       <p class = "company-logo">
+                            <a href = "https://www.smilegate.com/ko/" class = "company-logo-link" target="_blank">
+                                <img alt = "Smilegate" src = "img/ci-group@2x.png" class = "company-logo-img" />
+                            </a>
+                       </p>
+                    </section>
+                </footer>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+/* Font */
+/* [S] KR */
+@font-face {
+    font-family: 'Spoqa Han Sans Neo KR';
+    font-style: normal;
+    font-weight: normal;
+    src: url(../font/SpoqaHanSansNeo-Regular.eot) format('eot'), url(../font/SpoqaHanSansNeo-Regular.otf) format('otf'), url(../font/SpoqaHanSansNeo-Regular.woff) format('woff'), url(../font/SpoqaHanSansNeo-Regular.woff2) format('woff2');
+    font-display: fallback;
+}
+@font-face {
+    font-family: 'Spoqa Han Sans Neo KR';
+    font-style: normal;
+    font-weight: bold;
+    src: url(../font/SpoqaHanSansNeo-Bold.eot) format('eot'), url(../font/SpoqaHanSansNeo-Bold.otf) format('otf'), url(../font/SpoqaHanSansNeo-Bold.woff) format('woff'), url(../font/SpoqaHanSansNeo-Bold.woff2) format('woff2');
+    font-display: fallback;
+}
+/* [E] KR */
+
+@font-face {
+    font-family: 'Noto Sans CJK';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans Regular'), local('NotoSans-Regular'), url(https://static-new.onstove.com/sh-5.2.41/NotoSansKR-DemiLight.woff2) format('woff2'), url(https://static-new.onstove.com/sh-5.2.41/NotoSansKR-Light.woff) format('woff'), url(https://static-new.onstove.com/sh-5.2.41/NotoSansKR-Light.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans CJK';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(https://static-new.onstove.com/sh-5.2.41/NotoSansKR-Medium.woff2) format('woff2'), url(https://static-new.onstove.com/sh-5.2.41/NotoSansKR-Regular.woff) format('woff'), url(https://static-new.onstove.com/sh-5.2.41/NotoSansKR-Regular.otf) format('opentype');
+}

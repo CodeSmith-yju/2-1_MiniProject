@@ -1,0 +1,58 @@
+header{
+
+}
+
+body{
+
+
+}
+
+footer{
+
+
+}
+
+.headerimg{
+    position: absolute;
+    top: 48px;
+    left: 0;
+    height: 26px;
+    line-height: 0;
+    width: 112px;
+    height: 26px;
+}
+
+/*------------각 글꼴------------*/
+
+.pre{
+
+}
+
+.tetx_red{
+    color: red;
+}
+
+a{
+    color: blue;
+    text-decoration: underline;
+}
+
+/*------------표 상자------------*/
+th{
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+}
+/*------------------------*/
+
+
+h3{
+
+}
+
+pre{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 0;
+}

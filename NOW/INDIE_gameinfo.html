@@ -1,0 +1,1422 @@
+<!DOCTYPE html>js
+<html lang="en">
+
+<head style="font-family: 'Spoqa Han Sans Neo', 'sans-serif';">
+    <title>랜덤채팅의 그녀 | STOVE 인디</title>
+    <link href="./스토브아이콘.ico" rel="shortcut icon" type="image/x-icon">
+</head>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="./INDIE_gameinfo.js"></script>
+<div id="indie_infomain_layout">
+    <div class="indie_infomain_layout_wrap">
+        <style>
+            .info_main_wrap {
+    width: 1235.98px;
+    height: 5853.12px;
+    display: inline-block;
+    margin-right: 2.4rem;
+}
+        </style>
+
+
+        <!--헤더네비게이션-->
+        <div class="stove_nav" style="margin-top: -22px;">
+            <div class="nav_wrap">
+                <div class="stove_title">
+                    <a href="../박진석_최종본_mini/main.html" style="margin-right: 10px;">
+                        <img src="./EVENTIMG/stovetitle.png">
+                    </a>
+                    <a href="../NOW/STOVE_GAME.html">
+                        <img src="./EVENTIMG/indietitle.png">
+                    </a>
+                </div>
+                <div class="menu_wrap">
+                    <div class="list">
+                        <a style="color: #fc6020;;" href="./STOVE_GAME.html">게임</a>
+                        <a href="../인디게임-이벤트/STOVE_INDIEEVENT.html">이벤트</a>
+                        <a href="../comu/comu/comu.html">커뮤니티</a>
+                        <a href="https://accounts.onstove.com/auth/login?redirect_url=https%3A%2F%2Fmyindie.onstove.com">마이인디</a>
+                        <a href="https://page.onstove.com/indieboostlab/global">
+                            <img style="width: 138px; height: 24px; margin-top: 8px;" src="./INDIEIMG/슬기로운데모생활.png">
+                        </a>
+                        <a href="https://page.onstove.com/seavtuber/global">
+                            <img style="width: 108px; height: 20px; margin-top: 6px;" src="./INDIEIMG/seastory.png">
+                            <ion-icon name="open-outline" role="img" class="md hydrated"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="menu_input">
+                        <div class="search_area">
+                            <div class="inputbox_wrap">
+                                <div class="inputbox">
+                                    <div class="input_wrap">
+                                        <input class="inputsp" maxlength="20" type="text" placeholder="게임 검색하기" style="color: aliceblue;">
+                                        <button class="input_btn">
+                                            <ion-icon name="search-outline" role="img" class="md hydrated"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="studio">
+                                <a href="https://studio.onstove.com/ko">스튜디오</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button_list">
+                        <div class="button_list">
+                            <button class="btn-1" onclick="toggleBox('box-1', this)">
+                              <img src="./INDIEIMG/글로벌.png" alt="Button 1">
+                            </button>
+                            <button class="btn-2" onclick="toggleBox('box-2', this)">
+                              <img src="./INDIEIMG/메뉴.png" alt="Button 2">
+                            </button>
+                          </div>
+                          
+                          <div id="box-1" class="box">
+                            <div class="menu_list"><a href="#">한국어</a></div>
+                            <div class="menu_list"><a href="#">Deutsch</a></div>
+                            <div class="menu_list"><a href="#">English (US)</a></div>
+                            <div class="menu_list"><a href="#">Español (LA)</a></div>
+                            <div class="menu_list"><a href="#">Français</a></div>
+                            <div class="menu_list"><a href="#">Português (BR)</a></div>
+                            <div class="menu_list"><a href="#">中文 (繁體)</a></div>
+                            <div class="menu_list"><a href="#">日本語</a></div>
+                            <div class="menu_list"><a href="#">ภาษาไทย</a></div>
+                            <div class="menu_list"><a href="#">Italiano</a></div>
+                          </div>
+                          
+                          <div id="box-2" class="box">
+                            <div class="gnb-dropdown-content" id="pc-total-menu-content">
+                                <div class="gnb-game-grouppc-menu">
+                                <div class="gnb-game-group-wrap">
+                                    <div class="gnb-game-group-item">
+                                        
+                        <strong class="gnb-game-group-title">PC게임</strong>
+                        <ul class="gnb-game-list">
+                            
+                        <li class="gnb-game-list-item">
+                            <a href="https://blueprotocol.game.onstove.com/" class="gnb-game-list-link" data-st-log="menu_game.1066.home" target="_blank">
+                                <div class="gnb-game-list-link-wrap">
+                                    <strong class="gnb-game-list-text">블루프로토콜</strong>
+                                    <span class="gnb-stove-badge-wrap"><span class="gnb-stove-badge orange">NEW</span></span>
+                                </div>
+                            </a>
+                            
+                        </li>
+                    
+                        <li class="gnb-game-list-item">
+                            <a href="https://getamped.game.onstove.com" class="gnb-game-list-link" data-st-log="menu_game.2515.home" target="_self">
+                                <div class="gnb-game-list-link-wrap">
+                                    <strong class="gnb-game-list-text">겟앰프드</strong>
+                                    
+                                </div>
+                            </a>
+                            
+                            <a class="gnb-game-list-link" href="https://page.onstove.com/getamped/kr" target="_self" data-st-log="menu_game.2515.comm">
+                                <span class="gnb-icon ic-navigation-community-line" id="gnb-cm-icon-2515"></span>
+                                <span><img src="./GAME_mainIMG/ic-navigation-community-line-enabled.svg"></span>
+                            </a>
+                
+                        </li>
+                    
+                        <li class="gnb-game-list-item">
+                            <a href="https://lostark.game.onstove.com" class="gnb-game-list-link" data-st-log="menu_game.45.home" target="_self">
+                                <div class="gnb-game-list-link-wrap">
+                                    <strong class="gnb-game-list-text">LOST ARK</strong>
+                                    <span class="gnb-stove-badge-wrap"><span class="gnb-stove-badge purple">UPDATE</span></span>
+                                </div>
+                            </a>
+                            
+                            <a class="gnb-game-list-link" href="https://page.onstove.com/lostark/kr" target="_self" data-st-log="menu_game.45.comm">
+                                <span class="gnb-icon ic-navigation-community-line" id="gnb-cm-icon-45"></span>
+                                <span><img src="./GAME_mainIMG/ic-navigation-community-line-enabled.svg"></span>
+                            </a>
+                
+                        </li>
+                    
+                        <li class="gnb-game-list-item">
+                            <a href="https://tr.game.onstove.com" class="gnb-game-list-link" data-st-log="menu_game.2.home" target="_self">
+                                <div class="gnb-game-list-link-wrap">
+                                    <strong class="gnb-game-list-text">테일즈런너</strong>
+                                    <span class="gnb-stove-badge-wrap"><span class="gnb-stove-badge purple">UPDATE</span></span>
+                                </div>
+                            </a>
+                            
+                            <a class="gnb-game-list-link" href="https://page.onstove.com/talesrunner/kr" target="_self" data-st-log="menu_game.2.comm">
+                                <span class="gnb-icon ic-navigation-community-line" id="gnb-cm-icon-2"></span>
+                                <span><img src="./GAME_mainIMG/ic-navigation-community-line-enabled.svg"></span>
+                            </a>
+                
+                        </li>
+                    
+                        <li class="gnb-game-list-item">
+                            <a href="https://c-aoa.game.onstove.com/" class="gnb-game-list-link" data-st-log="menu_game.1962.home" target="_self">
+                                <div class="gnb-game-list-link-wrap">
+                                    <strong class="gnb-game-list-text">센추리: 에이지 오브 애쉬즈</strong>
+                                    
+                                </div>
+                            </a>
+                            
+                            <a class="gnb-game-list-link" href="https://page.onstove.com/c-aoa/kr" target="_self" data-st-log="menu_game.1962.comm">
+                                <span class="gnb-icon ic-navigation-community-line" id="gnb-cm-icon-1962"></span>
+                                <span><img src="./GAME_mainIMG/ic-navigation-community-line-enabled.svg"></span>
+                            </a>
+                
+                        </li>
+                    
+                        <li class="gnb-game-list-item">
+                            <a href="https://page.onstove.com/kards/kr" class="gnb-game-list-link" data-st-log="menu_game.1961.home" target="_self">
+                                <div class="gnb-game-list-link-wrap">
+                                    <strong class="gnb-game-list-text">KARDS</strong>
+                                    
+                                </div>
+                            </a>
+                            
+                            <a class="gnb-game-list-link" href="https://page.onstove.com/kards/kr/list/11728?page=1&amp;direction=LATEST" target="_self" data-st-log="menu_game.1961.comm">
+                                <span class="gnb-icon ic-navigation-community-line" id="gnb-cm-icon-1961"></span>
+                                <span><img src="./GAME_mainIMG/ic-navigation-community-line-enabled.svg"></span>
+                            </a>
+                
+                        </li>
+                    
+                        </ul>
+                    
+                                    </div>
+                                    <div class="gnb-game-group-item">
+                                        
+                        <strong class="gnb-game-group-title">모바일게임</strong>
+                        <ul class="gnb-game-list">
+                            
+                        <li class="gnb-game-list-item">
+                            <a href="https://outerplane.game.onstove.com/preregist" class="gnb-game-list-link" data-st-log="menu_game.2269.home" target="_blank">
+                                <div class="gnb-game-list-link-wrap">
+                                    <strong class="gnb-game-list-text">아우터플레인</strong>
+                                    <span class="gnb-stove-badge-wrap"><span class="gnb-stove-badge orange">NEW</span></span>
+                                </div>
+                            </a>
+                            
+                            <a class="gnb-game-list-link" href="https://page.onstove.com/outerplane/kr" target="_self" data-st-log="menu_game.2269.comm">
+                                <span class="gnb-icon ic-navigation-community-line" id="gnb-cm-icon-2269"></span>
+                                <span><img src="./GAME_mainIMG/ic-navigation-community-line-enabled.svg"></span>
+                            </a>
+                
+                        </li>
+                    
+                        <li class="gnb-game-list-item">
+                            <a href="https://dominion.game.onstove.com" class="gnb-game-list-link" data-st-log="menu_game.3478.home" target="_blank">
+                                <div class="gnb-game-list-link-wrap">
+                                    <strong class="gnb-game-list-text">전국제패M</strong>
+                                    <span class="gnb-stove-badge-wrap"><span class="gnb-stove-badge orange">NEW</span></span>
+                                </div>
+                            </a>
+                            
+                            <a class="gnb-game-list-link" href="https://page.onstove.com/dominion/kr" target="_self" data-st-log="menu_game.3478.comm">
+                                <span class="gnb-icon ic-navigation-community-line" id="gnb-cm-icon-3478"></span>
+                                <span><img src="./GAME_mainIMG/ic-navigation-community-line-enabled.svg"></span>
+                            </a>
+                
+                        </li>
+                    
+                        <li class="gnb-game-list-item">
+                            <a href="https://page.onstove.com/epicseven/kr" class="gnb-game-list-link" data-st-log="menu_game.141.home" target="_self">
+                                <div class="gnb-game-list-link-wrap">
+                                    <strong class="gnb-game-list-text">에픽세븐</strong>
+                                    <span class="gnb-stove-badge-wrap"><span class="gnb-stove-badge purple">UPDATE</span></span>
+                                </div>
+                            </a>
+                            
+                        </li>
+                    
+                        <li class="gnb-game-list-item">
+                            <a href="https://page.onstove.com/magicshop/kr" class="gnb-game-list-link" data-st-log="menu_game.209.home" target="_self">
+                                <div class="gnb-game-list-link-wrap">
+                                    <strong class="gnb-game-list-text">마술양품점</strong>
+                                    <span class="gnb-stove-badge-wrap"><span class="gnb-stove-badge purple">UPDATE</span></span>
+                                </div>
+                            </a>
+                            
+                        </li>
+                    
+                        <li class="gnb-game-list-item">
+                            <a href="https://page.onstove.com/supertank/global" class="gnb-game-list-link" data-st-log="menu_game.26.home" target="_self">
+                                <div class="gnb-game-list-link-wrap">
+                                    <strong class="gnb-game-list-text">슈퍼탱크대작전</strong>
+                                    
+                                </div>
+                            </a>
+                            
+                        </li>
+                    
+                        <li class="gnb-game-list-item">
+                            <a href="https://page.onstove.com/qurareforever/kr" class="gnb-game-list-link" data-st-log="menu_game.5.home" target="_self">
+                                <div class="gnb-game-list-link-wrap">
+                                    <strong class="gnb-game-list-text">큐라레를 추억하는 사서들</strong>
+                                    
+                                </div>
+                            </a>
+                            
+                        </li>
+                    
+                        </ul>
+                    
+                                    </div>
+                                    <div class="gnb-game-group-item">
+                                        
+                                    </div>
+                                </div>
+                            
+                                    <!-- 게임 리스트 들어 가는 자리 -->
+                                    <div class="gnb-game-group-wrap">
+                                        <div class="gnb-game-group-item">
+                                            <div class="gnb-game-group-item-row">
+                                                <strong class="gnb-game-group-title">서비스</strong>
+                                                <ul class="gnb-game-list">
+                                                    
+                            <li class="gnb-game-list-item">
+                                <a class="gnb-game-list-link" href="https://indie.onstove.com/ko" data-st-log="menu_indie">
+                                    <div class="gnb-game-list-link-wrap">
+                                        <strong class="gnb-game-list-text">인디게임</strong>
+                                    </div>
+                                </a>
+                            </li>
+                                                    
+                                                                
+                            <li class="gnb-game-list-item">
+                                <a class="gnb-game-list-link" href="https://toonspoon.service.onstove.com" data-st-log="menu_toonspoon">
+                                    <div class="gnb-game-list-link-wrap">
+                                        <strong class="gnb-game-list-text">툰스푼</strong>
+                                    </div>
+                                </a>
+                            </li>
+                                                            
+                                                </ul>
+                                            </div>
+                                            <div class="gnb-game-group-item-row">
+                                                <strong class="gnb-game-group-title">STOVE</strong>
+                                                <ul class="gnb-game-list">
+                                                    
+                            <li class="gnb-game-list-item">
+                                <a class="gnb-game-list-link" href="https://www.onstove.com" data-st-log="menu_home">
+                                    <div class="gnb-game-list-link-wrap">
+                                        <strong class="gnb-game-list-text">홈</strong>
+                                    </div>
+                                </a>
+                            </li>
+                                                    
+                            <li class="gnb-game-list-item">
+                                <a class="gnb-game-list-link" href="https://page.onstove.com/quarter" data-st-log="menu_comm">
+                                    <div class="gnb-game-list-link-wrap">
+                                        <strong class="gnb-game-list-text">공식 커뮤니티</strong>
+                                    </div>
+                                </a>
+                            </li>
+                                                    
+                            <li class="gnb-game-list-item">
+                                <a class="gnb-game-list-link" href="https://www.onstove.com/download" data-st-log="menu_download">
+                                    <div class="gnb-game-list-link-wrap">
+                                        <strong class="gnb-game-list-text">클라이언트 설치</strong>
+                                    </div>
+                                </a>
+                            </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                          </div>
+                          
+                          <style>
+                            .box {
+                              position: fixed;
+                              background-color: #222;
+                              color: #ccc;
+                              border-radius: 4px;
+                              box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.01), 0 0 1px 0 rgba(0, 0, 0, 0.01);
+                              border: solid 1px rgb(70, 70, 70);
+                              display: none;
+                              top: 55px;
+                              width: 140px;
+                              height: 385px;
+                            }
+                          
+                            #box-2 {
+                              width: 716px;
+                              height: 516px;
+                            }
+                          
+                            .active {
+                              display: block;
+                            }
+                            .btn-1 img {
+                                
+                            }
+
+                            .btn-1:hover img {
+                                /* 호버 시 이미지 스타일 */
+                                content: url("./INDIEIMG/글로벌활성화.png");
+                            }
+
+                            .btn-2 img {
+                                /* 기본 이미지 스타일 */
+                            }
+
+                            .btn-2:hover img {
+                                /* 호버 시 이미지 스타일 */
+                                content: url("./INDIEIMG/메뉴활성화.png");
+                            }
+                          </style>
+                          
+                          <script>
+                            function toggleBox(boxId, button) {
+                              var box = document.getElementById(boxId);
+                              box.classList.toggle('active');
+                          
+                              var otherBoxes = document.querySelectorAll('.box:not(#' + boxId + ')');
+                              for (var i = 0; i < otherBoxes.length; i++) {
+                                otherBoxes[i].classList.remove('active');
+                              }
+                            }
+                          </script>
+                        <a href="../박진석_최종본_mini/login.html" style="margin-right: -13px;">로그인</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--메인layout-->
+        <div class="indie_info_layout2">
+            <div class="indie_info_layout_wrap">
+                <div id="top" class="topimg">
+                    <div class="indie_topimg" style="background-image: url(./INDIEIMG/indie_상점_배경이미지_bg_random.jpg);"></div>
+                    <div class="indie_topinfomain">
+                        <div class="indie_search">
+                            <a href="./STOVE_GAME.html" class="searchinfo">
+                                전체게임
+                                <span class="rightbar_wrap">
+                                    <i class="rightbart-line:before">
+                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                                    </i>
+                                </span>
+                            </a>
+                            <a href="https://indie.onstove.com/ko/store/search?types=BASIC" class="searchinfo">
+                                정식게임
+                                <span class="rightbar_wrap">
+                                    <i class="rightbart-line:before">
+                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                                    </i>
+                                </span>
+                            </a>
+                            <a href="https://indie.onstove.com/ko/store/search?genres=114" class="searchinfo">
+                                연애 시뮬레이션
+                                <span class="rightbar_wrap">
+                                    <i class="rightbart-line:before">
+                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                                    </i>
+                                </span>
+                            </a>
+                            <span class="searchinfo">랜덤채팅의 그녀</span>
+                        </div>
+                        <section class="indie_gallery_wrap">
+                            <div class="indie_gallery_slider_wrap">
+                                <!--큰 갤러리 이미지-->
+                                <div class="indie_slider_big">
+                                    <ul class="swiper_wrap" style="transition-duration: 2ms;">
+                                        <li class="slider_container-slide-active" style="width: 1088px; height: 612px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                                            <div class="player_active" data-layer="0">
+                                                <iframe width="1088" height="612" src="https://www.youtube.com/embed/s-Eyd2SpMr8?autoplay=1&mute=1" title="[게임 추천 – 랜덤채팅의 그녀] 트레일러 공개! – 연애 시뮬레이션 , 캐주얼 , 비주얼 노벨" 
+                                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </li>
+                                        <li class="slider_container-slide-next" style="pointer-events: none; width: 1088px; height: 612px; opacity: 0; transform: translate3d(-1088px, 0px, 0px);">
+                                            <div class="slider_container"><img style="pointer-events: none;" loading="lazy" src="/INDIEIMG/1_1678148307180.png" alt="Image-1"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--작은 갤러리 이미지-->
+                                <div class="slider_container"></div>
+                                <div class="blackbox">
+                                    
+                                    <a href="#" class="next" onclick="moveSlider(17.25); return false;"><ion-icon name="chevron-back-outline"></ion-icon></a>
+                                    </div>
+                                <div class="blackbox" style="right: 407px;">
+                                    <a href="#" class="prev" onclick="moveSlider(-17.25); return false;"><ion-icon name="chevron-forward-outline"></ion-icon></a>
+                                </div>
+                                <div class="indie_slider_small_wrap">
+                                    
+                                    
+                                    <div class="slider_flex">
+                                        <div class="slideimg">
+                                            <img src="./INDIEIMG/랜덤채팅의그녀썸네일.jpg" onclick="changeImage(1)">
+                                        </div>
+                                        <div class="slideimg">
+                                            <img src="./INDIEIMG/랜덤채팅의그녀썸네일.jpg"onclick="changeImage(2)" >
+                                        </div>
+                                        <div class="slideimg">
+                                            <img src="./INDIEIMG/1_1678148307180.png"onclick="changeImage(3)">
+                                        </div>
+                                        <div class="slideimg">
+                                            <img src="./INDIEIMG/2_1678148309089.png"onclick="changeImage(4)">
+                                        </div>
+                                        <div class="slideimg">
+                                            <img src="./INDIEIMG/3_1678148311659.png" style="width: 100%; height: 100%;" onclick="changeImage(5)">
+                                        </div>
+                                        <div class="slideimg">
+                                            <img src="./INDIEIMG/4_1678148313893.png" style="width: 100%; height: 100%;" onclick="changeImage(6)">
+                                        </div>
+                                        <div class="slideimg">
+                                            <img src="./INDIEIMG/5_1678148318525.png" style="width: 100%; height: 100%;" onclick="changeImage(7)">
+                                        </div>
+                                        <div class="slideimg">
+                                            <img src="./INDIEIMG/6_1678148320100.png" style="width: 100%; height: 100%;" onclick="changeImage(8)">
+                                        </div>
+                                        <div class="slideimg">
+                                            <img src="./INDIEIMG/7_1678148325739.png" style="width: 100%; height: 100%;" onclick="changeImage(9)">
+                                        </div>
+                                        <div class="slideimg">
+                                            <img src="./INDIEIMG/8_1678148327908.png" style="width: 100%; height: 100%;" onclick="changeImage(10)">
+                                        </div>
+                                        <div class="slideimg">
+                                            <img src="./INDIEIMG/9_1678148330452.png" style="width: 100%; height: 100%;" onclick="changeImage(11)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--갤러리 오른쪽 정보란-->
+                            <div class="indie_gallery_info_wrap">
+                                <div class="info_header">
+                                    <div class="header_tit">
+                                        <figure class="header_img">
+                                            <img loading="lazy" src="./INDIEIMG/랜덤채팅의그녀썸네일아이콘.jpg" alt="랜덤채팅의 그녀" style="border-radius: 12px; width: 100%">
+                                        </figure>
+                                        <div class="header_txt">
+                                            <p class="header_txt">랜덤채팅의 그녀</p>
+                                        </div>
+                                    </div>
+                                    <div class="header_ico"></div>
+                                </div>
+
+                                <div class="info_main">
+                                    <div class="game_info">
+                                        <table>
+                                            <tr>
+                                                <th>장르</th>
+                                                <td>
+                                                    <a class="game_infolink">연애 시뮬레이션</a>
+                                                    <a class="game_infolink">, 캐주얼</a>
+                                                    <a class="game_infolink">, 비주얼 노벨</a>
+                                                </td>
+                                            <tr>
+                                                <th>이용등급</th>
+                                                <td>청소년 이용불가</td>
+                                            </tr>
+                                            <tr>
+                                                <th>창작자</th>
+                                                <td>주식회사 테일즈샵</td>
+                                            </tr>
+                                            <tr>
+                                                <th>배급사</th>
+                                                <td>주식회사 테일즈샵</td>
+                                            </tr>
+                                            <tr>
+                                                <th>출시일</th>
+                                                <td>2023.03.28</td>
+                                            </tr>
+                                            <tr>
+                                                <th>태그</th>
+                                                <td>#2D #스토리중심 #꼭 해봐야할 #귀여</td>
+                                                <td>운 #갓게임 #멀티엔딩 #시간순삭<ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                                </td>
+                                            </tr>
+                                            </tr>
+                                        </table>
+                                        <div class="studio2" style="    margin-left: 102px;
+                                        margin-top: 10px;">
+                                            투표하기
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buytable">
+                                    <div class="bt_price">
+                                        <div class="bt_price_wrap">
+                                            <div class="item_price">
+                                                <span class="item_won">₩ 40,000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bt_buy">
+                                        <section class="download_bt">
+                                            <button class="buy">
+                                                <span class="btntxt">장바구니</span>
+                                            </button>
+                                            <div class="want">
+                                            <button class="want">
+                                                <span class="btntxt">찜</span>
+                                            </button>
+                                        </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div id="info_bar" class="info_bar">
+                    <div class="info_bar_wrap">
+                        <div class="info_bar_container">
+                            <ul class="info_bar_flex"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_body">
+                    <div class="info_body_container">
+                        <div class="info_main_wrap">
+                            <div class="info_mainbox">
+                                <section class="info_parts">
+                                    <div class="info_title">
+                                        <p>게임 설명</p>
+                                    </div>
+                                    <div class="box_body">
+                                        <div class="info_imagebox">
+                                            <img src="./INDIEIMG/indie_상점_한줄소개_gameinfo_random_1675213509910.jpg">
+                                            <p>네이버 웹툰 화요 인기작 ' 랜덤채팅의 그녀 '의 연애 시뮬레이션 게임</p>
+                                        </div>
+                                        <div class="boox">
+                                            <a href="https://indie.onstove.com/ko/event/exhibit/320"><img src="./INDIEIMG/indie_week_top_pc_indie_top.png" class="img_ad"></a>
+                                        
+                                            <pre>
+<b>* 중요 </b>
+
+본게임은 원작 [랜덤채팅의 그녀]의 현실적인 드라마와 가감없는 소재로 진행되며 
+
+원작의 강한 캐릭터성과 전개를 많이 따라갑니다.
+
+현재는 그간의 테일즈샵의 게임의 느낌과 다르니 구매시 주의가 필요합니다.
+
+
+
+기존의 테일즈샵 게임의 느낌과 같은 미연시 버젼의 무료 업데이트가 예정되어있습니다.
+
+현재의 히로인 루트와 같은 볼륨으로 히로인 4인이 순차적으로 업데이트 됩니다.
+--------------------------------------------------------------------------------------
+
+
+
+
+
+네이버 웹툰 화요 인기작 ' 랜덤채팅의 그녀 '연애 시뮬레이션 게임화 프로젝트!
+'썸썸 편의점','기적의 분식집'을 제작한PD ZAD X AD 케로의 3년만의 신작
+
+
+<b>
+원작과 다르게 흘러가는 새로운 스토리
+
+4인 4색 히로인과 연애하는 풀보이스 미연시</b>
+
+
+
+<b>
+네이버 웹툰 ' 랜덤채팅의 그녀 '를 활용한 IP게임</b>
+원작 웹툰의 매력적인 캐릭터들과 연애할 수 있는 게임입니다.
+
+웹툰을 안 보신 분들도 재미있게 즐길 수 있는 연애 시뮬레이션 게임입니다.
+
+원작에선 볼 수 없었던 새로운 스토리를 즐겨주세요.
+
+<b>
+4명의 히로인으로 더 커진 볼륨</b>
+4개 히로인 루트를 제공하여 훨씬 더 큰 만족감을 선사합니다.메인 히로인 외에도, 다양한 조연들도 전부 풀보이스로 더빙하여
+드라마의 몰입도를 올렸습니다.
+
+<b>
+'랜덤채팅의 그녀'의 월드를 체험할 수 있는 경험 제공</b>
+실제 이야기의 무대가 되는 학교와 거리를 직접 뛰어다니며 체험할 수 있습니다.
+
+월드뿐만 아니라 메신저, SNS 등 학교 생활을 체험할 수 있는 다양한 서브 이벤트가 준비되어 있습니다.
+
+불편하지 않으면서도 재미있는 게임성을 준비 중입니다.
+
+*본 게임은 18금입니다. 하지만 그것은 선정성때문이 아니라 욕 표현 때문입니다.
+
+<b>주요 성우 캐스팅 (캐릭터명 : 성우명)</b>
+
+박하민 : 정혜원
+윤성아 : 조경이
+서리라 : 장미
+이유리 : 서다혜
+이태양 : 이경태
+임대현 : 신범식
+정성욱 : 정의진
+권용우 : 정의택
+임자유 : 서정익
+이현정 : 이명화
+강보라 : 이은조
+주유림 : 방시우
+유종화 : 최현수
+신영윤 : 안효민
+양지원 : 이주승
+                                                </pre>
+                                        </div>
+                                        <div class="box_body_unmore">
+                                            <div class="unmbt_btn">
+                                            <button class="unmbt">
+                                                <span class="unmore_txt">게임 설명 접기<ion-icon name="chevron-up-outline"></ion-icon></span>
+                                            </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            </section>
+                            <!--유저평가-->
+                            <div class="info_mainbox" style="margin-top: 100px; width: 1235.98px; height: 389px;">
+                                <div class="info_title">
+                                    <p style="position: absolute; margin-bottom: 306px;">유저 평가</p>
+                                    <img src="./INDIEIMG/유저평가.PNG"> 
+                                </div>
+                            </div>
+                            <!--게임후기-->
+                            <div class="info_mainbox" style="margin-top: 100px; width: 1235.98px; height: 1854px;">
+                                <div class="info_title">
+                                    <p>게임 후기</p>
+                                    <span>글 작성 시 </span>
+                                    <a href="#"> 규칙 및 기준</a>
+                                    <span>을 지켜주세요.</span>
+                                </div>
+                                <div class="info_reviewwrite_box">
+                                    <p>
+                                        글을 작성하시려면
+                                        <a href="../박진석_최종본_mini/login.html" class="info_title" style="color: red;">로그인</a>
+                                        해주세요
+                                    </p>
+                                </div>
+
+                                <!-------------------------리뷰 리스트--------------------------------------------->
+                                <li class="review_box_wrap" style="height: 14%;">
+                                    <div class="review_id">
+                                        <div class="id_icon">   
+                                            <img src="./INDIEIMG/icon1.png" alt="icon">
+                                        </div>
+                                        <div class="id_record">
+                                            <span class="id_name">
+                                                <span class="id_name">낙서백야</span>
+                                            </span>
+                                            <div class="id_playtime">
+                                                <span>23시간 58분 플레이</span>
+                                                <span class="txt_time"></span>
+                                                <span>2023.04.23 2:39 (UTC+9)</span>
+                                                <span class="txt_time"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review_txt">
+                                        <p>
+                                            <p>엔딩 다 본 다음에 채울 거 다 채우고 이벤트 100%는 만들었습니다만</p>
+                                            <p>CG가 92%(2장 없음)네요?</p>
+                                            <p>대충 비어 있는 위치 보면 하민 이벤트 CG(3페이지)랑</p>
+                                            <p>리라 셀카 CG(5페이지)인 것 같은데</p>
+                                            <p>혹시 이거 획득 조건 아시는 분 있나요? 어차피 스토리는 차후 업데이트 기대하는 게 맞을 것 같고,</p>
+                                            <p>이왕 돈 낸 거 올클리어로 그림 구경이라도 해야겠는데 ㅋㅋㅋ</p>
+                                            <div class="comment_wrap">
+                                                <div class="comment">0</div>
+                                                <div class="comment">댓글달기</div>
+                                            </div>
+                                        </p>
+                                        
+                                    </div>
+                                </li>
+
+
+                                <li class="review_box_wrap">
+                                    <div class="review_id">
+                                        <div class="id_icon">
+                                            <img src="./INDIEIMG/ID_요시자와카스미.jpg" alt="icon">
+                                        </div>
+                                        <div class="id_record">
+                                            <span class="id_name">
+                                                <span class="id_name">요시자와카스미</span>
+                                            </span>
+                                            <div class="id_playtime">
+                                                <span>13시간 6분 플레이</span>
+                                                <span class="txt_time"></span>
+                                                <span>2023.04.21 23:28 (UTC+9)</span>
+                                                <span class="txt_time"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review_txt">
+                                        <p>
+                                            <p>원작 안보고 해봤는데요 . 주인공 암 걸리게하는것도 있지만 결과론적으로는</p>
+                                            <p>성장하고 해결하는게 괜찮았던거 같아요. 그렇게 깔부분은 없어보이네요.</p>
+                                            <div class="comment_wrap">
+                                                <div class="comment">0</div>
+                                                <div class="comment">댓글달기</div>
+                                            </div>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="review_box_wrap">
+                                    <div class="review_id">
+                                        <div class="id_icon">
+                                            <img src="./INDIEIMG/ID_bwarrior.png" alt="icon">
+                                        </div>
+                                        <div class="id_record">
+                                            <span class="id_name">
+                                                <span class="id_name">bwarrior</span>
+                                            </span>
+                                            <div class="id_playtime">
+                                                <span>1시간 10분 플레이</span>
+                                                <span class="txt_time"></span>
+                                                <span>2023.04.21 20:11 (UTC+9)</span>
+                                                <span class="txt_time"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review_txt">
+                                        <p>
+                                            <p>
+                                                <p>웹툰 원작 보지도 않았고 볼 생각도 없고 그냥 미연시 장르인줄 알고 가볍게 즐길려고 샀는데</p>
+                                                <p>욕도 너무 많이 나와서 거슬리고 무엇보다 재미가 없음;;&nbsp; 게임이라는게 주인공에 이입이 되어야 몰입이 되는데, 하나도 이해가 안가니까 몰입이 안되고 지루함.</p>
+                                                <p>한시간 밖에 안했는데 무슨내용일지 앞날이 훤하고 보기 싫은거 참고 하기도 싫음. 아마 어떻게 패치될지 모르겠지만 크게 기대도 안하고</p>
+                                                <p>걍 4만원 기부한셈 칠거임.지금까지 사전예약하면 그냥 묻지도 따지지도 않고 샀는데</p>
+                                                <p>한방먹고 나니까 이젠그냥 출시하고 후기보고 사야할듯..</p>
+                                                <div class="comment_wrap">
+                                                    <div class="comment">0</div>
+                                                    <div class="comment">댓글달기</div>
+                                                </div>
+                                            </p>
+                                    </div>
+                                </li>
+                                <li class="review_box_wrap">
+                                    <div class="review_id">
+                                        <div class="id_icon">
+                                            <img src="./INDIEIMG/ID_STOVE83779457.png" alt="icon">
+                                        </div>
+                                        <div class="id_record">
+                                            <span class="id_name">
+                                                <span class="id_name">STOVE83779457</span>
+                                            </span>
+                                            <div class="id_playtime">
+                                                <span>2시간 14분 플레이</span>
+                                                <span class="txt_time"></span>
+                                                <span>2023.04.21 2:36 (UTC+9)</span>
+                                                <span class="txt_time"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review_txt">
+                                        <p>&nbsp;솔직히 원작 웹툰을 안봐서 뭐가 다른지는 모르지만
+                                        <p>스토리가 그냥 어질어질합니다. 초반만 했는데 무슨 저기가 21세기 대한민국이 맞을까라는 생각이 듭니다.</p>
+                                        <p>이정도면 무법지대라고 해도 되는 스토리 같은데 쌈박질이 10분마다 나오고 욕도 필요 이상으로 나오니깐 좀 불쾌합니다.</p>
+                                        <p>그나마 성우분들의 풀더빙과 고퀄리티 일러스트로 할만은 합니다..</p>
+                                        <p>그럼에도 불구하고 이 가격에 추천 드리기는 어려운 게임이라 말할 순 있습니다</p>
+                                        <div class="comment_wrap">
+                                            <div class="comment">0</div>
+                                            <div class="comment">댓글달기</div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="review_box_wrap">
+                                    <div class="review_id">
+                                        <div class="id_icon">
+                                            <img src="./INDIEIMG/ID_배뻘특전사.png" alt="icon">
+                                        </div>
+                                        <div class="id_record">
+                                            <span class="id_name">
+                                                <span class="id_name">배뻘특전사</span>
+                                            </span>
+                                            <div class="id_playtime">
+                                                <span>6일 2시간 0분 플레이</span>
+                                                <span class="txt_time"></span>
+                                                <span>2023.04.20 13:38 (UTC+9)</span>
+                                                <span class="txt_time"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review_txt">
+                                        <p>
+                                            <p>100%는 아니지만 원작과 약간 다른 점이 있긴 하네요 강보라의 등장이라던가 팔찌 부분을 없앴다든가 하는 그런 점이요 그래도 대다수는 비슷하기
+                                                때문에 웹툰을 본 분들은 굳이 4만원이란 돈을 주고 살만큼의 가치는 없는거 같아요 또 만약 웹툰을 안본 사람 입장에서도
+                                                개연성이 떨어지고 주인공의 답답한 점 등을 고려해 봤을때 그다지 추천 드리고싶진 않습니다 그래도 스토리 다시 새로 짠다고 하고
+                                                빠르게 고쳐나가려는 생각이 있는거보면 아직 아예 희망을 놓을 정도는 아니라고 생각하니 좀 더 존버하시는 걸 추천드립니다 &nbsp;</p>
+                                        </p>
+                                        <div class="comment_wrap">
+                                            <div class="comment">0</div>
+                                            <div class="comment">댓글달기</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <div class="box_body_unmore">
+                                    <button class="unmbt">
+                                        <span class="unmore_txt">더 보기</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!--추천리뷰-->
+                            <div class="info_mainbox" style="margin-top: 100px; width: 1235.98px; height: 737px;">
+                                <div class="info_title">
+                                    <p>추천 리뷰</p>
+                                </div>
+                                <div class="Chu_boxwrap">
+
+                                    <div class="item_box" style="margin-top: 16px;">
+                                        <div class="item_txt">
+                                            <a href="https://indie.onstove.com/ko/games/1689/community/122752/view/9381564">
+                                            <div class="item_txt_tit">
+                                                [랜덤채팅의 그녀] 올 클리어 리뷰 (스포 없음)
+                                            </div>
+                                            <div class="item_textbox">
+                                                미연시 게임에 대한 편견이 있었다.그저 몸매 좋은 여성 캐릭터들이 등장하고, 어떻게든 호감도를 올려서 그녀의 마음에 들어 보려는 남자가 주인공인 작품이 '미연시'
+                                                일 것이라는 막연한 편견을 가지고 있었다.그러나 28 일 정식 출시를 앞둔 '랜덤 채팅의 그녀'
+                                                의 출시 전 사전 플
+                                            </div>
+                                            <div class="item_time">
+                                                <span class="txt_time">2023.03.27 9:15 (UTC+9)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                        <div class="item_imgaes">
+                                            <img src="./INDIEIMG/랜덤채팅의그녀썸네일.jpg">
+                                        </div>
+                                    </div>
+
+                                    <div class="item_box" style="margin-top: 16px;">
+                                        <div class="item_txt">
+                                            <a href="https://indie.onstove.com/ko/games/1689/community/122752/view/9386925">
+                                            <div class="item_txt_tit">
+                                                중요 공지를 기념하는 랜그녀 후기!
+                                            </div>
+                                            <div class="item_textbox">
+                                                처음에는 실망스러운 기분을 담아 글을 쓰려 했지만, 제 후기가 이 게임을 사랑하는 다른 분들이나 제가 좋아하는 제작사인 테일즈샵에게
+                                                부정적인 영향을 끼칠 것 같아서 그냥 조용히 침묵으로 넘어가려고 했습니다. 그런데 어제 올라온 중요 공지를 보고, 지금의 안 좋은 상황을
+                                            </div>
+                                            <div class="item_time">
+                                                <span class="txt_time">2023.03.27 9:15 (UTC+9)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                        <div class="item_imgaes">
+                                            <img src="./INDIEIMG/리뷰글2.png">
+                                        </div>
+                                    </div>
+
+                                    <div class="item_box" style="margin-top: 16px;">
+                                        <div class="item_txt">
+                                            <a href="https://indie.onstove.com/ko/games/1689/community/122752/view/9382273">
+                                            <div class="item_txt_tit">
+                                                미연시 신작이 18금 게임으로 나온 이유, 랜덤채팅의 그녀 프리뷰
+                                            </div>
+                                            <div class="item_textbox">
+                                                오는 3월 28일 비주얼노벨 게임 신작 [랜덤채팅의 그녀]가 출시합니다.랜덤채팅의 그녀는 시나리오 라이터 ZAD와 일러스트레이터 KERO가 참여해
+                                                [기적의 분식집], [썸썸편의점] 이후로 3년 만에 내놓은 신작인데요.출시 당시 기적의 분식집과 썸썸편의점은 인터넷 방송을 통해 화제를 모으기도 했고,
+                                                특히 이번 신작은 유명 네이버 웹툰이 원작이기 때문에 더 큰 인기몰이를 할 수 있을지 귀추가 주목됩니다
+                                            </div>
+                                            <div class="item_time">
+                                                <span class="txt_time">2023.03.27 9:15 (UTC+9)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                        <div class="item_imgaes">
+                                            <img src="./INDIEIMG/리뷰글3.png">
+                                        </div>
+                                    </div>
+                                    <div class="box_body_unmore">
+                                        <button class="unmbt">
+                                            <span class="unmore_txt">전체보기</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+                            <!--새  소식-->
+                            <div class="info_mainbox" style="margin-top: 100px; width: 1235.98px; height: 737px;">
+                                <div class="info_title">
+                                    <p>새 소식</p>
+                                </div>
+                                <div class="Chu_boxwrap">
+
+                                    <div class="item_box">
+                                        <div class="item_txt">
+                                            <a href="https://indie.onstove.com/ko/games/1689/community/122752/view/9420861">
+                                            <div class="item_txt_tit">
+                                                팬 그리팅 신청 인증 이벤트 [당첨자 발표]
+                                            </div>
+                                            <div class="item_textbox">
+                                                안녕하세요! 스토브 인디지기입니다!지난 3월 21일 부터 3월 27일까지 진행되었던스페셜 팬 그리팅 신청 인증 이벤트 당첨자 발표 입니다!!※
+                                                 팬 그리팅 오프라인 당첨자는 선정에서 제외되었습니다! 📢당첨자 명단  당첨자김쥬뉴유센용사제니쪼개진
+                                            </div>
+                                            <div class="item_time">
+                                                <span class="txt_time">2023.03.27 9:15 (UTC+9)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                        <div class="item_imgaes">
+                                            <img src="./INDIEIMG/새소식글이미지.jpg">
+                                        </div>
+                                    </div>
+
+                                    <div class="item_box" style="margin-top: 16px;">
+                                        <div class="item_txt">
+                                            <a href="https://indie.onstove.com/ko/games/1689/community/122752/view/9411114">
+                                            <div class="item_txt_tit">
+                                                랜덤채팅의 그녀 최애 대사 고르기 이벤트 당첨자 발표
+                                            </div>
+                                            <div class="item_textbox">
+                                                안녕하세요. 스토브 인디지기입니다.3월  28일 부터 4월 10일 까지 진행된랜덤채팅의 그녀 최애 대사 고르기 이벤트! 당첨자를 발표합니다!! 
+                                                📢당첨자 명단  추첨상서리라농업코코좀비물조아용박하민STOVE163879838489400이청용_TR이유리스쳐요착한닉네임1125윤성아9754726_TR솜상은아차상문보492o35004
+                                                기타누락자청비STOVE167340487065212염민준shiloh7STOVE96855156팡룡 📢이벤트 보상 🎁 추첨상 :
+                                            </div>
+                                            <div class="item_time">
+                                                <span class="txt_time">2023.03.27 9:15 (UTC+9)</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                        <div class="item_imgaes">
+                                            <img src="./INDIEIMG/새소식글이미지.jpg">
+                                        </div>
+                                    </div>
+
+                                    <div class="item_box" style="margin-top: 16px;">
+                                        <div class="item_txt">
+                                            <a href="https://indie.onstove.com/ko/games/1689/community/122752/view/9385918">
+                                            <div class="item_txt_tit">
+                                                랜덤채팅의 그녀 중요 공지
+                                            </div>
+                                            <div class="item_textbox">
+                                                ※ 아래는 테일즈샵에서 작성한 공지 내용입니다.안녕하세요 테일즈샵입니다. [랜덤채팅의 그녀] 발매 후 많은 피드백을 받았습니다. 유저 분들의 다양한 의견을 확인했으며
+                                                이를 해결하기 위해 생각한 결과를 알려드립니다. 새로운 시나리오를 작성해 무료로 업데이트 하겠습니다. 1) 기존 시나리오는 [웹툰 원작 버전]으로 하여
+                                            </div>
+                                            <div class="item_time">
+                                                <span class="txt_time">2023.03.27 9:15 (UTC+9)</span>
+                                            </div>
+                                        </div>
+                                        <div class="item_imgaes">
+                                        </div>
+                                    </a>
+                                    </div>
+                                    <div class="box_body_unmore">
+                                        <button class="unmbt">
+                                            <span class="unmore_txt">전체보기</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--시스템 요구사항-->
+                            <div class="info_mainbox" style="margin-top: 100px; width: 1235.98px; height: 646px;">
+                                <div class="info_title">
+                                    <div class="booox">
+                                        <p style="margin-bottom: 30px;
+                                        border-bottom: solid #cfcfcf 1px; display: flex;">
+                                        시스템 요구사항</p>
+                                        <ul>
+                                            <p>최소 사양</p>
+                                            <li><em>OS</em> <span>Windows® 7 or higher</span></li>
+                                            <li><em>Processor</em> <span>Intel Core i or higher</span></li>
+                                            <li><em>Memory</em> <span>4GB</span></li>
+                                            <li><em>Graphics</em> <span>32MB or greater graphics card</span></li>
+                                            <li><em>DirectX</em> <span>N/A</span></li>
+                                            <li><em>Hard Drive</em> <span>5GB</span></li>
+                                            <p>지원 언어</p>
+                                            <li><em>한국어</em></li>
+                                            <p>이용 등급</p>
+                                            <li><em>청소년 이용불가</em></li>
+                                            <li><em>(본 게임은 만 18세 이상 이용자만 구매 및 이용이 가능합니다.)</em></li>
+                                            <!---->
+                                            </pre>
+                                            <div class="rating_img">
+                                                <div style="width: 90px; height: 104px; margin-bottom: 12px; margin-right: 12px;">
+                                                    <img src="./INDIEIMG/18세.png" style="width:100%; border-radius: 0%;">
+                                                </div>
+                                                <div style="width: 90px; height: 104px; margin-bottom: 12px; margin-right: 12px;">
+                                                    <img src="./INDIEIMG/언어부적절성.png" style="width:100%; border-radius: 0%;">
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <p class="outside" style="margin-top: 60px; padding-bottom: 30px;">창작자/배급사의 다른 게임</p>
+                        </div>
+                        <div class="moregame_box_body">
+                            <div class="moregame_box_wrap">
+                                <div class="moregame">
+                                    <a href="https://indie.onstove.com/ko/games/1614/">
+                                        <div class="morecard">
+                                            <div class="cardimg">
+                                                <img src="./INDIEIMG/그녀의세계원본.jpg">
+                                            </div>
+                                            <div class="cardinfo">
+                                                <div class="cardinfo_txt">
+                                                    <p class="cardinfo_txt">그녀의 세계</p>
+                                                    <div class="cardinfo_cat">
+                                                        <span class="cardinfo_cat">비주얼 노벨</span>
+                                                        <span class="cardinfo_cat">추천 24</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="underline"></div>
+                                            <div class="cardprice">
+                                                <p>₩ 15,000</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="moregame">
+                                    <a href="https://indie.onstove.com/ko/games/1608/">
+                                        <div class="morecard">
+                                            <div class="cardimg">
+                                                <img src="./INDIEIMG/미래의 여친님이 나에게 인사를 건네왔다 원본.png">
+                                            </div>
+                                            <div class="cardinfo">
+                                                <div class="cardinfo_txt">
+                                                    <p class="cardinfo_txt">미래의 여친님이 나에게 인사를 건네왔다</p>
+                                                    <div class="cardinfo_cat">
+                                                        <span class="cardinfo_cat">비주얼 노벨</span>
+                                                        <span class="cardinfo_cat">추천 8</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="underline"></div>
+                                            <div class="cardprice">
+                                                <p>₩ 5,500</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="moregame">
+                                    <a href="https://indie.onstove.com/ko/games/1609/">
+                                        <div class="morecard">
+                                            <div class="cardimg">
+                                                <img src="./INDIEIMG/리리셰리리셰 원본.png">
+                                            </div>
+                                            <div class="cardinfo">
+                                                <div class="cardinfo_txt">
+                                                    <p class="cardinfo_txt">섬광천사 리토나 리리셰</p>
+                                                    <div class="cardinfo_cat">
+                                                        <span class="cardinfo_cat">비주얼 노벨</span>
+                                                        <span class="cardinfo_cat">추천 5</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="underline"></div>
+                                            <div class="cardprice">
+                                                <p>₩ 12,500</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="moregame">
+                                    <a href="https://indie.onstove.com/ko/games/1611/">
+                                        <div class="morecard">
+                                            <div class="cardimg">
+                                                <img src="./INDIEIMG/기적의 분식집 원본.jpg">
+                                            </div>
+                                            <div class="cardinfo">
+                                                <div class="cardinfo_txt">
+                                                    <p class="cardinfo_txt">기적의 분식집</p>
+                                                    <div class="cardinfo_cat">
+                                                        <span class="cardinfo_cat">비주얼 노벨</span>
+                                                        <span class="cardinfo_cat">추천 26</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="underline"></div>
+                                            <div class="cardprice">
+                                                <p>₩ 10,500</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box_body_unmore"  style="width: 85%;">
+                            <button class="unmbt">
+                                <span class="unmore_txt">전체보기</span>
+                            </button>
+                            <p class="outside" style="margin-top: 60px; padding-bottom: 30px;">다른 게임 추천</p>
+                        </div>
+                        <div class="moregame_box_body">
+                            <div class="moregame_box_wrap">
+                                <div class="moregame">
+                                    <a href="https://indie.onstove.com/ko/games/1618/">
+                                        <div class="morecard">
+                                            <div class="cardimg">
+                                                <img src="./INDIEIMG/근육녀 리사 육성일기 원본.png">
+                                            </div>
+                                            <div class="cardinfo">
+                                                <div class="cardinfo_txt">
+                                                    <p class="cardinfo_txt">근육녀 리사 육성일기</p>
+                                                    <div class="cardinfo_cat">
+                                                        <span class="cardinfo_cat">비주얼 노벨</span>
+                                                        <span class="cardinfo_cat">추천 2</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="underline"></div>
+                                            <div class="cardprice">
+                                                <p>₩ 6,000</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="moregame">
+                                    <a href="https://indie.onstove.com/ko/games/1614/">
+                                        <div class="morecard">
+                                            <div class="cardimg">
+                                                <img src="./INDIEIMG/타워이스케이프 원본.jpg">
+                                            </div>
+                                            <div class="cardinfo">
+                                                <div class="cardinfo_txt">
+                                                    <p class="cardinfo_txt">타워 이스케이프</p>
+                                                    <div class="cardinfo_cat">
+                                                        <span class="cardinfo_cat">전략</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="underline"></div>
+                                            <div class="cardprice">
+                                                <p>₩ 8,900</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="moregame">
+                                    <a href="https://indie.onstove.com/ko/games/1805/">
+                                        <div class="morecard">
+                                            <div class="cardimg">
+                                                <img src="./INDIEIMG/테라포머스 원본.jpg">
+                                            </div>
+                                            <div class="cardinfo">
+                                                <div class="cardinfo_txt">
+                                                    <p class="cardinfo_txt">테라포머스</p>
+                                                    <div class="cardinfo_cat">
+                                                        <span class="cardinfo_cat">전략</span>
+                                                        <span class="cardinfo_cat">추천 6</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="underline"></div>
+                                            <div class="cardprice">
+                                                <p>₩ 16,400</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="moregame">
+                                    <a href="https://indie.onstove.com/ko/games/1715/">
+                                        <div class="morecard">
+                                            <div class="cardimg">
+                                                <img src="./INDIEIMG/그녀의세계원본.jpg">
+                                            </div>
+                                            <div class="cardinfo">
+                                                <div class="cardinfo_txt">
+                                                    <p class="cardinfo_txt">플라이 코프</p>
+                                                    <div class="cardinfo_cat">
+                                                        <span class="cardinfo_cat">전략</span>
+                                                        <span class="cardinfo_cat">추천 3</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="underline"></div>
+                                            <div class="cardprice">
+                                                <p>₩ 12,500</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box_body_unmore"  style="width: 85%;">
+                            <button class="unmbt">
+                                <span class="unmore_txt">전체보기</span>
+                            </button>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+
+                    
+
+                    
+
+
+                    <div class="info_main_side_wrap">
+                        <div class="info_main_side_boxwrap sticky">
+                            <section class="info_boxtop">
+                                <div class="boxtop_info">
+                                    <div class="boxtop_flex">
+                                        <div class="boxtop_icon">
+                                            <img src="./INDIEIMG/따봉.png">
+                                        </div>
+                                        <div class="boxtop_status">
+                                            <strong>추천해요</strong>
+                                            <p>100명의 유저가 추천합니다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="info_boxmid">
+                                <div class="boxmid_info">
+                                    <div class="box_gogo">
+
+                                    </div>
+                                    <div class="linkbox_wrap">
+                                        <div class="linkbox_all">
+                                           <ul class="box_all"> 
+                                                <li>
+                                                <a href="https://cafe.naver.com/taleshop/" target="_black" class="item-link">
+                                                    <span>공식카페</span> 
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                                                </li>
+                                                <li>
+                                                <a href="https://twitter.com/talesshop" target="_black" class="item-link">
+                                                    <span>트위터</span> 
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                                                    </li>
+                                                <li>
+                                                <a href="https://www.facebook.com/talesshop.game" target="_black" class="item-link">
+                                                    <span>페이스북</span> 
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                                                </li>
+                                                <li>
+                                                <a href="https://help.onstove.com/web/faq/serviceMain/page?game=2010050001" target="_black" class="item-link">
+                                                    <span>고객센터</span> 
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info_boxfooter">
+                                <div class="item_price2">
+                                    <span class="item_won2">₩ 40,000</span>
+                                </div>
+                                <div class="bt_buy">
+                                    <section class="download_bt" style="width: 280px; height: auto">
+                                        <button class="buy">
+                                            <span class="btntxt">장바구니</span>
+                                        </button>
+                                        <div class="want2">
+                                        <button class="want2">
+                                            <span class="btntxt" style="color: black">찜</span>
+                                        </button>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+            }
+        
+        function topFunction() {
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+    <button onclick="topFunction()" id="myBtn" class="navtop"><ion-icon name="arrow-up-outline"></ion-icon></button>
+    <!--footer-->
+                        <!--footer-->
+<link rel="stylesheet" href="footer.css">
+<div class="footer">
+    <div class="footer-notice-data">
+        <div class="footer-notice">
+            <nav class="footer-nav">
+                <a href="//www.smilegate.com"
+                target="_blank" class="footer-nav-menu">
+                회사소개 </a>
+                <a href="https://clause.onstove.com/stove/terms?category=service"
+                target="_black" class="footer-nav-menu">
+            이용약관</a>
+            <a href="https://clause.onstove.com/stove/terms?category=privacy"
+             target="_blank" class="footer-nav-menu">
+                개인정보처리방침 </a>
+                <a href="https://clause.onstove.com/stove/terms?category=youth"
+                target="_blank" class="footer-nav-menu">
+            청소년보호정책 </a>
+            <a href="https://clause.onstove.com/stove/terms?category=oppolicy" 
+            target="_blank" class="footer-nav-menu">
+        운영정책</a>
+        <a href="https://member.onstove.com/game/block"
+        target="_blank" class="footer-nav-menu">
+        게임시간선택제 </a>
+        <a href="https://help.onstove.com/"
+        target="_blank" class="footer-nav-menu">
+        고객센터 </a>
+
+            </nav>
+            <div class="footer-address">
+                <p class="footer-copy">
+                    <span class="footer-item">㈜스마일게이트홀딩스</span>
+                    <span class="footer-item">대표이사: 성준호</span>
+                    <span class="footer-item">주소:  경기도 성남시 분당구 판교역로 220(삼평동) 쏠리드 스페이스 빌딩 5층</span>
+                </p>
+                <p class="footer-copy">
+                    <span class="footer-item">사업자 등록번호: 132-81-60298</span>
+                    <sapn class="footer-item">통신판매업 신고번호: 제2022-성남분당A-1071호</sapn>
+                    <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=8138502492"
+                    title="사업자정보확인" target="_blank" class="bizinfo footer-link"></a>
+                </p>
+                <p class="footer-copy contact-data">
+                    <span class="footer-item">
+                      대표번호 : 
+                    <a href="tel:+8216700399" class="footer-link">1670-0399</a>
+                </span>
+                <span class="footer-item">
+                    팩스 : 
+                    <a href="tel:+820260208213" class="footer-link">
+                        02-6020-8213</a>
+                </span>
+                <span class="footer-item">
+                    E-mail : 
+                    <a href="mailto:stove@smilegate.com" class="footer-link">
+                        sotve@smilegate.com</a>
+                  </span>
+                  <span class="footer-item">
+                      입점문의 : 
+                      <a href="mailto:stoveindie@smilegate.com" class="footer-link">
+                          stoveindie@smilegate.com</a>
+                  </span>
+                </p>
+            </div>
+            <p class="copy">© Smilegate. All Rights Reserved.</p>
+            <p class="footer-logo">
+                <a href="https://www.onstove.com" target="_blank" class="logo-sgh">
+                    <img alt="Smilegate" src="./스마일게이트푸터.png"
+                    class="ci-logo">
+                </a>
+                </p>
+              </div>
+                </div>
+                </div>
+                </div>
+            </div>
+    </div>
+</div>
+      
+      </div>
+      </div>
+</div>
+</div>
+<!--스타일-->
+<link rel="stylesheet" href="IndieGame_info.css">
+<link rel="stylesheet" href="STOVE_GAME.css">
+
+</html>

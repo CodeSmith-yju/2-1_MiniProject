@@ -1,0 +1,112 @@
+
+.footer {
+    width: 1980px;
+    height: 0px;
+    bottom:0;
+    left:0;
+    position : relative;
+    transform : translateY(-100%);
+    z-index: 100;
+}
+.footer-notice-data{
+    padding-left: 200px;
+    padding-bottom: 30px;
+    margin-right: 0px;
+    background-color: rgb(36, 35, 35);
+}
+.ci-logo{
+    width: 155px;
+    height: 45px;
+}
+
+.footer-notice .footer-notice-title {
+    float: left;
+    margin-right: 20px;
+    color: white;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 34px;
+    background-color: rgb(36, 35, 35);
+}
+
+.footer-notice .footer-notice-data {
+   overflow: hidden;
+   vertical-align: middle;
+}
+.footer-notice .footer-notice-link {
+
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 70px;
+    display: inline-block;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: nowrap;
+    max-width: 100%;
+    text-decoration: none;
+    
+}
+.footer-nav{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.6rem;
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
+    border-bottom: 1px solid rgb(85, 84, 84);
+    width: 1370px;
+}
+
+.footer-nav .footer-nav-menu{
+    margin: 0 20px 0px 0px;
+    color: rgb(191, 180, 180);
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 2.4rem;
+    text-decoration: none; 
+}
+
+.footer-address .footer-copy {
+    font-size: 0px;
+
+}
+
+.footer-address .footer-copy .footer-item  {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 20px;
+    color: rgb(191, 180, 180);
+    word-break: keep-all;
+    margin-right: 15px;
+}
+.footer-address .footer-copy .contact-data .footer-item {
+    display: inline-block;
+    font-weight: 900;
+    
+}
+.footer-address .footer-link {
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 0.1px;
+    color:rgb(105, 99, 99);
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+.footer .copy{
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 50px;
+    color:rgb(105, 99, 99);
+}
+.footer .footer-logo{
+    display: inline-block;
+    height:10px;
+
+} 

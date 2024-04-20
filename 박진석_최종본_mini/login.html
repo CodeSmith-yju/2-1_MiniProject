@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>STOVE</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/16x16.ico">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="./css/login.css" /> 
+        <link rel="stylesheet" type="text/css" href="./css/loginmain.css" />
+
+        <script src = "./js/login-main.js"></script>
+    </head>
+
+    <body>
+        <section id = "main-layout">
+            <header id = "main-logo">
+                <a href="./main.html" target="_self" class = "header-logo"></a>
+            </header>
+            <section id = "main-body">
+                <!-- 로그인 탭 섹션 -->
+                <section id = "menu-tap">
+                    <ul class = "overflow-hidden d-flex position-relative">
+                        <li class = "tab-item m-0 position-relative ">
+                            <button type="button" class = "btn-active h-100 w-100 d-block pt-0 text-nowrap" id = "btn1">
+                                <span class = "btn-text ">아이디 로그인</span>
+                            </button>
+                        </li>
+                        <li class = "tab-item m-0 position-relative">
+                            <button type="button" class = "btn-non-active h-100 w-100 d-block pt-0 text-nowrap" id = "btn2">
+                                <span class = "btn-text">일회용 로그인</span>
+                            </button>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- 로그인 섹션 -->
+                <section id = "login-body" class = "login-mainbody">
+                <fieldset id = "login-menu">
+                    <section class = "login-input">
+                            <input id = "id" type="text" placeholder="이메일 또는 아이디" class = "id-input-text" />
+                            <button type= "button" class = "input-clear" style="display: none"></button>
+                    </section>
+                    <section class = "login-input" id = "pw-input">
+                            <input id = "password" type="password" placeholder="비밀번호" class = "password-input-text" />
+                            <button type= "button" class = "input-clear" style="display: none;"></button>
+                    </section>
+                    <article class = "fail" style="display: none;">
+                        <i class = "infomark"></i>
+                        <span class = "fail-text">아이디 또는 비밀번호가 일치하지 않습니다. <br/>다시 시도해주세요.</span>
+                    </article>
+                    <section class = "login-checkbox">
+                        <section class = "login-checkbox-wrap">
+                            <input id = "forever" type="checkbox" name = "forever" class = "login-check" value="false">
+                            <label for = "forever" class = "checkbox-text">로그인 유지</label>
+                        </section>
+                    </section>
+                    <section class = "hidden-text">
+                        <span class = "checked-text"> 개인정보 보호를 위해 개인 PC에서만 사용하세요. </span>
+                    </section>
+                    <section class = "login-button-area">
+                        <button class = "login-button" type="button" default = "default">로그인</button>
+                    </section>
+                </fieldset>
+
+                <footer class = "middle-line" default = "default">
+                    <span>또는</span>
+                </footer>
+
+                <!-- SNS 로그인 섹션 -->
+                <ul class = "sns-list">
+                    <li class = "sns-icon-list">
+                        <a id = "sns-icon1" class = "sns-icon" target = "_self" href = "https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?client_id=774138225602-94btlff2439tl4hbtuo24k23vd50r5h4.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fapi.onstove.com%2Fsim%2Foauth%2Fcallback&nonce=9e7bb6c7-408b-4f99-8a7f-308cf835c2e0&display=popup&response_type=code&scope=openid%20email&state=be2a4613dcd4067013f84af45a4837e9&service=lso&o2v=2&flowName=GeneralOAuthFlow"></a>
+                    </li>
+                    <li class = "sns-icon-list">
+                        <a id = "sns-icon2" class = "sns-icon" target = "_self" href = "https://www.facebook.com/login.php?skip_api_login=1&api_key=1770035916542597&kid_directed_site=0&app_id=1770035916542597&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.2%2Fdialog%2Foauth%3Fclient_id%3D1770035916542597%26redirect_uri%3Dhttps%253A%252F%252Fapi.onstove.com%252Fsim%252Foauth%252Fcallback%26display%3Dpopup%26state%3D88c66b4322d5b2df32b94f1370106fc1%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D54ef4958-16a6-464b-a2d2-3c4130519225%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fapi.onstove.com%2Fsim%2Foauth%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D88c66b4322d5b2df32b94f1370106fc1%23_%3D_&display=popup&locale=ko_KR&pl_dbl=0"></a>
+                    </li>
+                    <li class = "sns-icon-list">
+                        <a id = "sns-icon3" class = "sns-icon" target = "_self" href = "https://nid.naver.com/oauth2.0/authorize?client_id=0MfR8FM3q6Z6bA0qi2HW&redirect_uri=https%3A%2F%2Fapi.onstove.com%2Fsim%2Foauth%2Fcallback&state=fa84a54b6f16f06f0eddad0b9b19e25f&response_type=code&svctype=0"></a>
+                    </li>
+                    <li class = "sns-icon-list">
+                        <a id = "sns-icon4" class = "sns-icon" target = "_self" href = "https://twitter.com/i/oauth2/authorize?response_type=code&client_id=a1dxcXl5eUowSU1aSTBram9JVzM6MTpjaQ&redirect_uri=https%3A%2F%2Fapi.onstove.com%2Fsim%2Foauth%2Fcallback&scope=offline.access%20users.read%20tweet.read&state=0f61eb88239dd04170bc3f93d17c38ad&code_challenge=challenge&code_challenge_method=plain"></a>
+                    </li>
+                </ul>
+
+                <!-- 로그인 메뉴 섹션 -->
+                <ul class = "login-menu-list">
+                    <li class = "login-menu">
+                        <a href = "https://accounts.onstove.com/verification?type=RECOVERY_ID&redirect_url=https%3A%2F%2Fwww.onstove.com%2F" class = "login-menu-button">
+                            아이디 찾기
+                        </a>
+                    </li>
+                    <li class = "login-menu">
+                        <a href = "https://member.onstove.com/find/pwd?redirect_url=https%3A%2F%2Fwww.onstove.com" class = "login-menu-button">
+                            비밀번호 찾기
+                        </a>
+                    </li>
+                    <li class = "login-menu">
+                        <a href = "https://accounts.onstove.com/signup?inflow_path=NONE&game_no=0&redirect_url=https%3A%2F%2Fwww.onstove.com%2F" class = "login-menu-button">
+                            회원가입
+                        </a>
+                    </li>
+                </ul>
+                </section>
+
+                <!-- 일회용 로그인 섹션 -->
+                <section class = "dispo-login-body login-mainbody">
+                    <section class = "dispo-login-guide">
+                        <span class = "orange-text">STOVE 앱 > 더보기 > 일회용 로그인</span>
+                        <span>에 보이는</span>
+                        <br/>
+                        <span class = "orange-text">8자리</span>
+                        <span>번호를 입력해주세요</span>
+                    </section>
+                    <fieldset>
+                        <article class = "login-input" id = "dispo-input-area">
+                            <input id = "id-num" type ="password" placeholder="일회용 번호" class = "id-password"  maxlength = "8" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                            <button type= "button" class = "input-clear" style="display: none;"></button>
+                        </article>
+                        <article class = "fail" id = "onepoint-fail" style="display: none;">
+                            <i class = "infomark"></i>
+                            <span class = "fail-text"></span>
+                        </article>
+                        <section class = "login-button-area">
+                            <button class = "login-button" type="button" default = "default">로그인</button>
+                        </section>
+                    </fieldset>
+                    <ul id = "dispo-menu-list">
+                        <li class = "dispo-menu">
+                            <a href = "https://www.onstove.com/stoveApp" class = "menu-link">STOVE APP 설치</a>
+                        </li>
+                        <li class = "dispo-menu">
+                            <a href = "https://help.onstove.com/web/faq/faqDetail/page?search_key=&parent_classification_no=2017080102&service_no=2017080100&category=2017080102&section=1902080001&live_yn=Y&current_page=1&list_size=10&pathname=%2Fweb%2Ffaq%2FfaqList%2Fpage&seq_no=1811280033&faq_dtl_no=1811280045" class = "menu-link">일회용 로그인 안내</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- 언어 선택 드롭다운 메뉴 -->
+                <section class = "lang-list-button">
+                    <section class = "lang-button">
+                        <section class = "lang-button-non-active">
+                            <button class = "dropdown-button">
+                                <span class = "">한국어</span>
+                                <i id = "pot"></i>
+                            </button>
+                        </section>
+                            <section class = "lang-sel-menu">
+                                <ul class = "sel-menu-list">
+                                    <li class = "sel-menu-item">
+                                        <button class = "lang-sel-btn btn-select">한국어</button>
+                                    </li>
+                                    <li class = "sel-menu-item">
+                                        <button class = "lang-sel-btn">Deutsch</button>
+                                    </li>
+                                    <li class = "sel-menu-item">
+                                        <button class = "lang-sel-btn">English (US)</button>
+                                    </li>
+                                    <li class = "sel-menu-item">
+                                        <button class = "lang-sel-btn">Español (LA)</button>
+                                    </li>
+                                    <li class = "sel-menu-item">
+                                        <button class = "lang-sel-btn">Français</button>
+                                    </li>
+                                    <li class = "sel-menu-item">
+                                        <button class = "lang-sel-btn">Português (BR)</button>
+                                    </li>
+                                    <li class = "sel-menu-item">
+                                        <button class = "lang-sel-btn">中文 (繁體)</button>
+                                    </li>
+                                    <li class = "sel-menu-item"> 
+                                        <button class = "lang-sel-btn">日本語</button>
+                                    </li>
+                                    <li class = "sel-menu-item">
+                                        <button class = "lang-sel-btn">ภาษาไทย</button>
+                                    </li>
+                                    <li class = "sel-menu-item">
+                                        <button class = "lang-sel-btn">Italiano</button>
+                                    </li>
+                                </ul>
+                            </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </body>
+</html>

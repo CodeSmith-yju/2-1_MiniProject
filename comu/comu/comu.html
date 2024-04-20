@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>STOVE 인디 커뮤니티</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    </style>
+</head>
+
+<style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0px;
+    }
+</style>
+<script src="./1.js"></script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="body.css">
+
+    <!--우선 오른쪽 사이드바 박스(틀)을 다 완성하고 왼쪽의 메인 컨텐츠 화면 박스(틀)을 제작하기-->
+
+    <head style="font-family: 'Spoqa Han Sans Neo', 'sans-serif';">
+        <title>추천게임 | 게임의 모든 취향, STOVE 인디</title>
+        <link href="./스토브아이콘.ico" rel="shortcut icon" type="image/x-icon">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="./INDIE_gameinfo.js"></script>
+        <script src="./INDIE_GAME.js"></script>
+        <link rel="stylesheet" href="IndieGame_info.css">
+        <link rel="stylesheet" href="STOVE_GAME.css">
+    </head>
+
+
+
+    <body>
+        <div id="indie_infomain_layout">
+            <div class="indie_infomain_layout_wrap">
+                <!--헤더네비게이션-->
+                <div class="stove_nav">
+                    <div class="nav_wrap">
+                        <div class="stove_title">
+                            <a href="/박진석_최종본_mini/main.html" style="margin-right: 10px;">
+                                <img src="./EVENTIMG/stovetitle.png">
+                            </a>
+                            <a href="/NOW/STOVE_GAME.html">
+                                <img src="./EVENTIMG/indietitle.png">
+                            </a>
+                        </div>
+                        <div class="menu_wrap">
+                            <div class="list">
+                                <a href="https://indie.onstove.com/ko/store/recommend">게임</a>
+                                <a href="https://indie.onstove.com/ko/event">이벤트</a>
+                                <a style="color: #fc6020;;" href="https://page.onstove.com/indie/global">커뮤니티</a>
+                                <a href="https://accounts.onstove.com/auth/login?redirect_url=https%3A%2F%2Fmyindie.onstove.com">마이인디</a>
+                                <a href="https://page.onstove.com/indieboostlab/global">
+                                    <img style="width: 138px; height: 24px; margin-top: 8px;" src="./INDIEIMG/슬기로운데모생활.png">
+                                </a>
+                                <a href="https://page.onstove.com/seavtuber/global">
+                                    <img style="width: 108px; height: 20px; margin-top: 6px;" src="./INDIEIMG/seastory.png">
+                                    <ion-icon name="open-outline" role="img" class="md hydrated"></ion-icon>
+                                </a>
+                            </div>
+                            <div class="menu_input">
+                                <div class="search_area">
+                                    <div class="inputbox_wrap">
+                                        <div class="inputbox">
+                                            <div class="input_wrap">
+                                                <input class="inputsp" maxlength="20" type="text" placeholder="게임 검색하기" style="color: aliceblue;">
+                                                <button class="input_btn">
+                                                    <ion-icon name="search-outline" role="img" class="md hydrated"></ion-icon>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="studio">
+                                        <a href="https://studio.onstove.com/ko">스튜디오</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button_list">
+                                <div class="button_list">
+                                    <button class="btn-1" onclick="toggleBox('box-1', this)">
+                                        <img src="./INDIEIMG/글로벌.png" alt="Button 1">
+                                    </button>
+                                    <button class="btn-2" onclick="toggleBox('box-2', this)">
+                                        <img src="./INDIEIMG/메뉴.png" alt="Button 2">
+                                    </button>
+                                </div>
+
+                                <div id="box-1" class="box">
+                                    <div class="menu_list"><a href="#">한국어</a></div>
+                                    <div class="menu_list"><a href="#">Deutsch</a></div>
+                                    <div class="menu_list"><a href="#">English (US)</a></div>
+                                    <div class="menu_list"><a href="#">Español (LA)</a></div>
+                                    <div class="menu_list"><a href="#">Français</a></div>
+                                    <div class="menu_list"><a href="#">Português (BR)</a></div>
+                                    <div class="menu_list"><a href="#">中文 (繁體)</a></div>
+                                    <div class="menu_list"><a href="#">日本語</a></div>
+                                    <div class="menu_list"><a href="#">ภาษาไทย</a></div>
+                                    <div class="menu_list"><a href="#">Italiano</a></div>
+                                </div>
+
+                                <div id="box-2" class="box">
+                                    <div class="gnb-dropdown-content" id="pc-total-menu-content">
+                                        <div class="gnb-game-grouppc-menu">
+                                            <div class="gnb-game-group-wrap">
+                                                <div class="gnb-game-group-item">
+
+                                                    <strong class="gnb-game-group-title">PC게임</strong>
+                                                    <ul class="gnb-game-list">
+
+                                                        <li class="gnb-game-list-item">
+                                                            <a href="https://blueprotocol.game.onstove.com/" class="gnb-game-list-link" data-st-log="menu_game.1066.home" target="_blank">
+                                                                <div class="gnb-game-list-link-wrap">
+                                                                    <strong class="gnb-game-list-text">블루프로토콜</strong>
+                                                                    <span class="gnb-stove-badge-wrap"><span class="gnb-stove-badge orange">NEW</span></span>
+                                                                </div>
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li class="gnb-game-list-item">
+                                                            <a href="https://getamped.game.onstove.com" class="gnb-game-list-link" data-st-log="menu_game.2515.home" target="_self">
+                                                                <div class="gnb-game-list-link-wrap">
+                                                                    <strong class="gnb-game-list-text">겟앰프드</strong>
+
+                                                                </div>
+                                                            </a>
+
+                                                            <a class="gnb-game-list-link" href="https://page.onstove.com/getamped/kr" target="_self" data-st-log="menu_game.2515.comm">
+                                                                <span class="gnb-icon ic-navigation-community-line" id="gnb-cm-icon-2515"></span>
+                                                                <span><img src="./GAME_mainIMG/ic-navigation-community-line-enabled.svg"></span>
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li class="gnb-game-list-item">
+                                                            <a href="https://lostark.game.onstove.com" class="gnb-game-list-link" data-st-log="menu_game.45.home" target="_self">
+                                                                <div class="gnb-game-list-link-wrap">
+                                                                    <strong class="gnb-game-list-text">LOST ARK</strong>
+                                                                    <span class="gnb-stove-badge-wrap"><span class="gnb-stove-badge purple">UPDATE</span></span>
+                                                                </div>
+                                                            </a>
+
+                                                            <a class="gnb-game-list-link" href="https://page.onstove.com/lostark/kr" target="_self" data-st-log="menu_game.45.comm">
+                                                                <span class="gnb-icon ic-navigation-community-line" id="gnb-cm-icon-45"></span>
+                                                                <span><img src="./GAME_mainIMG/ic-navigation-community-line-enabled.svg"></span>
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li class="gnb-game-list-item">
+                                                            <a href="https://tr.game.onstove.com" class="gnb-game-list-link" data-st-log="menu_game.2.home" target="_self">
+                                                                <div class="gnb-game-list-link-wrap">
+                                                                    <strong class="gnb-game-list-text">테일즈런너</strong>
+                                                                    <span class="gnb-stove-badge-wrap"><span class="gnb-stove-badge purple">UPDATE</span></span>
+                                                                </div>
+                                                            </a>
+
+                                                            <a class="gnb-game-list-link" href="https://page.onstove.com/talesrunner/kr" target="_self" data-st-log="menu_game.2.comm">
+                                                                <span class="gnb-icon ic-navigation-community-line" id="gnb-cm-icon-2"></span>
+                                                                <span><img src="./GAME_mainIMG/ic-navigation-community-line-enabled.svg"></span>
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li class="gnb-game-list-item">
+                                                            <a href="https://c-aoa.game.onstove.com/" class="gnb-game-list-link" data-st-log="menu_game.1962.home" target="_self">
+                                                                <div class="gnb-game-list-link-wrap">
+                                                                    <strong class="gnb-game-list-text">센추리: 에이지 오브 애쉬즈</strong>
+
+                                                                </div>
+                                                            </a>
+
+                                                            <a class="gnb-game-list-link" href="https://page.onstove.com/c-aoa/kr" target="_self" data-st-log="menu_game.1962.comm">
+                                                                <span class="gnb-icon ic-navigation-community-line" id="gnb-cm-icon-1962"></span>
+                                                                <span><img src="./GAME_mainIMG/ic-navigation-community-line-enabled.svg"></span>
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li class="gnb-game-list-item">
+                                                            <a href="https://page.onstove.com/kards/kr" class="gnb-game-list-link" data-st-log="menu_game.1961.home" target="_self">
+                                                                <div class="gnb-game-list-link-wrap">
+                                                                    <strong class="gnb-game-list-text">KARDS</strong>
+
+                                                                </div>
+                                                            </a>
+
+                                                            <a class="gnb-game-list-link" href="https://page.onstove.com/kards/kr/list/11728?page=1&amp;direction=LATEST" target="_self" data-st-log="menu_game.1961.comm">
+                                                                <span class="gnb-icon ic-navigation-community-line" id="gnb-cm-icon-1961"></span>
+                                                                <span><img src="./GAME_mainIMG/ic-navigation-community-line-enabled.svg"></span>
+                                                            </a>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                                <div class="gnb-game-group-item">
+
+                                                    <strong class="gnb-game-group-title">모바일게임</strong>
+                                                    <ul class="gnb-game-list">
+
+                                                        <li class="gnb-game-list-item">
+                                                            <a href="https://outerplane.game.onstove.com/preregist" class="gnb-game-list-link" data-st-log="menu_game.2269.home" target="_blank">
+                                                                <div class="gnb-game-list-link-wrap">
+                                                                    <strong class="gnb-game-list-text">아우터플레인</strong>
+                                                                    <span class="gnb-stove-badge-wrap"><span class="gnb-stove-badge orange">NEW</span></span>
+                                                                </div>
+                                                            </a>
+
+                                                            <a class="gnb-game-list-link" href="https://page.onstove.com/outerplane/kr" target="_self" data-st-log="menu_game.2269.comm">
+                                                                <span class="gnb-icon ic-navigation-community-line" id="gnb-cm-icon-2269"></span>
+                                                                <span><img src="./GAME_mainIMG/ic-navigation-community-line-enabled.svg"></span>
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li class="gnb-game-list-item">
+                                                            <a href="https://dominion.game.onstove.com" class="gnb-game-list-link" data-st-log="menu_game.3478.home" target="_blank">
+                                                                <div class="gnb-game-list-link-wrap">
+                                                                    <strong class="gnb-game-list-text">전국제패M</strong>
+                                                                    <span class="gnb-stove-badge-wrap"><span class="gnb-stove-badge orange">NEW</span></span>
+                                                                </div>
+                                                            </a>
+
+                                                            <a class="gnb-game-list-link" href="https://page.onstove.com/dominion/kr" target="_self" data-st-log="menu_game.3478.comm">
+                                                                <span class="gnb-icon ic-navigation-community-line" id="gnb-cm-icon-3478"></span>
+                                                                <span><img src="./GAME_mainIMG/ic-navigation-community-line-enabled.svg"></span>
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li class="gnb-game-list-item">
+                                                            <a href="https://page.onstove.com/epicseven/kr" class="gnb-game-list-link" data-st-log="menu_game.141.home" target="_self">
+                                                                <div class="gnb-game-list-link-wrap">
+                                                                    <strong class="gnb-game-list-text">에픽세븐</strong>
+                                                                    <span class="gnb-stove-badge-wrap"><span class="gnb-stove-badge purple">UPDATE</span></span>
+                                                                </div>
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li class="gnb-game-list-item">
+                                                            <a href="https://page.onstove.com/magicshop/kr" class="gnb-game-list-link" data-st-log="menu_game.209.home" target="_self">
+                                                                <div class="gnb-game-list-link-wrap">
+                                                                    <strong class="gnb-game-list-text">마술양품점</strong>
+                                                                    <span class="gnb-stove-badge-wrap"><span class="gnb-stove-badge purple">UPDATE</span></span>
+                                                                </div>
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li class="gnb-game-list-item">
+                                                            <a href="https://page.onstove.com/supertank/global" class="gnb-game-list-link" data-st-log="menu_game.26.home" target="_self">
+                                                                <div class="gnb-game-list-link-wrap">
+                                                                    <strong class="gnb-game-list-text">슈퍼탱크대작전</strong>
+
+                                                                </div>
+                                                            </a>
+
+                                                        </li>
+
+                                                        <li class="gnb-game-list-item">
+                                                            <a href="https://page.onstove.com/qurareforever/kr" class="gnb-game-list-link" data-st-log="menu_game.5.home" target="_self">
+                                                                <div class="gnb-game-list-link-wrap">
+                                                                    <strong class="gnb-game-list-text">큐라레를 추억하는 사서들</strong>
+
+                                                                </div>
+                                                            </a>
+
+                                                        </li>
+
+                                                    </ul>
+
+                                                </div>
+                                                <div class="gnb-game-group-item">
+
+                                                </div>
+                                            </div>
+
+                                            <!-- 게임 리스트 들어 가는 자리 -->
+                                            <div class="gnb-game-group-wrap">
+                                                <div class="gnb-game-group-item">
+                                                    <div class="gnb-game-group-item-row">
+                                                        <strong class="gnb-game-group-title">서비스</strong>
+                                                        <ul class="gnb-game-list">
+
+                                                            <li class="gnb-game-list-item">
+                                                                <a class="gnb-game-list-link" href="https://indie.onstove.com/ko" data-st-log="menu_indie">
+                                                                    <div class="gnb-game-list-link-wrap">
+                                                                        <strong class="gnb-game-list-text">인디게임</strong>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+
+                                                            <li class="gnb-game-list-item">
+                                                                <a class="gnb-game-list-link" href="https://toonspoon.service.onstove.com" data-st-log="menu_toonspoon">
+                                                                    <div class="gnb-game-list-link-wrap">
+                                                                        <strong class="gnb-game-list-text">툰스푼</strong>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                    <div class="gnb-game-group-item-row">
+                                                        <strong class="gnb-game-group-title">STOVE</strong>
+                                                        <ul class="gnb-game-list">
+
+                                                            <li class="gnb-game-list-item">
+                                                                <a class="gnb-game-list-link" href="https://www.onstove.com" data-st-log="menu_home">
+                                                                    <div class="gnb-game-list-link-wrap">
+                                                                        <strong class="gnb-game-list-text">홈</strong>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="gnb-game-list-item">
+                                                                <a class="gnb-game-list-link" href="https://page.onstove.com/quarter" data-st-log="menu_comm">
+                                                                    <div class="gnb-game-list-link-wrap">
+                                                                        <strong class="gnb-game-list-text">공식 커뮤니티</strong>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+
+                                                            <li class="gnb-game-list-item">
+                                                                <a class="gnb-game-list-link" href="https://www.onstove.com/download" data-st-log="menu_download">
+                                                                    <div class="gnb-game-list-link-wrap">
+                                                                        <strong class="gnb-game-list-text">클라이언트 설치</strong>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                                <a href="https://accounts.onstove.com/login?redirect_
+                                url=https%3A%2F%2Findie.onstove.com%2Fko%2Fgames%2F1689%2Fcommunit
+                                y%2F122752%2Flist%3Fpage%3D1%26direction%3DLATEST" style="margin-right: -13px;">로그인</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bodyhover">
+                    <!--바디 배경색-->
+                    <div class="back">
+                        <!--바디 콘텐츠 배경-->
+                        <div class="container">
+                            <!--Back 위에 띄워질 왼쪽 메인 콘텐츠-->
+                            <aside id="right">
+                                <!--오른쪽 사이드바-->
+                                <div class="right_body">
+                                    <!--사이드바  배경-->
+                                    <div class="back_account">
+                                        <!--사이드바 로그인 배경-->
+                                        <div class="account_content">
+                                            <!--사이드바 로그인 콘텐츠-->
+                                            <img class="img" src="로그인 이미지.png">
+                                            <div class="text">
+                                                <br>
+                                                공식 커뮤니티에 오신 것을<br>환영합니다.
+                                            </div>
+                                        </div>
+                                        <div class="account">
+                                            <a href="https://accounts.onstove.com/login?redirect_url=https%3A%2F%2Fpage.onstove.com%2Findie%2Fglobal" target="_self">
+                                                <img src="로그인 이미지.JPG">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="back_search">
+                                        <!--사이드바 서치 배경-->
+                                        <div class="back_txt">
+                                            <!--텍스트 바 배경-->
+                                            <input type="search" placeholder="검색어를 입력하세요." maxlength="20" autocomplete="off" class="input">
+                                            <div class="search_img">
+                                                <a href="https://page.onstove.com/indie/global/search/ALL/?searchType=CONTENTS&page=1&direction=LATEST" target="_self">
+                                                    <img src="서치 버튼.png">
+                                                </a>
+                                            </div>
+                                            <!--사이드바 서치-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="back_menu">
+                                    <!--사이드바 메뉴 배경-->
+                                    
+                                        <div class="menu_home">
+                                        
+                                        <ul class="menu1">
+                                          <li>
+                                            <a href=''>
+                                              <div class="main_title">
+                                              <img src="홈 버튼.png"> 홈
+                                              </div>
+                                            </a>
+                                          <li>
+                                            <a href="https://page.onstove.com/indie/global/list?page=1&direction=LATEST"> <div class="main_title">
+                                              <img src="전체 글.png"> 전체글
+                                              </div></a>
+                                          <li>
+                                            <a href="#"> <div class="main_title">
+                                              <img src="리스트.png"> 스토브인디 소식
+                                              </div></a>
+                                            <ul class="submenu">
+                                              <li><a href="https://page.onstove.com/indie/global/list/10290?page=1&direction=LATEST">
+                                                <div class="click">
+                                                이벤트와 소식
+                                                </div>
+                                            </a></li>
+                                              <li><a href="https://page.onstove.com/indie/global/list/123117?page=1&direction=LATEST">
+                                                <div class="click">
+                                                    자주 묻는 질문
+                                                    </div></a></li>
+                                              <li><a href="https://forcreators.stoveindie.com/">
+                                                <div class="click">
+                                                    창작 지원 프로그램
+                                                    </div></a></li>
+                                            </ul>
+                                          </li>
+                                          <li>
+                                            <a href="#"> <div class="main_title">
+                                              <img src="리스트.png"> 인디 커뮤니티
+                                              </div></a>
+                                            <ul class="submenu">
+                                              <li><a href="https://page.onstove.com/indie/global/list/10001?page=1&direction=LATEST">
+                                                <div class="click">
+                                                    게임 리뷰/후기
+                                                    </div>
+                                              </a></li>
+                                              <li><a href="https://page.onstove.com/indie/global/list/10005?page=1&direction=LATEST">
+                                                <div class="click">
+                                                    자유 주제
+                                                    </div>
+                                              </a></li>
+                                              <li><a href="https://page.onstove.com/indie/global/list/11635?page=1&direction=LATEST">
+                                                <div class="click">
+                                                    한글화 이야기
+                                                    </div>
+                                              </a></li>
+                                            </ul>
+                                          </li>
+                                          <li>
+                                            <a href="#"> <div class="main_title">
+                                              <img src="리스트.png"> 인디 어워즈&버닝비버
+                                              </div></a>
+                                            <ul class="submenu">
+                                              <li><a href="https://page.onstove.com/indie/global/list/121088?page=1&direction=LATEST">
+                                                <div class="click">
+                                                    행사 소식
+                                                    </div>
+                                              </a></li>
+                                              <li><a href="https://indieawards.onstove.com/">
+                                                <div class="click">
+                                                    2022인디 어워즈
+                                                    </div>
+                                              </a></li>
+                                            </ul>
+                                          </li>
+                                        </ul>
+                                        
+                                    </div>
+
+
+                                </div>
+                                <div class="back_game">
+                                    <div class="game_comu">
+                                        <a href="https://page.onstove.com/indie/global/game/community" style="text-decoration:none">
+                                            <img src="게임 버튼.png"> 게임★커뮤니티
+                                        </a>
+                                    </div>
+                                    <div class="game_txt">
+                                        내 게임 커뮤니티
+                                    </div>
+                                    <!--게임 커뮤 텍스트-->
+                                    <div class="game_img">
+                                        <img src="게임 커뮤니티 이미지.png">
+                                    </div>
+                                    <div class="img_under_txt">
+                                        게임을 하고! 수많은 유저들과 소통을 해보세요.
+                                    </div>
+                                    <div class="under_game_img">
+                                        <img src="게임 하러 가기.png">
+                                    </div>
+                                </div>
+                                <div class="back_best_comu">
+                                    <div class="best_comu_txt">
+                                        <img src="인기 커뮤니티.png"> 인기 커뮤니티 TOP 5
+                                    </div>
+                                    <div id="play">
+                                        <div class="love_in_login">
+                                            <a href="https://page.onstove.com/indie/global/list/120555?page=1&direction=LATEST">
+                                             <img src="게임1.png"> 
+                                             </a>
+                                        </div>
+                                        
+                                        <div class="Tale_of">
+                                            <a href="https://page.onstove.com/indie/global/list/11979?page=1&direction=LATEST">
+                                                <img src="게임2.png">
+                                                </a>
+                                            </div>
+
+                                            
+                                        
+                                        <div class="troble_suter">
+                                            <a href="https://page.onstove.com/indie/global/list/122869?page=1&direction=LATEST">
+                                            <img src="게임3.png"> 
+                                            </a>
+                                        </div>
+                                        
+                                        
+                                        <div class="random_chat">
+                                            <a href="https://page.onstove.com/indie/global/list/10247?page=1&direction=LATEST">
+                                            <img src="게임4.png"> 
+                                            </a>
+                                        </div>
+
+                                        <div class="black_academy">
+                                            <a href="https://page.onstove.com/indie/global/list/123231?page=1&direction=LATEST">
+                                            <img src="게임5.png"> 
+                                            </a>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div class="line">
+                                    </div>
+                                    <div class="comu_activity">
+                                        <img src="인기 커뮤니티.png"> 커뮤니티 활동 TOP 5
+                                    </div>
+                                    <div id="play">
+                                        
+                                        <div class="comu1">
+                                            <a href="https://myindie.onstove.com/210055819/list?type=CARD&direction=latest&filter=%2a">
+                                            <img src="유저1.png">　
+                                            </a>
+                                        </div>
+                                        
+                                        
+                                        <div class="comu2">
+                                            <a href="https://myindie.onstove.com/10352176/list?type=CARD&direction=latest&filter=%2a">
+                                            <img src="유저2.png">　
+                                            </a>
+                                        </div>
+                                        
+                                        
+                                        <div class="comu3">
+                                            <a href="https://myindie.onstove.com/79486008/list?type=CARD&direction=latest&filter=%2a">
+                                            <img src="유저3.png">　
+                                            </a>
+                                        </div>
+                                        </a>
+                                        
+                                        <div class="comu1">
+                                            <a href="https://myindie.onstove.com/191153542/list?type=CARD&direction=latest&filter=%2a">
+                                            <img src="유저4.png">　
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="comu1">
+                                            <a href="https://myindie.onstove.com/84378560/list?type=CARD&direction=latest&filter=%2a">
+                                            <img src="유저5.png">　
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+
+
+                                </div>
+                                <div class="back_time_search">
+                                    <div class="time_search">
+                                        <img src="실시간검색.png"> 오늘의 키워드
+                                    </div>
+                                    <ul class="tag_list">
+                                        <a href="https://page.onstove.com/indie/global/search/ALL/%EB%B8%94%EB%9E%99%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8?searchType=TAG&page=1&direction=LATEST">
+                                        <li class="tag_item"># 블랙 아카데미</li>
+                                        </a>
+                                        <a href="https://page.onstove.com/indie/global/search/ALL/%ED%99%88%EC%8A%A4%EC%9C%84%ED%8A%B8%ED%99%88?searchType=TAG&page=1&direction=LATEST">
+                                        <li class="tag_item2"># 홈 스위트홈</li>
+                                        </a>
+                                        <a href="https://page.onstove.com/indie/global/search/ALL/%EC%A3%BC%EA%B0%84%EA%B2%8C%EC%9E%84%EC%88%9C%EC%9C%84?searchType=TAG&page=1&direction=LATEST">
+                                        <li class="tag_item3"># 주간게임순위</li>
+                                        </a>
+                                        <a href="https://page.onstove.com/indie/global/search/ALL/%EC%9D%B8%EA%B8%B0%EA%B2%8C%EC%9E%84?searchType=TAG&page=1&direction=LATEST">
+                                        <li class="tag_item4"># 인기게임</li>
+                                        </a>
+                                        <a href="https://page.onstove.com/indie/global/search/ALL/%ED%9D%A5%EB%84%98%EC%B9%98%EB%8A%94%EC%B2%A0%EC%95%BC%EA%B7%BC%EB%AC%B4?searchType=TAG&page=1&direction=LATEST">
+                                        <li class="tag_item5">#흥넘치는철야근무</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <!--사이드바 원본이랑 비슷하게 할려고 띄워둠-->
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                            </aside>
+
+                            <body>
+                                <!-- Swiper -->
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <a href="https://page.onstove.com/indie/global/list/123117?direction=LATEST">
+                                        <div class="swiper-slide">
+                                            <img src="CP커뮤니티_멀티배너형_LMS_FAQ_jpg.jpg">
+                                        </a>
+                                        </div>
+                                        <a href="https://page.onstove.com/indieboostlab/global/view/9433695">
+                                        <div class="swiper-slide">
+                                            <img src="슬데_커뮤니티상단배너_1.jpg">
+                                        </a>
+                                        </div>
+                                        <a href="https://indie.onstove.com/ko/store/search?direction=LATEST&types=DEMO">
+                                        <div class="swiper-slide">
+                                            <img src="스토브인디데모게임배너.jpg">
+                                        </a>
+                                        </div>
+                                        <a href="https://forcreators.stoveindie.com/">
+                                        <div class="swiper-slide">
+                                            <img src="CP커뮤니티멀티배너형_SML_01_event_01.jpg">
+                                        </a>
+                                        </div>
+                                        <a href="https://indie.onstove.com/ko/event/exhibit/288">
+                                        <div class="swiper-slide">
+                                            <img src="슬데배너.jpg">
+                                        </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+
+                                <!-- Swiper JS -->
+                                <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+                            </body>
+                            <div class=back_youtube>
+                                <iframe width="650" height="360" src="https://www.youtube.com/embed/I5_l3RmNKC4" title="YouTube video player" frameborder="0" 
+                                style="border-radius: 7px 0px 0px 7px;"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                                <div class="image-container">
+                                    <a href="https://indie.onstove.com/ko/event/exhibit/339" target="_blank">
+                                        <div class="program">
+                                            <img src='창작 지원 프로그램.jpg' style="border-radius: 0px 7px 0px 0px;">
+                                        </div>
+                                    </a>
+                                    <a href="https://indie.onstove.com/ko/event/exhibit/339" target="_blank">
+                                        <div class="program">
+                                            <img src='이달의 신작 모아보기.jpg'>
+                                        </div>
+                                    </a>
+                                    <a href="https://indie.onstove.com/ko/event/exhibit/157" target="_blank">
+                                        <div class="program">
+                                            <img src='스토브 출시 예정작.jpg'style="border-radius: 0px 0px 7px 0px;">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="real_creator">
+                                <div class="creator_content">👨🏻‍💻공식 크리에이터 컨텐츠👩🏻‍💻</div>
+                                <div class="game_more_news">
+                                    <div class="game_news">
+                                        <a href="https://page.onstove.com/indie/global/view/9514003">
+                                            <img src="마법사.gif" style=" border-radius: 7px 7px 7px 7px;">
+                                            <div class="board_title">
+                                                <span class="board-title-text_1">
+                                                    <br>
+                                                    이봐! 플레이어 악을 재건할 시간이야, 이블 위자드
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <div class="creator_font"></div>
+                                        <span class="user">정어리MK2
+                                        </span>
+                                    </div>
+                                    <div class="game_news">
+                                        <a href="https://page.onstove.com/indie/global/view/9508274">
+                                            <img src="기대작.jpg" style=" border-radius: 7px 7px 7px 7px;">
+                                            <div class="board_title">
+                                                <span class="board-title-text_1">
+                                                    <br>
+                                                    취향 확실한 인디 게임 6월 기대작
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <div class="creator_font"></div>
+
+                                        <span class="user">네오필
+                                        </span>
+                                    </div>
+                                    <div class="game_news" >
+                                        <a href="https://page.onstove.com/indie/global/view/9507950">
+                                            <img src="매직페이퍼.jpg" style=" border-radius: 7px 7px 7px 7px;">
+                                            <div class="board_title">
+                                                <span class="board-title-text_1">
+                                                    <br>
+                                                    높은 편의성과 익숙한 신선함으로 무장한 게임. 매직페이퍼
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <div class="creator_font"></div>
+                                        <span class="user">Ank앙크
+                                        </span>
+                                    </div>
+
+                                    <div class="game_news">
+                                        <a href="https://page.onstove.com/indie/global/view/9507449">
+                                            <img src="지금 우리 학교는.jpg" style=" border-radius: 7px 7px 7px 7px;">
+                                            <div class="board_title">
+                                                <span class="board-title-text_1">
+                                                    <br>
+                                                    그날 그곳에는 삶과 죽음 그리고 아이들이 있었다.
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <div class="creator_font"></div>
+                                        <span class="user">LadyCALLA
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="back_bird">
+                                <div class="top_text" >🔥추천 소식🔥</div>
+                                <a href="https://page.onstove.com/indie/global/view/9511716" target="_self" style="text-decoration:none" class="board-link">
+                                    <div class="bird">
+                                        <img src="네개의 빛.jpg" class="bird_img" style=" border-radius: 7px 7px 7px 7px">
+                                        <div class="text_group" style="padding-top: 20px;">
+                                            <div class="board_title">
+                                                <span class="board-title-text">【 네개의 빛 : 비주얼 노벨 제작기 】#6 PV예요!
+                                                </span>
+                                            </div>
+                                            <p class="board-text">짠!여기에 따로 공유는 안했던 것 같아서 올려보아용!이루카 루트 전용 PV 입니다!ㅎㅎ현재 사전판매도 진행되고 있으니 많은 관심 부탁드립니다!https://indie.onstove.com/ko/event/exhibit/357#네개의빛 #이루카 #이루카루트 #PV #트레일러
+                                            </p>
+                                </a>
+                            </div>
+                            <div class="creator_font"></div>
+                            <br>
+                            <span class="gm"> GM </span>
+                            <span class="user">토리에트_1_SV</span>
+                        </div>
+                        <a href="https://page.onstove.com/indie/global/view/9507711" target="_self" style="text-decoration:none">
+                            <div class="right_bird">
+                                <div class="text_group">
+                                    <h4 class="right_bird_board_title">
+                                        <div class="right_bird_title_text">길 고양이 이야기2가 정식 출시되었습니다!
+                                        </div>
+                                    </h4>
+                                    <p class="right_bird_board_text">안녕하세요 삐요스튜디오입니다! 🐥
+                                        드디어, 길고양이 이야기2가 6월 2일 정식 출시되었습니다! 🎉 🎉 🎉 🎉
+                                        2월 얼리액세스 이후로 벌써 4개월이란 시간이 지났네요...
+                                        출시 일정이 약속드린 기간보다 많이 지체 되었는데도 믿고 기다려주셔서 감사드립니다! 🙇
+                                    </p>
+                                    <div class="short_creator_font"></div>
+                                    <span class="gm"> GM </span>
+                                    <span class="user">삐요 스튜디오</span>
+                                </div>
+
+                                <div class="right_bird_img">
+                                    <img src="고양이.jpg" class="cat_img" style=" border-radius: 7px 7px 7px 7px">
+                        </a>
+                    </div>
+                </div>
+                <a href="https://page.onstove.com/indie/global/view/9502025" target="_self" style="text-decoration:none">
+                    <div class="right_bird">
+                        <div class="text_group">
+                            <h4 class="right_bird_board_title">
+                                <div class="right_bird_title_text">네개의 빛 사전구매 시작!
+                                </div>
+                            </h4>
+                            <p class="right_bird_board_text">안녕하세요. 스토브 인디지기입니다.
+                                지난번 상점 페이지 오픈과 함께 게임별 커뮤니티가 개설된 이후 또 한번 인사드립니다.
+                                오늘! 네개의 빛 사전구매가 OPEN 되었습니다!
+                                5월 30일 13시 ~ 6월 15일 13시까지!
+                                10%할인된 가격으로 사전 구매가 가능합니다!
+                                많은 관심 부탁드립니다 ~! 🤗</p>
+                            <div class="short_creator_font"></div>
+                            <span class="gm"> GM </span>
+                            <span class="user">SOTVE인디</span>
+
+                        </div>
+
+                        <div class="right_bird_img">
+                            <img src="마녀.jpg" class="cat_img" style=" border-radius: 7px 7px 7px 7px">
+                </a>
+            </div>
+        </div>
+        <a href="https://page.onstove.com/indie/global/view/9507711" target="_self" style="text-decoration:none">
+            <div class="right_bird3">
+                <div class="text_group">
+                    <h4 class="right_bird_board_title">
+                        <div class="right_bird_title_text">[개발일지] 2023년 5월 하트 체크인 개발일지
+                        </div>
+                    </h4>
+                    <p class="right_bird_board_text">스토브 인디에서는 처음으로 인사 드리네요.
+                        하트 체크인을 개발 중인 이주 스튜디오의 팀장 정주입니다.
+                        앞으로 매달 말일에 개발 일지를 업로드할 예정이니 많은 관심 부탁드립니다.^^
+                    </p>
+                    <div class="short_creator_font"></div>
+                    <span class="gm"> GM </span>
+                    <span class="user">week2정주</span>
+
+                </div>
+
+                <div class="right_bird_img">
+                    <img src="구도.jpg" class="cat_img" style=" border-radius: 7px 7px 7px 7px">
+        </a>
+        </div>
+        </div>
+        </div>
+
+        <div class="scroll">
+            <div class="scroll_title">
+               황혼의 유령
+            </div>
+            <div class="button_right">
+            <div class="scroll-button left disabled"> 《 </div>
+            <div class="scroll-button right"> 》 </div>
+            </div>
+            <div class="scroll_img">
+
+                <a href="https://page.onstove.com/indie/global/view/9520049">
+                    <div class="image-box">
+                        <img src="유령1.png" class="scroll_main"alt="Image 1">
+                    </div>
+                </a>
+
+                <a href="https://page.onstove.com/indie/global/view/9517369">
+                    <div class="image-box">
+                        <img src="유령2.png" class="scroll_main"alt="Image 2">
+                    </div>
+                </a>
+
+                <a href="https://page.onstove.com/indie/global/view/9519937">
+                    <div class="image-box">
+                        <img src="유령3.png" class="scroll_main"alt="Image 3">
+                    </div>
+                </a>
+
+                <a href="https://page.onstove.com/indie/global/view/9517607">
+                    <div class="image-box">
+                        <img src="유령4.png" class="scroll_main"alt="Image 4">
+                    </div>
+                </a>
+
+                <a href="https://page.onstove.com/indie/global/view/9517362">
+                    <div class="image-box">
+                        <img src="유령5.png"class="scroll_main" alt="Image 5">
+                    </div>
+                </a>
+
+                <a href="https://page.onstove.com/indie/global/view/9516472">
+                    <div class="image-box">
+                        <img src="유령6.png"class="scroll_main" alt="Image 6">
+                    </div>
+                </a>
+
+                <a href="https://page.onstove.com/indie/global/view/9514288">
+                    <div class="image-box">
+                        <img src="유령7.png"class="scroll_main" alt="Image 7">
+                    </div>
+                </a>
+
+                <a href="https://page.onstove.com/indie/global/view/9514049">
+                    <div class="image-box">
+                        <img src="유령8.png" class="scroll_main"alt="Image 8">
+                    </div>
+                </a>
+
+                <a href="https://page.onstove.com/indie/global/view/9513945">
+                    <div class="image-box">
+                        <img src="유령9.png"class="scroll_main" alt="Image 9">
+                    </div>
+                </a>
+
+                <a href="https://page.onstove.com/indie/global/view/9490704">
+                    <div class="image-box">
+                        <img src="유령10.png"class="scroll_main" alt="Image 10">
+                    </div>
+                </a>
+
+                <!-- Add more image boxes as needed -->
+            </div>
+        </div>
+
+        <div class="real_creator">
+            <div class="creator_content">백야기담</div>
+            <div class="game_more_news">
+                <div class="game_news">
+                    <a href="https://page.onstove.com/indie/global/view/9520617">
+                        <img src="백야기담4.png" style=" border-radius: 7px 7px 7px 7px;">
+                        <div class="board_title">
+                            <span class="board-title-text_1">
+                                <br>
+                                백야기담 게임★소개 4편
+                            </span>
+                        </div>
+                    </a>
+                    <div class="creator_font"></div>
+                    <span class="gm"> GM </span>
+                    <span class="user">이그노스드
+                    </span>
+                </div>
+                <div class="game_news">
+                    <a href="https://page.onstove.com/indie/global/view/9506809">
+                        <img src="백야기담3.png" style=" border-radius: 7px 7px 7px 7px;">
+                        <div class="board_title">
+                            <span class="board-title-text_1">
+                                <br>
+                                백야기담 게임★소개 3편
+                            </span>
+                        </div>
+                    </a>
+                    <div class="creator_font"></div>
+                    <span class="gm"> GM </span>
+                    <span class="user">이그노스드
+                    </span>
+                </div>
+                <div class="game_news" >
+                    <a href="https://page.onstove.com/indie/global/view/9493324">
+                        <img src="백야기담2.png" style=" border-radius: 7px 7px 7px 7px;">
+                        <div class="board_title">
+                            <span class="board-title-text_1">
+                                <br>
+                                백야기담 게임★소개 2편
+                            </span>
+                        </div>
+                    </a>
+                    <div class="creator_font"></div>
+                    <span class="gm"> GM </span>
+                    <span class="user">이그노스드
+                    </span>
+                </div>
+
+                <div class="game_news">
+                    <a href="https://page.onstove.com/indie/global/view/9481202">
+                        <img src="백야기담1.png" style=" border-radius: 7px 7px 7px 7px;">
+                        <div class="board_title">
+                            <span class="board-title-text_1">
+                                <br>
+                                백야기담 게임★소개 1편
+                            </span>
+                        </div>
+                    </a>
+                    <div class="creator_font"></div>
+                    <span class="gm"> GM </span>
+                    <span class="user">이그노스드
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="back_hikari">
+            <div class="back_left_hikari">
+            <div class="hikari_title">
+            <div class="top_hikari">블랙 아카데미</div>
+            <a href="https://page.onstove.com/indie/global/list/11916?page=1" target="_self" style="text-decoration:none">
+            <div class="top_left_hikari">전체 보기</div>
+            </a>
+            </div>
+            <a href="https://page.onstove.com/indie/global/view/9520245" target="_self" style="text-decoration:none">
+            <div class="left_hikari">
+                <div class="hikari_font">
+                    [창작자소식] 블랙 아카데미 1.0.167 업데이트
+                </span>
+                <div class="creator_font"></div>
+        <span class="gm"> GM </span>
+            <span class="user">Catdoors</span>
+        </div>
+    </a>
+    </div>
+    <a href="https://page.onstove.com/indie/global/view/9527225" target="_self" style="text-decoration:none">
+        <div class="left_hikari">
+            <div class="hikari_font">
+                [리뷰&공략] CG 전체 개방 기념 후기 겸 건의
+            </span>
+            <div class="creator_font"></div>
+        <span class="user">리즈의리즈시절</span>
+    </div>
+</a>
+</div>
+<a href="https://page.onstove.com/indie/global/view/9525084" target="_self" style="text-decoration:none">
+    <div class="left_hikari">
+        <div class="hikari_font">
+            혹시 일러 개방 조건 좀 알 수 있을까요
+        </span>
+        <div class="creator_font"></div>
+    <span class="user">리즈의리즈시절</span>
+</div>
+</a>
+</div>
+<a href="https://page.onstove.com/indie/global/view/9522365" target="_self" style="text-decoration:none">
+    <div class="left_hikari">
+        <div class="hikari_font">
+            [자유주제] 이거 왜 패드 버튼이 먹히지가 않나요?
+        </span>
+        <div class="creator_font"></div>
+    <span class="user">STOVE795073</span>
+</div>
+</a>
+</div>
+<a href="https://page.onstove.com/indie/global/view/9516285" target="_self" style="text-decoration:none">
+    <div class="left_hikari">
+        <div class="hikari_font">
+            [자유주제] 향후 지속적인 업데이트가 있을까요
+        </span>
+        <div class="creator_font"></div>
+    <span class="user">단풍접고로아하러왔어요</span>
+</div>
+</a>
+</div>
+<a href="https://page.onstove.com/indie/global/view/9520245" target="_self" style="text-decoration:none">
+    <div class="left_hikari">
+        <div class="hikari_font">
+            [자유주제] 내가 운이 없던거였구만
+        </span>
+        <div class="creator_font"></div>
+    <span class="user">리즈의리즈시절</span>
+</div>
+</a>
+</div>
+</div>
+<div class="right_back_hikari">
+<div class="right_hikari_title">
+    <div class="top_hikari">네개의 빛</div>
+    <a href="https://page.onstove.com/indie/global/list/122869" target="_self" style="text-decoration:none">
+    <div class="top_left_hikari">전체 보기</div>
+    </a>
+    <div class="back_hikari_tap" style="margin-bottom: 30px;">
+            <div class="game_news" style="margin-left : 0">
+                <a href="https://page.onstove.com/indie/global/view/9514003">
+                    <img src="이미지없음.png" style=" border-radius: 7px 7px 7px 7px;">
+                    <div class="board_title">
+                        <span class="board-title-text_1">
+                            <br>
+                            [자유주제] 이제 이틀 남은건가...
+                        </span>
+                    </div>
+                </a>
+                <div class="creator_font"></div>
+                <span class="user">Mr개똥이
+                </span>
+            </div>
+                <div class="re_game_news">
+                    <a href="https://page.onstove.com/indie/global/view/9529999">
+                        <img src="이미지없음.png" style=" border-radius: 7px 7px 7px 7px;">
+                        <div class="board_title">
+                            <span class="board-title-text_1">
+                                <br>
+                                [자유주제] 빨리 출시해 네개의 빛
+                            </span>
+                        </div>
+                    </a>
+                    <div class="creator_font"></div>
+                    <span class="user">용사제니
+                    </span>
+                </div>
+                       
+    </div>
+    <div class="game_news" style="margin-left : 0">
+        <a href="https://page.onstove.com/indie/global/view/9527594">
+            <img src="이미지없음.png" style=" border-radius: 7px 7px 7px 7px;">
+            <div class="board_title">
+                <span class="board-title-text_1">
+                    <br>
+                    [자유주제] 와...일러스트 미쳤네요
+                </span>
+            </div>
+        </a>
+        <div class="creator_font"></div>
+        <span class="gm"> GM </span>
+        <span class="user">맛햄군
+        </span>
+    </div>
+        <div class="re_game_news">
+            <a href="https://page.onstove.com/indie/global/view/9527014">
+                <img src="이미지없음.png" style=" border-radius: 7px 7px 7px 7px;">
+                <div class="board_title">
+                    <span class="board-title-text_1">
+                        <br>
+                        [자유주제] 4일 남았네요
+                    </span>
+                </div>
+            </a>
+            <div class="creator_font"></div>
+            <span class="user">STOVE165409873087812
+            </span>
+        </div>
+    </div>
+            </div>
+        </div>
+        <div class="back_bird">
+            <div class="top_text" >🌏한글화 이야기🌏
+            </div>
+            <a href="https://page.onstove.com/indie/global/view/9474670" target="_self" style="text-decoration:none" class="board-link">
+                <div class="bird">
+                    <img src="flower.png" class="bird_img" style=" border-radius: 7px 7px 7px 7px">
+                    <div class="text_group" style="padding-top: 20px;">
+                        <div class="board_title">
+                            <span class="board-title-text">FLOWERS 여름편 번역 후기
+                            </span>
+                        </div>
+                        <p class="board-text">[작업 기간]
+                            시작 2022.11.07
+                            초고 2022.12.11
+                            윤문 및 퇴고 2022.12.22 (총괄 파트) 
+                            총 35일 + 12일
+                              (이미지, 오디오 코멘터리, 디버그 및 기타 작업 기간 제외 순수 번역 기간)
+                            [작중 등장한 소재 일람]
+                            다크 나이트 라이즈 - 영화
+                            리어왕 - 소설
+                            O. J. 심슨 사건
+                            호텔 캘리포니아 - 노래
+                            배틀쉽 - 영화
+                            체호프의 총
+                            오스틴 파워 - 영화
+                            대낮의 사각 - 영화/소설
+                            굿 윌 헌팅 - 영화
+                            맥베스 - 소설</p>
+            </a>
+        </div>
+        <div class="creator_font"></div>
+        <br>
+        <span class="user">unicord</span>
+    </div>
+    <a href="https://page.onstove.com/indie/global/view/9480873" target="_self" style="text-decoration:none">
+        <div class="right_bird">
+            <div class="text_group">
+                <h4 class="right_bird_board_title">
+                    <div class="right_bird_title_text">스토브인디 한글화 현황판 (23.05.18) 
+                    </div>
+                </h4>
+                <p class="right_bird_board_text">안녕하세요 스토브인디 유저 여러분!
+                    스토브인디 한글화 담당자입니다.
+                    여러 한글화 파트너들과 함께, 스토브인디는 계속 게임들을 한글화하고 있습니다 👏👏👏
+                    그 한글화 과정을 알려드리는 한글화 현황판! 매주 목요일에 찾아옵니다.
+                    지금 바로 시작해볼까요?
+                    한글화는 다음의 3가지 과정을 통해 출시됩니다:
+                    /00. 번역 준비
+                    /01. 번역 
+                    /02. 검수 
+                    /03. 출시 준비 
+                    출시 준비 중인 게임은 모든 번역이 완료되어 출시만 기다리고 있어요! 🐱‍🏍
+                    (각 게임들의 이미지나 타이틀을 클릭하시면 게임 소개 페이지로 연결됩니다.)
+                    한 게임이 출시되기까지는 번역, 검수, LQA까지 꽤 많은 시간과 노력이 필요합니다 😢
+                    조금 시간이 걸리더라도 퀄리티 좋은 한글화 게임들을 보여드리기 위한 절차들이니, 조금만 기다려주세요...!!🙇‍♀️
+                    스토브에서 번역한 게임 중 오역, 오탈자, 문맥상 부드럽지 못한 부분을 발견하셨다면 알려주세요!
+                    개발사로 전달해 빠르게 수정할 수 있도록 하겠습니다.
+                </p>
+                <div class="short_creator_font"></div>
+                <span class="gm"> OFFICIAL</span>
+                <span class="user">한글화담당자</span>
+            </div>
+
+            <div class="right_bird_img">
+                <img src="한글화.png" class="cat_img" style=" border-radius: 7px 7px 7px 7px">
+    </a>
+</div>
+</div>
+<a href="https://page.onstove.com/indie/global/view/9425652" target="_self" style="text-decoration:none">
+<div class="right_bird">
+    <div class="text_group">
+        <h4 class="right_bird_board_title">
+            <div class="right_bird_title_text">ATOM RPG Trudograd
+            </div>
+        </h4>
+        <p class="right_bird_board_text">Are you ready to venture to a far away megalopolis of Trudograd and try to uncover its many, many mysteries?
+
+        </p>
+        <div class="short_creator_font"></div>
+        <span class="gm"> GM </span>
+        <span class="user">AtomBoy</span>
+
+    </div>
+
+    <div class="right_bird_img">
+        <img src="아톰.png" class="cat_img" style=" border-radius: 7px 7px 7px 7px">
+</a>
+</div>
+</div>
+<a href="https://page.onstove.com/indie/global/view/9357843" target="_self" style="text-decoration:none">
+<div class="right_bird3">
+<div class="text_group">
+<h4 class="right_bird_board_title">
+    <div class="right_bird_title_text">FLOWERS 봄편 번역 후기
+    </div>
+</h4>
+<p class="right_bird_board_text">안녕하세요. FLOWERS 봄, 가을, 겨울편 번역, 전편 총검수 등을 맡은 게임 번역팀 Myskrpatch의 DDss라고 합니다.
+    Myskrpatch 팀에 FLOWERS 번역 제의가 온 건 대략 작년 2022년 7월 일이었고,
+    이래저래 해서 실제로 시작한 건 2022년 9월 8일,
+    봄편 번역이 완성된 건 2022년 9월 29일,
+    경과 기간 21일 정도.
+    실제 출시일이 2023년 3월 14일이 된 거에는 이런저런 사정이 있긴 한데 노코멘트.
+    번역, 그래픽, 빌드 권한 등은 Myskrpatch 팀에 일임되었기 때문에 별다른 제약 없이 편안하게 작업할 수 있었습니다.
+    영상 관련해서는 저작권이 복잡하게 얽혀 있다고 하여 작업이 불가능했습니다. 유감.
+</p>
+<div class="short_creator_font"></div>
+<span class="user">DDss9294</span>
+
+</div>
+
+<div class="right_bird_img">
+<img src="flower.piano.png" class="cat_img" style=" border-radius: 7px 7px 7px 7px">
+</a>
+</div>
+</div>
+</div>
+
+
+<div class="back_hikari">
+    <div class="back_left_hikari">
+    <div class="hikari_title">
+    <div class="top_hikari">자유 주제</div>
+    <a href="https://page.onstove.com/indie/global/list/11916?page=1" target="_self" style="text-decoration:none">
+    <div class="top_left_hikari">전체 보기</div>
+    </a>
+    </div>
+    <a href="https://page.onstove.com/indie/global/view/9530061" target="_self" style="text-decoration:none">
+    <div class="left_hikari">
+        <div class="hikari_font">
+            토토노가 한글화 정발될줄은 몰랐네요.
+        </span>
+        <div class="creator_font"></div>
+    <span class="user">
+        ideality1011</span>
+</div>
+</a>
+</div>
+<a href="https://page.onstove.com/indie/global/view/9530026" target="_self" style="text-decoration:none">
+<div class="left_hikari">
+    <div class="hikari_font">
+        억새밭 데모 플레이 해봤어요!
+
+    </span>
+    <div class="creator_font"></div>
+<span class="user">용사제니</span>
+</div>
+</a>
+</div>
+<a href="https://page.onstove.com/indie/global/view/9529784" target="_self" style="text-decoration:none">
+<div class="left_hikari">
+<div class="hikari_font">
+    사계
+</span>
+<div class="creator_font"></div>
+<span class="user">아인니이</span>
+</div>
+</a>
+</div>
+<a href="https://page.onstove.com/indie/global/view/9529242" target="_self" style="text-decoration:none">
+<div class="left_hikari">
+<div class="hikari_font">
+    윈도우10 내일 서비스 종료
+
+</span>
+<div class="creator_font"></div>
+<span class="user">레모나오란씨비타오백</span>
+</div>
+</a>
+</div>
+<a href="https://page.onstove.com/indie/global/view/9529229" target="_self" style="text-decoration:none">
+<div class="left_hikari">
+<div class="hikari_font">
+    스타필드 안한글....
+</span>
+<div class="creator_font"></div>
+<span class="user">레모나오란씨비타오백
+</span>
+</div>
+</a>
+</div>
+<a href="https://page.onstove.com/indie/global/view/9529071" target="_self" style="text-decoration:none">
+<div class="left_hikari">
+<div class="hikari_font">
+    커뮤니티 이벤트에
+</span>
+<div class="creator_font"></div>
+<span class="user">STOVE165409873087812</span>
+</div>
+</a>
+</div>
+</div>
+<div class="right_back_hikari">
+<div class="right_hikari_title">
+<div class="top_hikari">이벤트와 소식</div>
+<a href="https://page.onstove.com/indie/global/list/122869" target="_self" style="text-decoration:none">
+<div class="top_left_hikari">전체 보기</div>
+</a>
+<div class="back_hikari_tap" style="margin-bottom: 30px;">
+    <div class="game_news" style="margin-left : 0">
+        <a href="https://page.onstove.com/indie/global/view/9528711">
+            <img src="잡.png" style=" border-radius: 7px 7px 7px 7px;">
+            <div class="board_title">
+                <span class="board-title-text_1">
+                    <br>
+                    [주간 게임 순위] 6월 2주차 스토브 인디 게임 순위
+                </span>
+            </div>
+        </a>
+        <div class="creator_font"></div>
+        <span class="gm"> GM </span>
+        <span class="user">SOTVE인디
+        </span>
+    </div>
+        <div class="re_game_news">
+            <a href="https://page.onstove.com/indie/global/view/9524402">
+                <img src="이미지없음.png" style=" border-radius: 7px 7px 7px 7px;">
+                <div class="board_title">
+                    <span class="board-title-text_1">
+                        <br>
+                        Summer Season 기대작 투표 이벤트
+                    </span>
+                </div>
+            </a>
+            <div class="creator_font"></div>
+            <span class="gm"> GM </span>
+            <span class="user">SOTVE인디
+            </span>
+        </div>
+               
+</div>
+<div class="game_news" style="margin-left : 0">
+<a href="https://page.onstove.com/indie/global/view/9522227">
+    <img src="이미지없음.png" style=" border-radius: 7px 7px 7px 7px;">
+    <div class="board_title">
+        <span class="board-title-text_1">
+            <br>
+            평가&후기, 커뮤니티 활동 보상 ✌배 이벤트 - 시즌✌!
+        </span>
+    </div>
+</a>
+<div class="creator_font"></div>
+<span class="gm"> GM </span>
+<span class="user">SOTVE인디
+</span>
+</div>
+<div class="re_game_news">
+    <a href="https://page.onstove.com/indie/global/view/9517262">
+        <img src="이미지없음.png" style=" border-radius: 7px 7px 7px 7px;">
+        <div class="board_title">
+            <span class="board-title-text_1">
+                <br>
+                6월 1주차 커뮤니티 상시 이벤트 / 평가 후기 이벤트 당첨자 발표
+            </span>
+        </div>
+    </a>
+    <div class="creator_font"></div>
+    <span class="gm"> GM </span>
+    <span class="user">SOTVE인디
+</div>
+</div>
+    </div>
+</div>
+        </div>
+        </div>
+        </div>
+
+
+        </div>
+        </div>
+        <!--공지사항 스타일-->
+        <link rel="stylesheet" href="footer.css">
+        <div class="footer">
+            <div class="footer-notice-data">
+                <div class="footer-notice">
+
+                    <body>
+                        <nav class="footer-nav">
+                            <a href="//www.smilegate.com" target="_blank" class="footer-nav-menu">
+                                회사소개 </a>
+                            <a href="https://clause.onstove.com/stove/terms?category=service" target="_black" class="footer-nav-menu">
+                                이용약관</a>
+                            <a href="https://clause.onstove.com/stove/terms?category=privacy" target="_blank" class="footer-nav-menu">
+                                개인정보처리방침 </a>
+                            <a href="https://clause.onstove.com/stove/terms?category=youth" target="_blank" class="footer-nav-menu">
+                                청소년보호정책 </a>
+                            <a href="https://clause.onstove.com/stove/terms?category=oppolicy" target="_blank" class="footer-nav-menu">
+                                운영정책</a>
+                            <a href="https://member.onstove.com/game/block" target="_blank" class="footer-nav-menu">
+                                게임시간선택제 </a>
+                            <a href="https://help.onstove.com/" target="_blank" class="footer-nav-menu">
+                                고객센터 </a>
+
+                        </nav>
+                        <div class="footer-address">
+                            <p class="footer-copy">
+                                <span class="footer-item">㈜스마일게이트홀딩스</span>
+                                <span class="footer-item">대표이사: 성준호</span>
+                                <span class="footer-item">주소: 경기도 성남시 분당구 판교역로 220(삼평동) 쏠리드 스페이스 빌딩 5층</span>
+                            </p>
+                            <p class="footer-copy">
+                                <span class="footer-item">사업자 등록번호: 132-81-60298</span>
+                                <sapn class="footer-item">통신판매업 신고번호: 제2022-성남분당A-1071호</sapn>
+                                <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=8138502492" title="사업자정보확인" target="_blank" class="bizinfo footer-link"></a>
+                            </p>
+                            <p class="footer-copy contact-data">
+                                <span class="footer-item">
+                                    대표번호 :
+                                    <a href="tel:+8216700399" class="footer-link">1670-0399</a>
+                                </span>
+                                <span class="footer-item">
+                                    팩스 :
+                                    <a href="tel:+820260208213" class="footer-link">
+                                        02-6020-8213</a>
+                                </span>
+                                <span class="footer-item">
+                                    E-mail :
+                                    <a href="mailto:stove@smilegate.com" class="footer-link">
+                                        sotve@smilegate.com</a>
+                                </span>
+                                <span class="footer-item">
+                                    입점문의 :
+                                    <a href="mailto:stoveindie@smilegate.com" class="footer-link">
+                                        stoveindie@smilegate.com</a>
+                                </span>
+
+
+                            </p>
+                        </div>
+                        <p class="copy">© Smilegate. All Rights Reserved.</p>
+                        <p class="footer-logo">
+                            <a href="https://www.onstove.com" target="_blank" class="logo-sgh">
+                                <img alt="Smilegate" src="ci-group@2x.jpg" class="ci-logo">
+                            </a>
+                        </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+    </body>
+
+
+    </div>
+    </div>
+
+    </div>
+    </div>
+
+</html>
+      <!--사이드바 메뉴,키워드, 커뮤니티 수정 해야함-->

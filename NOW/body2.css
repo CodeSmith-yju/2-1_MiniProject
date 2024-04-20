@@ -1,0 +1,168 @@
+.stove-main{
+    background-color: #f6f7fa;
+    width: 1920px;
+    height: 651px;
+}
+
+.stove-main-wrap{
+    margin-top: 67px;
+    width: 1920px;
+    height: 552px;
+}
+
+.stove-layout-wrap{
+    margin-top: 32px;
+    width: 1920px;
+    height: 552px;
+}
+
+.stove-listmain{
+    margin-left: 310px;
+    margin-right: 310px;
+}
+
+.button-tap {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.button-tap-wrap{
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    width: 1300px;
+    height: 48px;
+    margin-bottom: 24px;
+}
+
+.game-listimg{
+    width: 1300px;
+    height: 480px;
+}
+
+.game-listimg-wrap{
+    height: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 2rem);
+}
+
+.gameimg{
+    width: 310px;
+    height: 140px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.gameimg-wrap{
+  background-size: cover;
+  background-position: right;
+  width: 100%;
+  height: 100%;
+}
+
+.button-tap li::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+  li.is-active {
+    width: 60.47px;
+    height: 2px;
+
+}
+
+  button{
+    border: solid #f6f7fa;
+    background-color: #f6f7fa;
+    color: black;
+    width: 120px;
+    text-align: left;
+    height: 48px;
+}
+
+  ul {
+    list-style-type: none;
+  }
+
+  .info-wrap{
+    padding-top: 20px;
+    padding-left: 24px;
+    width: auto;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  /*게임 제목*/
+  .info-title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 2.6rem;
+    font-weight: 500;
+    max-width: 175px;
+    letter-spacing: -.045rem;
+    color: #1f1f1f;
+  }
+
+  /*게임 가격*/
+  .info-price{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    font-size: 1.2px;
+    font-weight: 200;
+    line-height: 2.6rem;
+    font-weight: 500;
+    max-width: 175px;
+    letter-spacing: -.045rem;
+    color: #1f1f1f;
+
+  }
+
+   /*게임 세일강조색*/
+  .saletext{
+    color: #fc6020;
+  }
+
+  .slaenew-wrpa{
+    margin-top: 25px;
+  }
+
+  .sale-box{
+    color: white;
+    height: 20px;
+    margin-right: 0.1rem;
+    padding: 0px 10px 0px 5px;
+    background-color: #ec3b47;
+  }
+
+  .new-box{
+    color: white;
+    height: 20px;
+    margin-right: 0.1rem;
+    padding: 0px 10px 0px 5px;
+    background-color: #fc6020;
+  }
+
+  .update-box{
+    color: white;
+    height: 20px;
+    margin-right: 0.1rem;
+    padding: 0px 10px 0px 5px;
+    background-color: #944cec;
+  }

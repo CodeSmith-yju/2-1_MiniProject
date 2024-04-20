@@ -1,0 +1,540 @@
+#main-layout {
+    margin: auto;
+    max-width: 460px;
+    padding: 56px 20px 54px;
+}
+
+#main-logo {
+    text-align: center !important;
+    padding-bottom: 40px;
+    
+}
+
+.header-logo {
+    background-image: url(../img/bi.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 152px;
+    height: 34px;
+    display: block;
+    background-size:cover;
+    margin: 0 auto;
+}
+
+/* 로그인 탭 섹션 */
+
+#menu-tap > ul {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+#menu-tap .tab-item:first-child {
+    margin-left: 0;
+}
+
+/* .tab-item:first-child, .tab-item:first-child:nth-last-child(2) ~ li {
+    width: 50%;
+} */
+
+.tab-item {
+    min-height: 42px;
+    width: 50%;
+} 
+
+.tab-item > button {
+    min-height: auto !important;
+    font-weight: 500;
+    word-break: break-all !important;
+    line-height: 2.6rem !important;
+    font-size: 1.6rem !important;
+}
+
+[type=button], [type=reset], [type=submit], button {
+    background-color: transparent;
+    background-image: none;
+}
+
+.btn-text {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    opacity: 1;
+    color: rgb(153, 153, 153);
+    white-space: normal;
+}
+
+.btn-active {
+    border-bottom: 2px solid rgb(252, 96, 32)
+}
+
+.btn-non-active {
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+.btn-active span {
+    opacity: 1;
+    color: rgb(252, 96, 32);
+}
+
+/* 로그인 섹션 */
+
+#login-menu {
+    padding-top: 3.2rem !important;
+}
+
+.login-input {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    width: 100%;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    height: 4.4rem !important;
+    border-radius: 0.4rem;
+    background-color: #f5f5f5;
+}
+
+.input-clear {
+    display: inline-flex;
+    margin-left: 0.8rem;
+    flex-shrink: 0;
+    font-size: 1.6rem;
+    color: rgba(0,0,0,0.15);
+}
+
+.input-clear::before {
+    content: "";
+    background-image: url(../img/circle-xmark-solid.svg);
+    width: 16px;
+    height: 16px;
+    line-height: 1;
+    opacity: 0.15;
+}
+
+.id-input-text, .password-input-text, .id-password {
+    height: 100%;
+    width: 100%;
+    border-width: 0;
+    background-color: transparent;
+    color: #333;
+    caret-color: #fc6020;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    box-shadow: 0 0 0 1000px #f5f5f5 inset;
+    outline-width: 0;
+}
+
+.login-input:focus-within {
+    border: 2px solid rgb(153, 153, 153);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.id-input-text:focus, :active {
+    outline: 0;
+}
+
+.login-input:nth-child(2) {
+    margin-top : 1.2rem !important;
+}
+
+.fail { 
+    color: #d53430;
+    margin-top: 0.8rem;
+}
+
+.infomark {
+    display: inline-flex;
+}
+
+.infomark:before {
+    content: "";
+    background: url(../img/mark.png) center center no-repeat;
+    background-size: cover;
+    width: 16px; height: 16px;
+    line-height: 1;
+}
+
+.fail-text {
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.login-checkbox {
+    margin-top : 1.2rem !important;
+}
+
+.login-checkbox-wrap {
+    align-items: center;
+    min-width: 2rem;
+    min-height: 2rem;
+    position: relative;
+    display: inline-flex;
+}
+
+.login-check {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    flex-shrink: 0;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    appearance:none;
+}
+
+.login-check:checked {
+    border-color: #fc6020;
+    background-color: #fc6020;
+}
+
+.login-checkbox .login-chech:checked ~ .hidden-text {
+    display: block;
+}
+
+.login-check:checked:after {
+    content: '';
+    width: 6px; 
+    height: 10px; 
+    border: solid #fff; 
+    border-width: 0 2px 2px 0; 
+    -webkit-transform: rotate(45deg); 
+    transform: rotate(45deg); 
+    position: absolute; 
+    left: 6px; 
+    top: 2px;
+}
+
+.hidden-text {
+    margin-top: 0.8rem;
+    display: none;
+}
+
+.checked-text {
+    font-size: 1.2rem;
+    color: rgb(153, 153, 153);
+    line-height: 1.8rem;
+}
+
+.checkbox-text {
+    font-size: 1.4rem;
+    margin-left: 0.8rem;
+    cursor: pointer;
+    font-weight: 400;
+    color : #333;
+}
+
+.login-button-area {
+    margin-top: 2.4rem;
+}
+
+.login-button {
+    border-radius: 0.4rem;
+    width: 100%;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    min-width: 4.4rem;
+    min-height: 4rem;
+    border-color: #fc6020;
+    background-color: #fc6020;
+    border-width: 0.2rem;
+    color: white;
+    font-size: 1.4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.middle-line {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: rgb(153, 153, 153);
+    font-size: 1.2rem;
+    margin-top: 4rem;
+    line-height: 1.8rem;
+}
+
+.middle-line:before {
+    height: 1px;
+    flex: 1 1 0%;
+    content: "";
+    background-color: rgba(0,0,0,.06)
+}
+
+.middle-line:after {
+    height: 1px;
+    flex: 1 1 0%;
+    content: "";
+    background-color: rgba(0,0,0,.06)
+}
+
+/* SNS 로그인 섹션 */
+
+.sns-list {
+    margin-top: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+}
+
+
+.sns-icon-list:not(:first-child) {
+    margin-left: 0.8rem;
+}
+
+.sns-icon-list:last-child {
+    margin-right: 0;
+}
+
+.sns-icon {
+    border: 1px solid rgba(0,0,0,0.15);
+    height: 4.4rem;
+    width: 4.4rem;
+    border-radius: 9999px;
+    display: block;
+    text-decoration: none;
+    outline-width: 0;
+}
+
+#sns-icon1 {
+    background : url(../img/google_icon.svg) center center no-repeat;
+}
+
+#sns-icon2 {
+    background : url(../img/facebook_icon.svg) center center no-repeat;
+    background-color: #1877f2;
+}
+
+#sns-icon3 {
+    background : url(../img/naver_icon.svg) center center no-repeat;
+    background-color: #00c60c;
+}
+
+#sns-icon4 {
+    background : url(../img/bird_icon.svg) center center no-repeat;
+    background-color: #1da1f2;
+}
+
+.login-menu-list {
+    margin-top: 4.0rem;
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+}
+
+.login-menu {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
+.login-menu-button {
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+    font-size: 1.4rem;
+}
+
+.login-menu-button:hover {
+    color: rgb(102, 102, 102);
+}
+
+/* 언어 선택 드롭다운 메뉴 섹션 */
+
+.lang-list-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.lang-button {
+    min-width: 152px;
+    position: relative;
+    width: max-content;
+}
+
+.dropdown-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+    height: 3.2rem;
+    border-radius: 0.4rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    color: #333;
+    text-align: left;
+}
+
+#pot {
+    color: #333;
+    margin-left: 1.2rem;
+    display: inline-flex;
+    font-size: 1.2rem;
+}
+
+#pot::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 6px solid #333;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+
+.active > button > #pot::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-bottom: 6px solid #333;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 0;
+}
+
+.lang-sel-menu {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    width: 100%;
+    max-width: 350px;
+    transform: translate3d(0px, -352px, 0px);
+}
+
+.opened {
+    display: block;
+}
+
+.sel-menu-list::-webkit-scrollbar {
+    display: none;
+}
+
+.sel-menu-list {
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 0.4rem;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    background-color: #ffffff;
+    color: #333;
+    width: 100%;
+    max-height: 35.2rem;
+    border: 1px solid rgba(0,0,0,.3);
+    overflow: hidden;
+    overflow-y: auto;
+    box-shadow: 0 0 transparent, 0 0 transparent, 0 0.4rem 1rem rgba(0,0,0,.1);
+    transform: translateY(-6px);
+    padding: 0.8rem 0;
+}
+
+.lang-sel-btn {
+    width: 100%;
+    padding-left: 15px;
+    font-weight: 400;
+    display: flex;
+    height: 4rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding-right: 1.6rem;
+    background-size: 2rem;
+    background-position: 1.2rem;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+.sel-menu-item:hover {
+    background-color: rgba(0,0,0,0.04);
+}
+
+.btn-select {
+    width: 100%;
+    padding-left: 4rem;
+    background-image: url(../img/ico-select-check-selected.svg);
+    background-color: rgba(0,0,0,0.04);
+    color: #fc6020;
+}
+
+/* 일회용 로그인 섹션 */
+
+.dispo-login-body {
+    display: none;
+    padding-top: 3.2rem;
+}
+
+.dispo-login-guide {
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 2.4rem;
+    color: rgb(102, 102, 102);
+}
+
+.orange-text {
+    color: rgb(252, 96, 32) !important;
+}
+
+#dispo-input-area:focus-within {
+    border: 2px solid rgb(153, 153, 153);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#dispo-input-area {
+    margin-top: 3.2rem;
+}
+
+#login-body {
+    display: block;
+}
+
+#dispo-menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    margin-top: 4rem;
+}
+
+.dispo-menu {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    position: relative;
+}
+
+.dispo-menu > a {
+    font-size: 1.4rem;
+    color: rgb(102, 102, 102);
+    line-height: 2rem;
+}
+
+.dispo-menu:nth-child(2)::before {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 11px;
+    width: 1px;
+    content: "";
+    background-color: rgba(0,0,0,.1);
+}

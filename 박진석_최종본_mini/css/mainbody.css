@@ -1,0 +1,1626 @@
+#mainbody {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+
+#main-content {
+    width: 100%;
+    margin-top: 67px;
+}
+
+#main-content > section:first-child {
+    margin-top: 32px;
+}
+
+.main-section {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* 이벤트 슬라이드, 배너 섹션 */
+
+#banner-sect {
+    display: flex;
+}
+
+.slide-link {
+    display: block;
+    height: 100%;
+}
+
+
+/* 라이브러리 적용 전 CSS 스타일시트 */
+
+/* #banner-slide {
+    width: 860px;
+    height: 360px;
+    float: left;
+}
+
+#slide-wrap {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+ul {
+    list-style: none;
+}
+
+.banner-list {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    left: 0;
+}
+
+
+/* 이동할 때 부드럽게 슬라이드 될 수 있도록 하는 스타일 */
+/* .banner-list.ani {
+    transition: left .3s ease;
+}
+
+.banner-img {
+    position: absolute;
+    width: 100%;
+    height: 360px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.event-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#slide-control > a {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#slide-control > a {
+    opacity: 0;
+}
+
+#slide-wrap:hover #slide-control > a {
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.left {
+    left: 16px;
+    background: url(../img/control-arrow-line.svg) 0 0 no-repeat;
+    width: 32px;
+    height: 32px;
+}
+
+.right {
+    right: 16px;
+    background: url(../img/control-arrow-line.svg) 0 0 no-repeat;
+    transform: translateY(-50%) rotate(180deg) !important;
+    width: 32px;
+    height: 32px;
+}
+
+#slide-pagelist {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#slide-pagelist span {
+    width: 6px; height: 6px;
+    border-radius: 10pc; display: inline-block;
+    text-indent: -99999em;
+    margin: 0 4px;
+    background-color: #fff;
+    opacity: .3;
+    cursor: pointer;
+}
+#slide-pagelist .pager-active {
+    width: 16px;
+    background-color: #fff !important;
+    opacity: 1 !important;
+    transition: width .15s ease-in-out, opacity .15s ease-in-out;
+} */
+
+.banner-appeal {
+    width: 220px;
+    height: 360px;
+    padding-left: 20px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.appeal-img {
+    background-size: cover !important;
+    background-position: center 0 !important;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    display: block;
+}
+
+#appeal-img1 {
+    background-image: url(../img/_main_short_LM1_1680573489628.png);
+}
+
+#appeal-img2 {
+    background-image: url(../img/_main_short_LM_1680069140731.png);
+}
+
+.banner-img {
+    list-style: none;
+}
+
+/* 인기 게임 섹션 */
+
+#popgame {
+    margin-top: 48px;
+}
+
+.sectheader {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: -.06rem;
+    color: #1f1f1f;
+}
+
+#popgame-sect {
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    flex-direction: row;
+    height: 225px;
+}
+
+#popgame-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-basis: 236px;
+    width: 236px;
+    background-color: #fff;
+    -webkit-box-direction: normal;
+}
+
+#popgame-list > li {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    letter-spacing: -.045rem;
+    color: #ccc;
+}
+
+#popgame-list > li:first-child {
+    border-radius: 4px 4px 0 0;
+}
+
+#popgame-list > li:last-child {
+    border-radius: 0 0 4px 4px;
+}
+
+#popgame-list > .pop_active {
+    background-color: #292929;
+}
+
+#popgame-list > .pop_active::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    width: 0;
+    height: 0;
+    margin-top: -4.5%;
+    border-top: 12px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid #1f1f1f;
+    z-index: -1;
+}
+
+#popgame-list > .pop_active > button {
+    color: #fff;
+}
+
+
+.popgame-tap {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break:break-all;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 28px;
+    padding-right: 28px;
+    line-height: 75px;
+    text-decoration: none;
+    color: #ccc;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.popgame-guide-img {
+    overflow: hidden;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    margin-top: -30px;
+}
+
+.guide-img-content {
+    overflow: hidden;
+    position: relative;
+    min-height: 100%;
+}
+
+.popgame-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: calc(100% - 30px);
+    z-index: 10;
+}
+
+.pop-content-img {
+    min-height: 224px;
+    background-size: 990px;
+    background-position: 100% 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.pop-info {
+    position: absolute;
+    top: 70px;
+    right: 80px;
+}
+
+.pop-info-desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+    margin-bottom: 24px;
+}
+
+.pop-tit {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -.04rem;
+    color: #333;
+    padding-left: 30px;
+}
+
+.pop-text {
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -.035rem;
+    color: #999;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: normal;
+}
+
+.pop-inner-text {
+    line-clamp: 2;
+    white-space: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 400;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.pop-info-ico {
+    width: 75px;
+    margin-left: 24px;
+}
+
+.pop-info-ico > img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .1);
+}
+
+.pop-info-link {
+    text-align: right;
+}
+
+.pop-link-arrow {
+    width: 308px;
+    height: 9px;
+    margin-left: auto;
+    background-image: url(../img/thumbnail-content-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right 0;
+}
+
+.pop-link-text {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -.035rem;
+    color: #999;
+}
+
+/* 풀 사이즈 배너 섹션 */
+
+.fullsize-banner {
+    margin-top: 64px;
+    padding-top: 50px;
+}
+
+.full-banner-wide {
+    height: 120px;
+    position: relative;
+    display: block;
+}
+
+.wide-img {
+    position: relative;
+    height: 120px;
+    max-width: 1300px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.wide-img > .fullbanner-link {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: -50px;
+    z-index: 4;
+}
+
+.fullbanner-text {
+    height: 120px;
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    left: 110px;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 400;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.banner-text {
+    line-clamp: 2;
+    white-space: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.banner-inner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 120px;
+    overflow: hidden;
+}
+
+.wide-img .banner-inner {
+    height: 170px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    display: block;
+}
+
+.banner-inner-img {
+    z-index: 1;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    right: 109px;
+    width: 404px;
+    height: 170px;
+    background-position: center 0;
+    background-size: auto 100%;
+    background-image: url(../img/_full_obj_전국_.png);
+}
+
+.banner-bar-img {
+    background-color: rgb(0, 23, 23);
+    background-image: url(../img/_full_BG_전국_051717.jpg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 120px !important;
+    width: auto !important;
+    background-position: center 0;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+/* INDIE GAME 리뷰 섹션 */
+
+#review-banner {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 64px;
+    position: relative;
+    padding-bottom: 37px;
+    min-height: 365px;
+    
+}
+
+.review-inner {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.review-banner-body {
+    display: flex;
+}
+
+.review-img-sect {
+    flex: 1;
+    padding-top: 36px;
+}
+
+.review-text-sect {
+    min-width: 660px;
+    padding-top: 36px;
+}
+
+.review-sect-inner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.review-icon {
+    background: url(../img/메인_06_인디게임리뷰_크로니콘_review_BI_1681345212855.png) no-repeat;
+    width: 100%;
+    height: 120px;
+    margin-top: 11px;
+    background-size: auto 100%;
+}
+
+.review-detail-text {
+    padding-top: 20px;
+    padding-right: 10%;
+    font-size: 15px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.review-btn-list {
+    padding-top: 28px;
+}
+
+.review-btn1 {
+    min-width: 100px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #333;
+    text-decoration: none;
+    min-height: 28px;
+    padding: 0 10px;
+    border-radius: 2px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.review-btn2 {
+    margin-left: 8px;
+    min-width: 100px;
+    box-sizing: border-box;
+    min-height: 30px;
+    background-color: transparent;
+    border: 1px solid hsla(0, 0%, 100%, 0.5);
+    color: #fff;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    padding: 0 10px;
+    border-radius: 2px;
+}
+
+.review-btn-text {
+    padding: 4px 0;
+    font-size: 12px;
+    line-height: 18px;
+    display: inline-block;
+    letter-spacing: -.025em;
+}
+
+.review-list {
+    position: relative;
+    z-index: 1;
+    width: auto;
+    align-items: flex-end;
+    height: 100%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+.review-item {
+    padding-left: 20px;
+    display: flex;
+    flex: 1;
+    width: auto;
+    justify-content: end;
+    position: relative;
+    height: 100%;
+}
+
+.review-card {
+    display: flex;
+    width: 200px;
+    height: 292px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.review-content {
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+    margin-bottom: 14px;
+    max-height: 228px;
+}
+
+.review-text-area {
+    overflow: hidden;
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    top: 25px;
+    bottom: 0;
+}
+
+.review-text {
+    word-break: break-word;
+    word-wrap: break-word;
+    color: #999;
+    font-size: 15px;
+    line-height: 24px;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+.card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.review-writer {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+}
+
+.writer {
+    display: flex;
+    flex-wrap: nowrap;
+    text-decoration: none;
+}
+
+.writer-icon1 {
+    background: url(../img/img_default02.png) no-repeat;
+    background-size: 100% 100%;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.writer-icon2 {
+    background: url(../img/img_default03.png) no-repeat;
+    background-size: 100% 100%;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.writer-icon3 {
+    background: url(../img/img_default05.png) no-repeat;
+    background-size: 100% 100%;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.writer-content {
+    padding-left: 8px;
+}
+
+.writer-table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.writer-table-cell {
+    display: table-cell;
+}
+
+.writer-id {
+    white-space: nowrap;
+    color: #1f1f1f;
+    display: block;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 20px;
+    line-clamp: 6;
+    font-weight: 400;
+    word-break: break-all;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+}
+
+.writer-time {
+    white-space: nowrap;
+    letter-spacing: -.3px;
+    display: block;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #999;
+    font-size: 12px;
+    line-height: 18px;
+    line-clamp: 6;
+    -webkit-box-orient: vertical;
+    font-weight: 400;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.review-background {
+    background: rgb(25, 23, 27);
+    position: absolute;
+    top: 53px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    transform: translateZ(0);
+}
+
+.review-background-img {
+    background-image: url(../img/메인_06_인디게임리뷰_크로니콘_review_19171b_new_1681345313046.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: auto auto;
+}
+
+/* STOVE 추천게임 섹션 */
+
+#game-recommend {
+    margin-top: 64px;
+}
+
+.recommend-tap {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 26px;
+    background-color: #fff;
+}
+
+.recommend-tap-item {
+    flex: 1;
+    position: relative;
+    height: 56px;
+}
+
+.recommend-tap-item > button {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+    line-height: 56px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.recommend-tap-item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .15);
+    width: 100%;
+    height: 1px;
+}
+
+.recommend-tap .tap-active > button {
+    color: #fff;
+    background-color: #1f1f1f;
+}
+
+.recommend-tap .tap-active:after {
+    display: none;
+    content: "";
+}
+
+.recommend-list {
+    display: flex;
+    flex-wrap: nowrap;
+    width: calc(100% + 20px)
+}
+
+.recommend-item {
+    width: calc(25% - 20px);
+    margin-right: 20px;
+    position: relative;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.recommend-item-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    border-radius: 8px;
+    border: 1px solid #d9d9d9;
+}
+
+.recommend-game-img-area {
+    position: relative;
+}
+
+.recommend-game-img {
+    position: relative;
+    border-radius: 8px 8px 0 0;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 56%;
+}
+
+/* STOVE 추천게임 탭1 이미지 */
+
+#recommend-game-tap1-img1 {
+    background-image: url(../img/메인_05_카드형큐레이션배너card_random_default_1679996546061.jpg);
+}
+
+.recommend-item:hover #recommend-game-tap1-img1 {
+    background-image: url(../img/메인_05_카드형큐레이션배너card_random_hover_1679996548532.jpg);
+}
+
+#recommend-game-tap1-img2 {
+    background-image: url(../img/메인_05_카드형큐레이션배너card-curation_default_1678767746795.jpg);
+}
+
+.recommend-item:hover #recommend-game-tap1-img2 {
+    background-image: url(../img/메인_05_카드형큐레이션배너card-curation_hover_1678767749446.png);
+}
+
+#recommend-game-tap1-img3 {
+    background-image: url(../img/메인_05_카드형큐레이션배너_스테퍼케이스card_스테퍼케이스_default_1678438091453.jpg);
+}
+
+.recommend-item:hover #recommend-game-tap1-img3 {
+    background-image: url(../img/메인_05_카드형큐레이션배너_스테퍼케이스card_스테퍼케이스_hover_1678438093180.jpg);
+}
+
+#recommend-game-tap1-img4 {
+    background-image: url(../img/메인_05_카드형큐레이션배너card_chronicon_1_1678410731413.jpg);
+}
+
+.recommend-item:hover #recommend-game-tap1-img4 {
+    background-image: url(../img/메인_05_카드형큐레이션배너card_chronicon_2_1678410733734.jpg);
+}
+
+/* STOVE 추천게임 탭2 이미지 */
+
+#recommend-game-tap2-img1 {
+    background-image: url(../img/메인_05_카드형큐레이션배너_loveincard_lovein_default_1671681030343.jpg);
+}
+
+.recommend-item:hover #recommend-game-tap2-img1 {
+    background-image: url(../img/메인_05_카드형큐레이션배너_loveincard_lovein_hover_1671681030343.jpg);
+}
+
+#recommend-game-tap2-img2 {
+    background-image: url(../img/메인_05_카드형큐레이션배너_loveSPcard_loveSP_default_1671686208688.jpg);
+}
+
+.recommend-item:hover #recommend-game-tap2-img2 {
+    background-image: url(../img/메인_05_카드형큐레이션배너_loveSPcard_loveSP_hover_1671686210605.jpg);
+}
+
+#recommend-game-tap2-img3 {
+    background-image: url(../img/메인_05_카드형큐레이션배너_hanacard_hana_default_1667534957672.jpg);
+}
+
+.recommend-item:hover #recommend-game-tap2-img3 {
+    background-image: url(../img/메인_05_카드형큐레이션배너_hanacard_hana_hover_1667534959260.jpg);
+}
+
+#recommend-game-tap2-img4 {
+    background-image: url(../img/메인_05_카드형큐레이션배너_블카시크릿플러스_card-curation.jpg);
+}
+
+.recommend-item:hover #recommend-game-tap2-img4 {
+    background-image: url(../img/02_블랙아카데미시크릿_card-curation_hover.gif);
+}
+
+/* STOVE 추천게임 탭3 이미지 */
+
+#recommend-game-tap3-img1 {
+    background-image: url(../img/귀곡임시이미지_1664432818696.jpg);
+}
+
+.recommend-item:hover #recommend-game-tap3-img1 {
+    background-image: url(../img/메인_05_카드형큐레이션배너_Immortalcard_Immortal_hover.jpg);
+}
+
+#recommend-game-tap3-img2 {
+    background-image: url(../img/메인_05_카드형큐레이션배너_나흘벅card-curation_default.jpg);
+}
+
+.recommend-item:hover #recommend-game-tap3-img2 {
+    background-image: url(../img/메인_05_카드형큐레이션배너_나흘벅card-curation_hover.png);
+}
+
+#recommend-game-tap3-img3 {
+    background-image: url(../img/ATOMRPG_card-curation_default_1658265033383.jpg);
+}
+
+.recommend-item:hover #recommend-game-tap3-img3 {
+    background-image: url(../img/ATOMRPG_card-curation_hover2_1658265036812.jpg);
+}
+
+#recommend-game-tap3-img4 {
+    background-image: url(../img/브란테경_card-curation_default.jpg);
+}
+
+.recommend-item:hover #recommend-game-tap3-img4 {
+    background-image: url(../img/브란테경_card-curation_hover.gif);
+}
+
+/* STOVE 추천게임 탭4 이미지 */
+
+#recommend-game-tap4-img1 {
+    background-image: url(../img/card-curation_century.png);
+}
+
+.recommend-item:hover #recommend-game-tap4-img1 {
+    background-image: url(../img/card-curation_century_hover.png);
+}
+
+#recommend-game-tap4-img2 {
+    background-image: url(../img/메인_05_카드큐레이션배너_card-curation_로스트아크_1674008121715.jpg);
+}
+
+.recommend-item:hover #recommend-game-tap4-img2 {
+    background-image: url(../img/메인_05_카드큐레이션배너_card-curation_hover_로스트아크_1674008130044.jpg);
+}
+
+#recommend-game-tap4-img3 {
+    background-image: url(../img/pc_game_겟앰프드.jpg);
+}
+
+.recommend-item:hover #recommend-game-tap4-img3 {
+    background-image: url(../img/pc_game_겟앰프드_마우스오버.png);
+}
+
+#recommend-game-tap4-img4 {
+    background-image: url(../img/card-curation_talesrunner_1658480602819.png);
+}
+
+.recommend-item:hover #recommend-game-tap4-img4 {
+    background-image: url(../img/card-curation_talesrunner_hover_1658480606296.gif);
+}
+
+.recommend-game-text-area {
+    min-height: 159px;
+    margin-bottom: 20px;
+    padding: 24px 24px 0;
+}
+
+.recommend-game-name {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    width: 100%;
+    letter-spacing: -.045rem;
+}
+
+.recommend-game-tag {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    margin-right: 4px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -.035rem;
+    color: #999;
+}
+
+.recommend-game-price, .recommend-game-btn {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    position: absolute;
+    bottom: 20px;
+    width: calc(100% - 48px);
+    display: block;
+    letter-spacing: -.045rem;
+    white-space: nowrap;
+    color: #333;
+}
+
+.recommend-game-btn-list {
+    display: flex;
+    position: relative;
+    z-index: 10;
+}
+
+.recommend-game-btn-item {
+    flex: 1;
+    white-space: nowrap;
+    margin-right: 4px;
+    color: #666;
+    min-height: 30px;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    min-width: 32px;
+    padding: 0 10px;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    font-size: 0;
+    font-weight: 500;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.recommend-btn-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    padding: 4px 0;
+    font-size: 12px;
+    line-height: 18px;
+    display: inline-block;
+    letter-spacing: -.025em;
+}
+
+.recommend-btn-text::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    min-height: inherit;
+    vertical-align: middle;
+}
+
+/* 모든 게임 리스트 섹션 */
+
+#allgame-list-banner {
+    margin-top: 64px;
+}
+
+.allgame-tap-area {
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+}
+
+.allgame-tap {
+    display: flex;
+    align-items: center;
+    margin-bottom: -1px;
+}
+
+.allgame-tap-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    position: relative;
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
+.allgame-tap-item:first-child {
+    margin-left: 0;
+}
+
+.allgame-tap > .tap-active {
+    font-weight: 500;
+}
+
+.allgame-tap > .tap-active:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #1f1f1f;
+    z-index: 1;
+}
+
+.allgame-tap-item > button {
+    font-size: 16px;
+    line-height: 48px;
+    letter-spacing: -.04rem;
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+.allgame-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 20px);
+}
+
+.allgame-wrap-item {
+    position: relative;
+    border-radius: 4px;
+    width: calc(25% - 20px);
+    min-height: 140px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .06);
+}
+
+.allgame-wrap-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.allgame-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.allgame-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    border-radius: 4px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right 0;
+}
+
+.allgame-text-area {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 24px;
+}
+
+.allgame-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 175px;
+    letter-spacing: -.045rem;
+    color: #1f1f1f;
+}
+
+.allgame-pcmoba-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    max-width: 175px;
+    letter-spacing: -.045rem;
+    color: #1f1f1f;
+}
+
+.allgame-price-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -.035rem;
+    color: #1f1f1f;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+}
+
+.allgame-desc-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -.03rem;
+    color: #999;
+}
+
+.tag-text:first-child {
+    padding-left: 0;
+}
+
+.tag-text:first-child::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: block;
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #999;
+    z-index: 1;
+}
+
+.tag-text {
+    position: relative;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.allgame-price-text span:first-child {
+    padding-left: 0;
+}
+
+.allgame-price-text span {
+    padding-left: 4px;
+    padding-right: 4px;
+    position: relative;
+}
+
+.point-text {
+    color: #fc6020;
+}
+
+.sale-badge-area {
+    margin-top: 30px;
+}
+
+.sale-badge {
+    height: 20px;
+    margin-right: 5px;
+    padding: 0 8px;
+    font-size: 12px;
+    line-height: 18px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+.sale {
+    background-color: #ec3b47;
+}
+
+.new-badge {
+    background-color: #fc6020;
+}
+
+.update-badge {
+    background-color: #944cec;
+}
+
+.allgame-wrap-item:hover .recommend-game-bottom {
+    display: block;
+}
+
+.recommend-game-bottom {
+    position: absolute;
+    width: 100%;
+    display: none;
+    z-index: 11;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.recommend-game-bottom-item > a:hover .recommend-game-bottom-text {
+    color: #fff;
+}
+
+.rec-bottom-btn-ico-area > a:hover .bot-btn-icon {
+    filter: invert(99%) sepia(52%) saturate(2%) hue-rotate(138deg) brightness(106%) contrast(101%);
+    opacity: 1;
+}
+
+.recommend-game-bottom-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 44px;
+}
+
+.rec-bottom-btn-ico-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recommend-game-bottom-item > * {
+    flex: 1;
+    text-decoration: none;
+}
+
+.recommend-bottom-link {
+    min-width: 32px;
+    min-height: 28px;
+    padding: 0 10px;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.bot-btn-icon-link {
+    margin: 12px !important;
+    padding: 0 !important;
+    min-width: 32px;
+    min-height: 28px;
+    padding: 0 10px;
+    border-radius: 2px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.recommend-bottom-link:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    min-height: inherit;
+    vertical-align: middle;
+}
+
+.recommend-bottom-link:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: block;
+    width: 1px;
+    height: 12px;
+    z-index: 1;
+    background-color: hsla(0,0%,100%,.15);
+}
+
+.recommend-game-bottom-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.502);
+    padding: 4px 0;
+    line-height: 18px;
+}
+
+.bot-btn-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    display: inline-block;
+    background-size: contain;
+    vertical-align: top;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    filter: invert(99%) sepia(52%) saturate(2%) hue-rotate(138deg) brightness(106%) contrast(101%);
+}
+
+
+/*  커뮤니티, 클라이언트 배너 섹션 */
+
+#footer-banner {
+    margin-top: 64px;
+}
+
+.footer-banner-list {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.footer-banner-item {
+    width: 50%;
+    display: block;
+    flex-shrink: 1;
+}
+
+.footer-banner-item:first-child {
+    padding-right: 8px;
+}
+
+.footer-banner-item:last-child {
+    padding-left: 8px;
+}
+
+.footer-banner-link {
+    display: block;
+    position: relative;
+    padding-top: 23.375%;
+}
+
+.footer-banner-text {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    bottom: 0;
+    left: 43.14%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+    font-weight: 400;
+    z-index: 1;
+}
+
+.footer-banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#ft-banner-img1 {
+    background-color: rgb(0,0,0);
+    background-image: url(../img/메인_08_2단배너__스토브커뮤니티_main_2nd_PC_1658265108207.png);
+}
+
+#ft-banner-img2 {
+    background-color: rgb(0,0,0);
+    background-image: url(../img/_2nd_PC_3.0공지.png);
+}
+
+/*  공지사항, 회사소개 등의 섹션 */
+
+.company-footer {
+    margin-top: 200px;
+    padding: 32px 0 24px;
+    background-color: #1f1f1f;
+}
+
+.footer-area {
+    max-width: 1300px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-notice {
+    overflow: hidden;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+    width: inherit;
+}
+
+.notice-title {
+    float: left;
+    margin-right: 24px;
+    color: #fff;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.notice-data {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.notice-link {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    display: inline-block;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: nowrap;
+    max-width: 100%;
+    text-decoration: none;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+}
+
+.footer-nav-item {
+    margin: 0 24px 8px 0;
+    color: hsla(0, 0%, 100%, 0.5);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.footer-nav-item:nth-child(3) {
+    font-weight: 500;
+}
+
+.footer-addr-area {
+    font-size: 0;
+}
+
+.footer-addr-item {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    color: hsla(0, 0%, 100%, 0.5);
+    word-break: keep-all;
+    margin-right: 12px;
+}
+
+.footer-addr-link {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    display: inline-block;
+    text-decoration: underline;
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.company-text {
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.company-logo {
+    margin-top: 24px;
+}
+
+.company-logo-link {
+    display: inline-block;
+    height: 44px;
+    margin-right: 28px;
+    margin-bottom: 16px;
+}
+
+.company-logo-img {
+    max-height: 100%;
+}
